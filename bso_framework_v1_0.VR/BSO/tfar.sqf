@@ -33,9 +33,9 @@ _settingsSwWest set [2, ["401","402","403","404","405","406","407","408"]];
 tf_freq_west = _settingsSwWest;
 publicVariable "tf_freq_west";
 
-_settingsLRWest = false call TFAR_fnc_generateLRSettings; 
-_settingsLRWest set [2, ["40","41","42","43","44","45","46","47","48"]]; 
-tf_freq_west_lr = _settingsLRWest; 
+_settingsLrWest = false call TFAR_fnc_generateLrSettings; 
+_settingsLrWest set [2, ["40","41","42","43","44","45","46","47","48"]]; 
+tf_freq_west_lr = _settingsLrWest; 
 publicVariable "tf_freq_west_lr";
 
 _settingsSwEast = false call TFAR_fnc_generateSwSettings;                          
@@ -43,9 +43,9 @@ _settingsSwEast set [2, ["401","402","403","404","405","406","407","408"]];
 tf_freq_east = _settingsSwEast;
 publicVariable "tf_freq_east";
  
-_settingsLREast = false call TFAR_fnc_generateLRSettings;                            
-_settingsLREast set [2, ["40","41","42","43","44","45","46","47","48"]];  
-tf_freq_east_lr = _settingsLREast;
+_settingsLrEast = false call TFAR_fnc_generateLrSettings;                            
+_settingsLrEast set [2, ["40","41","42","43","44","45","46","47","48"]];  
+tf_freq_east_lr = _settingsLrEast;
 publicVariable "tf_freq_east_lr";
 
 _settingsSwGuer = false call TFAR_fnc_generateSwSettings;                         
@@ -53,9 +53,9 @@ _settingsSwGuer set [2, ["401","402","403","404","405","406","407","408"]];
 tf_freq_guer = _settingsSwEast;
 publicVariable "tf_freq_guer";
  
-_settingsLRGuer = false call TFAR_fnc_generateLRSettings;                           
-_settingsLRGuer set [2, ["40","41","42","43","44","45","46","47","48"]]; 
-tf_freq_guer_lr = _settingsLRGuer;
+_settingsLrGuer = false call TFAR_fnc_generateLrSettings;                           
+_settingsLrGuer set [2, ["40","41","42","43","44","45","46","47","48"]]; 
+tf_freq_guer_lr = _settingsLrGuer;
 publicVariable "tf_freq_guer_lr";
 
 
