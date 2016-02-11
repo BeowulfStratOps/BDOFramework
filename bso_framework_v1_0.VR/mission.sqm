@@ -1510,7 +1510,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[this, this, 100, 5, ""MOVE"", ""SAFE"", ""GREEN"", ""NORMAL"", ""STAG COLUMN"", ""this spawn CBA_fnc_searchNearby"", [3,6,9]] call CBA_fnc_taskPatrol;";
+					init="[this, this, 100, 5, ""MOVE"", ""SAFE"", ""RED"", ""NORMAL"", ""STAG COLUMN"", ""this spawn CBA_fnc_searchNearby"", [3,6,9]] call CBA_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -1808,7 +1808,7 @@ class Mission
 		{
 			position[]={322.67981,5,578.66504};
 			name="obj1";
-			text="Enemy Base";
+			text="Objective";
 			type="mil_objective";
 			colorName="ColorEAST";
 		};
@@ -1840,7 +1840,7 @@ class Mission
 		{
 			position[]={291.78738,5,168.06934};
 			name="start";
-			text="Insertion Point";
+			text="Starting Point";
 			type="mil_start";
 			colorName="ColorWEST";
 		};
