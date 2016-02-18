@@ -55,7 +55,7 @@ class Mission
 	randomSeed=299284;
 	class Intel
 	{
-		briefingName="BSO Framework v1.0";
+		briefingName="BSO Framework v1.1";
 		startWeather=0;
 		startWind=0.099999994;
 		startWaves=0.099999994;
