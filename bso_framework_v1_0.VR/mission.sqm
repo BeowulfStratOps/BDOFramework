@@ -1861,12 +1861,13 @@ class Mission
 		class Item8
 		{
 			position[]={166.57985,5,85.260254};
-			azimut=359.53476;
+			azimut=359.535;
 			id=80;
 			side="EMPTY";
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item9
 		{
@@ -1881,42 +1882,46 @@ class Mission
 		class Item10
 		{
 			position[]={182.08177,5,67.812988};
-			azimut=358.6138;
+			azimut=358.61401;
 			id=82;
 			side="EMPTY";
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item11
 		{
 			position[]={166.74098,5,67.297363};
-			azimut=358.6138;
+			azimut=358.61401;
 			id=83;
 			side="EMPTY";
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item12
 		{
 			position[]={184.43822,5,80.950684};
-			azimut=268.91376;
+			azimut=268.914;
 			id=84;
 			side="EMPTY";
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item13
 		{
 			position[]={184.48412,5,72.918457};
-			azimut=449.61853;
+			azimut=449.61899;
 			id=85;
 			side="EMPTY";
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item14
 		{
@@ -1931,12 +1936,13 @@ class Mission
 		class Item15
 		{
 			position[]={164.12004,5,72.234863};
-			azimut=449.61853;
+			azimut=449.61899;
 			id=87;
 			side="EMPTY";
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item16
 		{
@@ -1948,6 +1954,7 @@ class Mission
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item17
 		{
@@ -1959,6 +1966,7 @@ class Mission
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item18
 		{
@@ -1981,6 +1989,7 @@ class Mission
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item20
 		{
@@ -2036,6 +2045,7 @@ class Mission
 			vehicle="Land_HBarrier_large";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item25
 		{
