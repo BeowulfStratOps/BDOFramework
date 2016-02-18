@@ -13,7 +13,7 @@ showGPS			= 1;						// <!-- Allow GPS
 showCompass		= 1;						// <!-- Allow Compass
 showWatch		= 1;						// <!-- Allow Watch
 
-respawn		= 4;							// <!-- Sets respawn type (3 = Base, to respawn at the respawn marker in the editor)
+respawn		= 3;							// <!-- Sets respawn type (3 = Base, to respawn at the respawn marker in the editor) !! Set this to 4 to disable respawn and place players straight into the spectator system
 respawnTemplates[] = {"Seagull","f_spectator"};	// <!-- Enables the ACE_Spectator system when a player is killed.
 respawnDelay	= 3;						// <!-- Delay between death and respawn 
 respawnDialog	= 0;						// <!-- Displays dialogue when killed (leave this at 0) 

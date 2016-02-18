@@ -5,6 +5,8 @@ execVM "BSO\tfar.sqf";
 execVM "mission\briefing.sqf";
 
 ////// ==== Safety
+// Respawn protection
+execVM "BSO\safe_zone.sqf";
 // Enable ACE weapon Safety and Earplugs in.
 #include "BSO\safe\safety.sqf";
 // Safe Start
@@ -23,3 +25,4 @@ setViewDistance 3000;
 ////// === Mission Log
 diag_log format ["###### %1 ######", missionName];
 diag_log [diag_frameno, diag_ticktime, time, "Executing init.sqf"];
+
