@@ -3,7 +3,7 @@
 Use the fields below to set your mission attributes. For assistance speak to an admin or see the BI wiki for Description.ext
 */
 
-overviewText = "0-60<br />COOP<br />Short<br />Spectator<br />Standard Medical<br />Brief description about the mission<br />Author";
+overviewText = "0-60<br />COOP<br />Short<br />Spectator Box<br />Standard Medical<br />Brief description about the mission<br />Author";
 
 /*
 
@@ -18,7 +18,7 @@ COOP 															//<!-- Game type - COOP/TvT/Dynamic
 
 Short Length													//<!-- Expected Game Length - Short (30 Mins ) / Standard ( 1 - 1/2 Hour ) / Long ( 1 1/2 Hours + ) / Persistant (ALiVE Database Enabled)
 
-Spectator 													//<! -- Respawns - Spectator/Spectator box/Tickets/Limit/Unlimited 
+Spectator Box													//<! -- Respawns - Spectator/Spectator box/Tickets/Limit/Unlimited 
 
 Standard Medical												//<! -- Medical System - Standard/Advanced/Medevac
 
