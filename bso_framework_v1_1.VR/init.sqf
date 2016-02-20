@@ -5,8 +5,6 @@ execVM "BSO\tfar.sqf";
 execVM "mission\briefing.sqf";
 
 ////// ==== Safety
-// Respawn protection
-execVM "BSO\safe_zone.sqf";
 // Enable ACE weapon Safety and Earplugs in.
 #include "BSO\safe\safety.sqf";
 // Safe Start

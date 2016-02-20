@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={308.82428,603.93042,-33.635151};
-		dir[]={0.021122718,-0.88672614,0.46208084};
-		up[]={0.040487964,0.46238852,0.88573611};
-		aside[]={0.99905616,-4.8534457e-007,-0.045668513};
+		pos[]={311.51996,363.1048,37.526714};
+		dir[]={-0.036640283,-0.76504725,0.64312536};
+		up[]={-0.043515563,0.64397013,0.76378387};
+		aside[]={0.99847609,4.5466004e-007,0.056884296};
 	};
 };
 binarizationWanted=0;
@@ -3871,7 +3871,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="nul = [this,10,false] execVM ""bso\garrison\Garrison_script.sqf"";";
+						init="if (isServer) then {0 = [getPosATL this, units group this, -1, true, false] execVM ""BSO\Zen_OccupyHouse.sqf"";};";
 					};
 					id=127;
 					type="O_BSO_FIA_GL";
