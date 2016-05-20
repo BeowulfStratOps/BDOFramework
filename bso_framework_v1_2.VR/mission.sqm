@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=142;
+		nextID=145;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={172.16908,53.01685,57.71624};
-		dir[]={0.076673873,-0.80505943,0.5884254};
-		up[]={0.10401996,0.59318209,0.79828662};
-		aside[]={0.99170709,5.6638964e-007,-0.12922226};
+		pos[]={180.44365,18.968351,63.132229};
+		dir[]={0.091499545,-0.58688736,0.80452842};
+		up[]={0.066322155,0.80965495,0.58314598};
+		aside[]={0.99363112,4.1307067e-007,-0.11300779};
 	};
 };
 binarizationWanted=0;
@@ -45,8 +45,8 @@ addons[]=
 	"ace_winddeflection",
 	"A3_Modules_F_Curator_Curator",
 	"bso_fia",
-	"A3_Structures_F_Civ_Camping",
-	"ace_map"
+	"ace_map",
+	"A3_Structures_F_EPC_Civ_Accessories"
 };
 randomSeed=11973509;
 class ScenarioData
@@ -190,7 +190,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={174.30701,5,76.301003};
-			angle=6.2688389;
+			angle=6.2688384;
 			class Attributes
 			{
 				name="bsp_spect";
@@ -260,11 +260,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={171.93871,5.9690776,81.681847};
+				position[]={171.93871,6.2013354,81.681847};
 				angles[]={0,3.0236828,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -273,6 +272,7 @@ class Mission
 			};
 			id=15;
 			type="Land_Laptop_unfolded_F";
+			atlOffset=0.15818501;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5299,73 +5299,13 @@ class Mission
 		};
 		class Item57
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={171.91299,5.4065027,81.774002};
-				angles[]={0,2.9273915,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				name="table";
-			};
-			id=134;
-			type="Land_CampingTable_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item58
-		{
 			dataType="Marker";
 			position[]={174.33157,5,75.750488};
 			name="respawn_east";
 			type="Empty";
 			id=135;
 		};
-		class Item59
+		class Item58
 		{
 			dataType="Marker";
 			position[]={174.40793,5,75.839355};
@@ -5373,7 +5313,7 @@ class Mission
 			type="Empty";
 			id=136;
 		};
-		class Item60
+		class Item59
 		{
 			dataType="Marker";
 			position[]={174.40292,5,75.754883};
@@ -5381,7 +5321,7 @@ class Mission
 			type="Empty";
 			id=137;
 		};
-		class Item61
+		class Item60
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5469,6 +5409,66 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={171.91299,5.4435391,81.774002};
+				angles[]={0,2.9273884,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="table";
+			};
+			id=144;
+			type="Land_TablePlastic_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};

@@ -15,12 +15,12 @@ private ["_Key","_RscLayer"];
 /* Disable post processing effects for spectator */
 BIS_fnc_feedback_allowPP = false;
 /* Runs spectator script */
-_RscLayer = "BIS_fnc_respawnSpectator" call bis_fnc_rscLayer;
-_RscLayer cutrsc ["RscSpectator","plain"];
+//_RscLayer = "BIS_fnc_respawnSpectator" call bis_fnc_rscLayer;
+//_RscLayer cutrsc ["RscSpectator","plain"];
 
 // ACRE / TFAR 
-//[true] call acre_api_fnc_setSpectator;
-[player, true] call TFAR_fnc_forceSpectator;
+[true] call acre_api_fnc_setSpectator;
+//[player, true] call TFAR_fnc_forceSpectator;
 
 
 /* Exits spectator camera using the Ctrl + T key */
