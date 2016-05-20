@@ -32,13 +32,14 @@ BEARB_SpectatorKeyDown =
         /* Enables post processing effects for spectator */
         BIS_fnc_feedback_allowPP = true;
         /* Stops spectator script */
-        ("BIS_fnc_respawnSpectator" call BIS_fnc_rscLayer) cutText ["", "PLAIN"];
+     //   ("BIS_fnc_respawnSpectator" call BIS_fnc_rscLayer) cutText ["", "PLAIN"];
         /* Removes event handlers detecting key press */
         (findDisplay 46) displayRemoveEventHandler ["KeyDown", BEARB_SpectatorEH];
         /* Allows unit moving */
+ 	["Terminate"] call BIS_fnc_EGSpectator;	
         player enableSimulation true;
-		//[false] call acre_api_fnc_setSpectator;
-		[player, false] call TFAR_fnc_forceSpectator;
+		[false] call acre_api_fnc_setSpectator;
+		//[player, false] call TFAR_fnc_forceSpectator;
     };
 };
 /* Ensures the primary display is found */
