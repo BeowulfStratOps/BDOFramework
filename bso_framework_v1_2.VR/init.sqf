@@ -10,7 +10,7 @@ fc_safestart_init = compile preprocessFileLineNumbers "BSO\safe\safestart_init.s
 // Run all modules.
 [] spawn fc_safestart_init;
 // Safe Zone
-execVM "bso\safe_zone.sqf";
+execVM "bso\safe\safe_zone.sqf";
 
 /////// ==== Save Disable
 enableSaving [false,false];
