@@ -34,5 +34,5 @@ BIS_fnc_feedback_allowPP = false;
     };
 }] call BIS_fnc_addStackedEventHandler;
 
-["Initialize", [(_this select 1), [], true]] call BIS_fnc_EGSpectator;
+["Initialize", [player, [side player], false, true, true, true, true, true, true, true]] call BIS_fnc_EGSpectator;
 hintSilent "Press RELOAD to exit spectator";
