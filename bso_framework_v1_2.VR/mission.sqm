@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={180.44365,18.968351,63.132229};
-		dir[]={0.091499545,-0.58688736,0.80452842};
-		up[]={0.066322155,0.80965495,0.58314598};
-		aside[]={0.99363112,4.1307067e-007,-0.11300779};
+		pos[]={173.49944,7.2622418,80.314705};
+		dir[]={-0.40545297,-0.57285911,0.71241468};
+		up[]={-0.28336602,0.81963396,0.49789733};
+		aside[]={0.86914337,1.1294469e-007,0.49465141};
 	};
 };
 binarizationWanted=0;
@@ -260,19 +260,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={171.93871,6.2013354,81.681847};
-				angles[]={0,3.0236828,0};
+				position[]={171.939,6.2010722,81.681999};
+				angles[]={0,3.0236783,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this addAction [""Enter Spectating Mode"", ""bso\Spectator.sqf"", [], -4, false, true, """", ""_this distance _target < 3""];  ";
 				name="laptop_base";
 			};
 			id=15;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.15818501;
+			atlOffset=0.15792179;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5424,6 +5423,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				init="this addAction [""Enter Spectating Mode"", ""bso\Spectator.sqf"", [], -4, false, true, """", ""_this distance _target < 3""];  ";
 				name="table";
 			};
 			id=144;
