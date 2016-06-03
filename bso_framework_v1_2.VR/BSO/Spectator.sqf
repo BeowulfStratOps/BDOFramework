@@ -23,26 +23,16 @@ BIS_fnc_feedback_allowPP = false;
 //[player, true] call TFAR_fnc_forceSpectator;
 
 
-/* Exits spectator camera using the Ctrl + T key */
-BEARB_SpectatorKeyDown =
-{
-    _Key = _this select 1;
-    if ((_Key == 20) && (_this select 3)) then
-    {
-        /* Enables post processing effects for spectator */
-        BIS_fnc_feedback_allowPP = true;
-        /* Stops spectator script */
-     //   ("BIS_fnc_respawnSpectator" call BIS_fnc_rscLayer) cutText ["", "PLAIN"];
-        /* Removes event handlers detecting key press */
-        (findDisplay 46) displayRemoveEventHandler ["KeyDown", BEARB_SpectatorEH];
-        /* Allows unit moving */
- 	["Terminate"] call BIS_fnc_EGSpectator;	
+["exitSpect", "onEachFrame", {
+    
+    if (inputAction "ReloadMagazine" > 0) exitWith { // Check if "Reload" key is pressed
+        ["Terminate"] call BIS_fnc_EGSpectator; 
         player enableSimulation true;
-		[false] call acre_api_fnc_setSpectator;
-		//[player, false] call TFAR_fnc_forceSpectator;
+        [false] call acre_api_fnc_setSpectator;
+        BIS_fnc_feedback_allowPP = true;
+        ["exitSpect", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; //  Remove the stackedEventHandler as we no longer need it
     };
-};
-/* Ensures the primary display is found */
-waitUntil {!isNull(findDisplay 46)};
-/* Adds event handlers to detect key press */
-BEARB_SpectatorEH = (findDisplay 46) displayAddEventHandler ["keyDown", "_this call BEARB_SpectatorKeyDown"];
+}] call BIS_fnc_addStackedEventHandler;
+
+["Initialize", [player, [side player], false, true, true, true, true, true, true, true]] call BIS_fnc_EGSpectator;
+hintSilent "Press RELOAD to exit spectator";
