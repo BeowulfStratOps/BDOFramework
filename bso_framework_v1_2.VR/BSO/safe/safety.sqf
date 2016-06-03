@@ -1,6 +1,8 @@
-if (!isDedicated) then {
+if (!isDedicated) then 
+{
 
-	"" spawn {
+	"" spawn 
+	{
 
 		sleep 0.01;
 		

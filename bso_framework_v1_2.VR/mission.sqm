@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=145;
+		nextID=156;
 	};
 	class MarkerIDProvider
 	{
@@ -16,22 +16,23 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={173.49944,7.2622418,80.314705};
-		dir[]={-0.40545297,-0.57285911,0.71241468};
-		up[]={-0.28336602,0.81963396,0.49789733};
-		aside[]={0.86914337,1.1294469e-007,0.49465141};
+		pos[]={283.87897,121.32824,-1.0660456};
+		dir[]={0.26683721,-0.47100538,0.84095269};
+		up[]={0.14247918,0.88202757,0.44902655};
+		aside[]={0.95323676,-1.3461104e-006,-0.30247489};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Soft_F_Truck",
+	"A3_Ui_F",
+	"A3_Soft_F_Gamma_Van_01",
 	"BSOLoadouts",
 	"A3_Structures_F_Items_Electronics",
 	"A3_Structures_F_Mil_Flags",
-	"cup_misc3_config",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
+	"CUP_Misc3_Config",
+	"A3_Characters_F",
+	"asr_ai3_main",
 	"alive_main",
 	"alive_sys_data",
 	"alive_sys_playeroptions",
@@ -46,7 +47,136 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"bso_fia",
 	"ace_map",
-	"A3_Structures_F_EPC_Civ_Accessories"
+	"A3_Structures_F_Furniture"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=22;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="BSOLoadouts";
+			name="BSOLoadouts";
+		};
+		class Item3
+		{
+			className="A3_Structures_F";
+			name="Arma 3 Alpha - Buildings and structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
+		};
+		class Item6
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="asr_ai3_main";
+			name="asr_ai3_main";
+		};
+		class Item8
+		{
+			className="ALiVE_main";
+			name="alive_main";
+		};
+		class Item9
+		{
+			className="ALiVE_sys_data";
+			name="alive_sys_data";
+		};
+		class Item10
+		{
+			className="ALiVE_SYS_playeroptions";
+			name="alive_sys_playeroptions";
+		};
+		class Item11
+		{
+			className="ace_weather";
+			name="ace_weather";
+		};
+		class Item12
+		{
+			className="ace_medical";
+			name="ace_medical";
+		};
+		class Item13
+		{
+			className="ace_zeus";
+			name="ace_zeus";
+		};
+		class Item14
+		{
+			className="ace_captives";
+			name="ace_captives";
+		};
+		class Item15
+		{
+			className="ace_explosives";
+			name="ace_explosives";
+		};
+		class Item16
+		{
+			className="ace_hearing";
+			name="ace_hearing";
+		};
+		class Item17
+		{
+			className="ace_interaction";
+			name="ace_interaction";
+		};
+		class Item18
+		{
+			className="ace_winddeflection";
+			name="ace_winddeflection";
+		};
+		class Item19
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted features";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item20
+		{
+			className="bso_fia";
+			name="bso_fia";
+		};
+		class Item21
+		{
+			className="ace_map";
+			name="ace_map";
+		};
+	};
 };
 randomSeed=11973509;
 class ScenarioData
@@ -74,7 +204,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=62;
+		items=64;
 		class Item0
 		{
 			dataType="Marker";
@@ -198,6 +328,7 @@ class Mission
 				sizeA=10;
 				sizeB=10;
 				interuptable=1;
+				repeatable=1;
 				activationBy="ANY";
 				isRectangle=1;
 			};
@@ -271,7 +402,7 @@ class Mission
 			};
 			id=15;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.15792179;
+			atlOffset=0.22301912;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -352,7 +483,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -430,7 +561,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -508,7 +639,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -586,7 +717,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -664,7 +795,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -742,7 +873,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -820,7 +951,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -898,7 +1029,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -977,7 +1108,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1056,7 +1187,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1134,7 +1265,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1212,7 +1343,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1290,7 +1421,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1368,7 +1499,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1446,7 +1577,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1524,7 +1655,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1602,7 +1733,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1680,7 +1811,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1758,7 +1889,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1836,7 +1967,7 @@ class Mission
 				class Attribute1
 				{
 					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 					class Value
 					{
 						class data
@@ -1880,13 +2011,13 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={287.62344,5.0014391,129.46602};
+						position[]={287.62299,5.0014391,129.466};
 					};
 					side="West";
 					flags=6;
@@ -1894,7 +2025,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="[this,""US_OCP"",""PlatoonLeader"",true] call BSO_fnc_applyLoadout; this setGroupid [""COMMAND""]";
+						init="[this,""US_OCP"",""PlatoonLeader"",true] call BSO_fnc_applyLoadout; this setGroupid [""COMMAND""];";
 						name="pl_com";
 						description="Platoon Commander - COMMAND";
 						isPlayer=1;
@@ -1902,6 +2033,276 @@ class Mission
 					};
 					id=38;
 					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_unitTraits_engineer";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_unitTrait_UAVHacker";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_taskPatrol_behaviour";
+							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_taskPatrol_speed";
+							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="normal";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="Enh_animCombEquipment";
+							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="Enh_animType";
+							expression="_this setVariable ['Enh_animType',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="Enh_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="Enh_unitTrait_explosiveSpecialist";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute11
+						{
+							property="Enh_unitTraits_medic";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute12
+						{
+							property="Enh_animCombType";
+							expression="_this setVariable ['Enh_animCombType',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute13
+						{
+							property="Enh_animEquipment";
+							expression="_this setVariable ['Enh_animEquipment',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						nAttributes=14;
+					};
 				};
 				class Item1
 				{
@@ -1945,6 +2346,278 @@ class Mission
 					id=40;
 					type="B_medic_F";
 				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={287.991,5.0014391,126.193};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="[this,""US_OCP"",""SquadLeader"",true] call BSO_fnc_applyLoadout; [""English"", ""Greek""] call acre_api_fnc_babelSetSpokenLanguages;";
+						name="terp_com";
+						description="  Interpreter ";
+						isPlayable=1;
+					};
+					id=149;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_unitTraits_engineer";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_unitTrait_UAVHacker";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_taskPatrol_behaviour";
+							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_taskPatrol_speed";
+							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="normal";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="Enh_animCombEquipment";
+							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="Enh_animType";
+							expression="_this setVariable ['Enh_animType',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="Enh_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="Enh_unitTrait_explosiveSpecialist";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="Enh_unitTraits_medic";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute11
+						{
+							property="Enh_animCombType";
+							expression="_this setVariable ['Enh_animCombType',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute12
+						{
+							property="Enh_animEquipment";
+							expression="_this setVariable ['Enh_animEquipment',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						nAttributes=13;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -1956,7 +2629,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={277.73172,5,62.847229};
+				position[]={275.83347,5,63.379322};
 			};
 			id=41;
 			type="ALiVE_require";
@@ -2160,7 +2833,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={277.23544,5,58.007568};
+				position[]={275.33719,5,58.539661};
 			};
 			id=42;
 			type="ALiVE_sys_data";
@@ -2326,7 +2999,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={277.16049,5,52.335388};
+				position[]={275.26224,5,52.867481};
 			};
 			id=43;
 			type="ALiVE_SYS_playeroptions";
@@ -5412,10 +6085,570 @@ class Mission
 		};
 		class Item61
 		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={277.883,5.0014391,128.21201};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=151;
+					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_unitTraits_engineer";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_unitTrait_UAVHacker";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_taskPatrol_behaviour";
+							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_taskPatrol_speed";
+							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="normal";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="Enh_animCombEquipment";
+							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="Enh_animType";
+							expression="_this setVariable ['Enh_animType',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="Enh_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="Enh_unitTrait_explosiveSpecialist";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="Enh_unitTraits_medic";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute11
+						{
+							property="Enh_animCombType";
+							expression="_this setVariable ['Enh_animCombType',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute12
+						{
+							property="Enh_animEquipment";
+							expression="_this setVariable ['Enh_animEquipment',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						nAttributes=13;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=150;
+		};
+		class Item62
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={273.67401,5.0014391,128.078};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=153;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_unitTraits_engineer";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_unitTrait_UAVHacker";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_taskPatrol_behaviour";
+							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_taskPatrol_speed";
+							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="normal";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="Enh_animCombEquipment";
+							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="Enh_animType";
+							expression="_this setVariable ['Enh_animType',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="Enh_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="Enh_unitTrait_explosiveSpecialist";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="Enh_unitTraits_medic";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute11
+						{
+							property="Enh_animCombType";
+							expression="_this setVariable ['Enh_animCombType',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute12
+						{
+							property="Enh_animEquipment";
+							expression="_this setVariable ['Enh_animEquipment',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						nAttributes=13;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=152;
+		};
+		class Item63
+		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={171.91299,5.4435391,81.774002};
+				position[]={171.91299,5.4070597,81.774002};
 				angles[]={0,2.9273884,0};
 			};
 			side="Empty";
@@ -5426,8 +6659,8 @@ class Mission
 				init="this addAction [""Enter Spectating Mode"", ""bso\Spectator.sqf"", [], -4, false, true, """", ""_this distance _target < 3""];  ";
 				name="table";
 			};
-			id=144;
-			type="Land_TablePlastic_01_F";
+			id=155;
+			type="Land_TableDesk_F";
 			class CustomAttributes
 			{
 				class Attribute0
