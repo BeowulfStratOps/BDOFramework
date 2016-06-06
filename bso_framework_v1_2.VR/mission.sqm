@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=156;
+		nextID=157;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={293.30573,79.272964,28.879139};
-		dir[]={0.061805926,-0.62424177,0.77894342};
-		up[]={0.049380627,0.78114092,0.62232059};
-		aside[]={0.99693656,5.1037932e-007,-0.07911177};
+		pos[]={287.54184,265.30112,-127.70628};
+		dir[]={0.0095631815,-0.78703719,0.61703628};
+		up[]={0.012198331,0.61685765,0.78692043};
+		aside[]={0.99995202,2.7175374e-006,-0.015507025};
 	};
 };
 binarizationWanted=0;
@@ -204,7 +204,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=64;
+		items=65;
 		class Item0
 		{
 			dataType="Marker";
@@ -274,9 +274,10 @@ class Mission
 		class Item6
 		{
 			dataType="Trigger";
-			position[]={327.01218,5,587.74817};
+			position[]={327.01199,5,587.74799};
 			class Attributes
 			{
+				text="Objective Trigger";
 				condition="!alive Truck1";
 				onActivation="[""Task1"",""succeeded""] call SHK_Taskmaster_upd;";
 				sizeA=0;
@@ -289,10 +290,11 @@ class Mission
 		class Item7
 		{
 			dataType="Trigger";
-			position[]={323.74091,5,635.62061};
+			position[]={323.741,5,635.62097};
 			class Attributes
 			{
 				name="trigger_1";
+				text="Murk Spawner";
 				onActivation="trigger_1 setVariable [""murk_spawn"",true,true];";
 				sizeA=100;
 				sizeB=100;
@@ -305,9 +307,10 @@ class Mission
 		class Item8
 		{
 			dataType="Trigger";
-			position[]={332.06058,5,510.2002};
+			position[]={332.061,5,510.20001};
 			class Attributes
 			{
+				text="Patrol Start on GameOn";
 				condition="trigger_BSOstart;";
 				sizeA=0;
 				sizeB=0;
@@ -6703,6 +6706,23 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item64
+		{
+			dataType="Trigger";
+			position[]={260.16901,5,58.780998};
+			class Attributes
+			{
+				text="End game timer from GameOn";
+				condition="trigger_BSOstart";
+				onActivation="[""Task1"",""failed""] call SHK_Taskmaster_upd;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={30,30,30};
+				isServerOnly=1;
+			};
+			id=156;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
