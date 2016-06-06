@@ -8,8 +8,8 @@
 
 bso_acre_languages = [["en","English"],["gr","Greek"]];
 bso_acre_language_blufor = ["en"];
-bso_acre_language_opfor = ["gk"];
-bso_acre_language_indfor = ["gk","en"];
+bso_acre_language_opfor = ["gr"];
+bso_acre_language_indfor = ["gr","en"];
  
 if (hasInterface) then {
     {
