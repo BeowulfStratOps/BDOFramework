@@ -12,7 +12,6 @@ fc_safestart_init = compile preprocessFileLineNumbers "BSO\safe\safestart_init.s
 // Safe Zone
 execVM "bso\safe\safe_zone.sqf";
 
-
 /////// ==== Save Disable
 enableSaving [false,false];
 
@@ -20,6 +19,6 @@ enableSaving [false,false];
 diag_log format ["###### %1 ######", missionName];
 diag_log [diag_frameno, diag_ticktime, time, "Executing init.sqf"];
 
-
 // ACRE
 execVM "bso\acre.sqf";
+
