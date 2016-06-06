@@ -14,7 +14,7 @@
     Edit the #defines below.
 */
 
-#define SAFETY_ZONES    [["respawn_west", 50],["respawn_guerilla",50],["respawn_east",50]] // Syntax: [["marker1", radius1], ["marker2", radius2], ...]
+#define SAFETY_ZONES    [["respawn_west", 50],["respawn_guerrila",50],["respawn_east",50]] // Syntax: [["marker1", radius1], ["marker2", radius2], ...]
 #define MESSAGE "DON'T BE A DICK"
 
 if (isDedicated) exitWith {};

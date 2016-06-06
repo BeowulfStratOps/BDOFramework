@@ -1,6 +1,3 @@
-////// ====	TFAR
-execVM "BSO\tfar.sqf";
-
 ////// ====	Taskmaster
 execVM "mission\briefing.sqf";
 
@@ -12,14 +9,20 @@ execVM "mission\briefing.sqf";
 fc_safestart_init = compile preprocessFileLineNumbers "BSO\safe\safestart_init.sqf";
 // Run all modules.
 [] spawn fc_safestart_init;
+// Safe Zone
+execVM "bso\safe\safe_zone.sqf";
+
+
+  
+// ACRE
+execVM "bso\acre.sqf";
+
 
 /////// ==== Save Disable
 enableSaving [false,false];
 
-////// ==== Graphics options
-//setTerrainGrid 50; //uncomment to turn off grass
-setViewDistance 3000;
-
 ////// === Mission Log
 diag_log format ["###### %1 ######", missionName];
 diag_log [diag_frameno, diag_ticktime, time, "Executing init.sqf"];
+
+

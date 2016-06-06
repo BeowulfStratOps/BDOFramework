@@ -26,8 +26,10 @@ fc_safestart_fnc_safety = {
 
   _unit allowDamage false;
 
-  hint "All weapons have been disabled. Wait for the admin to start the mission.";
+	["SafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
+
 };
+
 
 // -------------------------------------------------------------------------------
 // LOCAL FUNCTION
@@ -48,7 +50,7 @@ fc_safestart_fnc_unsafety = {
 
   _unit allowDamage true;
 
-  hint "Game on!";
+	["SafeStart",["GAME ON!"]] call BIS_fnc_showNotification;
 };
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -56,14 +58,22 @@ fc_safestart_fnc_unsafety = {
 // Wait until we're in-game
 waitUntil{time > 3};
 
+/*
 // If the user is the admin, give them an addAction that disables SafeStart.
 if ((serverCommandAvailable "#kick") || (!isMultiplayer)) then {
   systemChat "You are the admin. Use the 'Start the mission!' scroll-menu option to start the mission when all players are ready.";
   player addAction ["<t color='#73E600'>Start the mission!</t>", "BSO\safe\safestart_adminAction.sqf", [], 1, false, true, "", "(driver _target == player)"];  
 };
-
+*/
 // Clients should exit here.
 if(!isServer) exitWith {};
 
 // Server launches the SafeStart phase on all clients (includes server client if hosted locally).
 [[],"fc_safestart_fnc_safety", true, false, true] call BIS_fnc_MP;
+
+
+
+// Adds ACE Interaction to start mission to admins
+_mainAction = ["bso_start_mission", "Start Mission", "", {execVM "bso\safe\safestart_adminAction.sqf"}, {fc_safestart && serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
+
+[typeOf player, 1, ["ACE_SelfActions"], _mainAction] call ace_interact_menu_fnc_addActionToClass;
