@@ -21,11 +21,13 @@ class BLUFOR {
 			};
 			items[] = {
 				"ACE_EarPlugs",
-				"ACRE_PRC343",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine"
 			};
+			personalRadios[] = {
+				"ACRE_PRC343"
+			};			
 			assignedItems[] = {
 				"ItemMap",
 				"ItemCompass",
@@ -85,11 +87,13 @@ class BLUFOR {
 			};
 			items[] = {
 				"ACE_EarPlugs",
-				"ACRE_PRC343",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine"
 			};
+			personalRadios[] = {
+				"ACRE_PRC343"
+			};				
 			assignedItems[] = {
 				"ItemMap",
 				"ItemCompass",
