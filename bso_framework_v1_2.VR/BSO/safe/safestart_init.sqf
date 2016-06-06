@@ -26,8 +26,10 @@ fc_safestart_fnc_safety = {
 
   _unit allowDamage false;
 
-  hint "All weapons have been disabled. Wait for the admin to start the mission.";
+	["SafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
+
 };
+
 
 // -------------------------------------------------------------------------------
 // LOCAL FUNCTION
@@ -48,7 +50,7 @@ fc_safestart_fnc_unsafety = {
 
   _unit allowDamage true;
 
-  hint "Game on!";
+	["SafeStart",["GAME ON!"]] call BIS_fnc_showNotification;
 };
 
 /////////////////////////////////////////////////////////////////////////////////
