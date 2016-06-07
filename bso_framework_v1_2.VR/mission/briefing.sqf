@@ -20,20 +20,20 @@
   ["COMSIG","Operations comms and signal are follows
 					<br/>
 					<br/>
-				1st Squad - CH1 401Mhz
+				1st Squad - CH1 SR
 					<br/>
-				2nd Squad - CH2 402Mhz
+				2nd Squad - CH2 SR
 					<br/>
-				3rd Squad - CH3 403Mhz
+				3rd Squad - CH3 SR
 					<br/>
-				COMMAND - CH4 404Mhz 
+				COMMAND - CH4 SR
 					<br/>
-				MMG Team - CH5 405Mhz
+				MMG Team - CH5 SR
 					<br/>
 					<br/>
-				Company net - CH1 40Mhz
+				Company net - CH1 LR
 					<br/>
-				Air Net - CH5 44Mhz
+				Air Net - CH5 LR
 				",WEST], 
   ["Notes","Additional notes about the mission and any tips you want to give the players should go here.",WEST],
 
@@ -48,20 +48,20 @@
     ["COMSIG","Operations comms and signal are follows
 					<br/>
 					<br/>
-				1st Squad - CH1 401Mhz
+				1st Squad - CH1 SR
 					<br/>
-				2nd Squad - CH2 402Mhz
+				2nd Squad - CH2 SR
 					<br/>
-				3rd Squad - CH3 403Mhz
+				3rd Squad - CH3 SR
 					<br/>
-				COMMAND - CH4 404Mhz 
+				COMMAND - CH4 SR
 					<br/>
-				MMG Team - CH5 405Mhz
+				MMG Team - CH5 SR
 					<br/>
 					<br/>
-				Company net - CH1 40Mhz
+				Company net - CH1 LR
 					<br/>
-				Air Net - CH5 44Mhz
+				Air Net - CH5 LR
 				",EAST], 
   ["Notes","Additional notes about the mission and any tips you want to give the players should go here.",EAST],
  
@@ -76,20 +76,20 @@
     ["COMSIG","Operations comms and signal are follows
 					<br/>
 					<br/>
-				1st Squad - CH1 401Mhz
+				1st Squad - CH1 SR
 					<br/>
-				2nd Squad - CH2 402Mhz
+				2nd Squad - CH2 SR
 					<br/>
-				3rd Squad - CH3 403Mhz
+				3rd Squad - CH3 SR
 					<br/>
-				COMMAND - CH4 404Mhz 
+				COMMAND - CH4 SR
 					<br/>
-				MMG Team - CH5 405Mhz
+				MMG Team - CH5 SR
 					<br/>
 					<br/>
-				Company net - CH1 40Mhz
+				Company net - CH1 LR
 					<br/>
-				Air Net - CH5 44Mhz
+				Air Net - CH5 LR
 				",RESISTANCE], 
   ["Notes","Additional notes about the mission and any tips you want to give the players should go here.",RESISTANCE],
 
