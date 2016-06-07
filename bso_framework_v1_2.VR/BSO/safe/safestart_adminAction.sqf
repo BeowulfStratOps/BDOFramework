@@ -7,4 +7,3 @@
 [[],"fc_safestart_fnc_unsafety", true, true, true] call BIS_fnc_MP;
 Trigger_BSOStart = true; publicVariable "Trigger_BSOStart";
 
-hint "Game on!";

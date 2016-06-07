@@ -70,10 +70,3 @@ if(!isServer) exitWith {};
 
 // Server launches the SafeStart phase on all clients (includes server client if hosted locally).
 [[],"fc_safestart_fnc_safety", true, false, true] call BIS_fnc_MP;
-
-
-
-// Adds ACE Interaction to start mission to admins
-_mainAction = ["bso_start_mission", "Start Mission", "", {execVM "bso\safe\safestart_adminAction.sqf"}, {fc_safestart && serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-
-[typeOf player, 1, ["ACE_SelfActions"], _mainAction] call ace_interact_menu_fnc_addActionToClass;
