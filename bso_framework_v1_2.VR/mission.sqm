@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=157;
+		nextID=168;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={287.54184,265.30112,-127.70628};
-		dir[]={0.0095631815,-0.78703719,0.61703628};
-		up[]={0.012198331,0.61685765,0.78692043};
-		aside[]={0.99995202,2.7175374e-006,-0.015507025};
+		pos[]={206.25056,118.47906,10.634212};
+		dir[]={0.030866083,-0.88322145,0.46820948};
+		up[]={0.058096491,0.46898365,0.88124293};
+		aside[]={0.99790394,4.2049651e-006,-0.065793484};
 	};
 };
 binarizationWanted=0;
@@ -47,13 +47,14 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"bso_fia",
 	"ace_map",
-	"A3_Structures_F_Furniture"
+	"A3_Structures_F_Furniture",
+	"Desert"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=23;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -176,6 +177,11 @@ class AddonsMetaData
 			className="ace_map";
 			name="ace_map";
 		};
+		class Item22
+		{
+			className="Desert";
+			name="Desert";
+		};
 	};
 };
 randomSeed=11973509;
@@ -204,7 +210,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=65;
+		items=76;
 		class Item0
 		{
 			dataType="Marker";
@@ -2632,7 +2638,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={275.83347,5,63.379322};
+				position[]={270.38577,5,62.651367};
 			};
 			id=41;
 			type="ALiVE_require";
@@ -2836,7 +2842,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={275.33719,5,58.539661};
+				position[]={270.5134,5,57.683899};
 			};
 			id=42;
 			type="ALiVE_sys_data";
@@ -3002,7 +3008,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={275.26224,5,52.867481};
+				position[]={270.43845,5,52.011719};
 			};
 			id=43;
 			type="ALiVE_SYS_playeroptions";
@@ -3681,7 +3687,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={300.76828,5,62.360779};
+				position[]={301.25229,5,62.862305};
 			};
 			id=44;
 			type="ace_weather_ModuleSettings";
@@ -3809,7 +3815,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={295.36008,5,62.591431};
+				position[]={295.40555,5,62.651367};
 			};
 			id=45;
 			type="ACE_moduleMedicalSettings";
@@ -4089,7 +4095,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={289.07944,5,60.144775};
+				position[]={289.87488,5,58.121582};
 			};
 			id=46;
 			type="ace_zeus_moduleSettings";
@@ -4198,7 +4204,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={306.22903,5,62.554688};
+				position[]={307.57306,5,63.073242};
 			};
 			id=47;
 			type="ace_captives_moduleSettings";
@@ -4269,7 +4275,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={289.35013,5,63.001465};
+				position[]={289.71683,5,62.703613};
 			};
 			id=48;
 			type="ACE_ModuleExplosive";
@@ -4340,7 +4346,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={289.12164,5,57.850098};
+				position[]={289.55884,5,51.958984};
 			};
 			id=49;
 			type="ACE_ModuleHearing";
@@ -4430,7 +4436,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={305.83707,5,58.780762};
+				position[]={307.8891,5,57.75293};
 			};
 			id=50;
 			type="ACE_ModuleInteraction";
@@ -4463,7 +4469,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={300.26791,5,58.606934};
+				position[]={301.30496,5,57.594727};
 			};
 			id=51;
 			type="ace_winddeflection_ModuleSettings";
@@ -4553,7 +4559,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={284.86301,5,59.655998};
+				position[]={285.24753,5,57.820061};
 			};
 			id=52;
 			type="ModuleCurator_F";
@@ -5395,7 +5401,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={341.76028,5.0014391,572.81287};
+						position[]={341.76001,5.0014391,572.81299};
 					};
 					side="East";
 					flags=6;
@@ -5406,6 +5412,295 @@ class Mission
 					};
 					id=98;
 					type="O_BSO_FIA_GL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_insignia";
+							expression="if !(_value == '') then {[_this,_value] remoteExec ['BIS_fnc_setUnitInsignia',0,true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="LOP_Insignia_ISOF";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_unitTraits_engineer";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Engineer',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Engineer',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_unitTrait_UAVHacker";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['UAVHacker',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['UAVHacker',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="Enh_taskPatrol_behaviour";
+							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="Enh_taskPatrol_speed";
+							expression="_this setVariable ['Enh_randomPatrol_speed',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="normal";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="Enh_animCombEquipment";
+							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="Enh_animType";
+							expression="_this setVariable ['Enh_animType',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="Enh_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute11
+						{
+							property="Enh_unitTrait_explosiveSpecialist";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['ExplosiveSpecialist',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['ExplosiveSpecialist',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute12
+						{
+							property="Enh_unitTraits_medic";
+							expression="				if (_value isEqualTo 'noChange') then {};				if (_value isEqualTo 'no') then {_this setUnitTrait ['Medic',false]};				if (_value isEqualTo 'yes') then {_this setUnitTrait ['Medic',true]};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="noChange";
+								};
+							};
+						};
+						class Attribute13
+						{
+							property="Enh_animCombType";
+							expression="_this setVariable ['Enh_animCombType',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="STAND";
+								};
+							};
+						};
+						class Attribute14
+						{
+							property="Enh_animEquipment";
+							expression="_this setVariable ['Enh_animEquipment',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						nAttributes=15;
+					};
 				};
 				class Item1
 				{
@@ -6001,7 +6296,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={295.39462,5,58.633301};
+				position[]={277.49664,5,57.963867};
 			};
 			id=141;
 			type="ACE_ModuleBlueForceTracking";
@@ -6041,7 +6336,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -6723,6 +7018,127 @@ class Mission
 			};
 			id=156;
 			type="EmptyDetector";
+		};
+		class Item65
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={260.77359,5,54.600677};
+			};
+			title="Game Timer";
+			description="Set the mission time limit in this tigger's countdown. ";
+			id=157;
+		};
+		class Item66
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={174.58501,5,72.468002};
+			};
+			title="Respawn Box";
+			description="Ensure the respawn markers are brought across to your mission.";
+			id=158;
+		};
+		class Item67
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={277.33859,5,60.229004};
+			};
+			title="BluForce Tracker";
+			description="Enable BluForce Tracker here";
+			id=159;
+		};
+		class Item68
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={275.66901,5,131.396};
+			};
+			title="ACRE Babel Languages";
+			description="If using alternative factions, ensure you change the languages in the ""BSO\acre.sqf"" script. ";
+			id=160;
+		};
+		class Item69
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={289.40201,5,130.17799};
+			};
+			title="Loadouts and Group ID's";
+			description="You can create your own loadouts for the BSO Loadouts system. Check ""Mission\Meta.sqf"" for details. " \n "" \n "Make sure you set group IDs for your groups in either the group icon or using the ""setGroupID"" command in these group leader inits.";
+			id=161;
+		};
+		class Item70
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={305.50299,5,568.00897};
+			};
+			title="Garrison Script";
+			description="In this group leader init you can see the occupy script we use. See the script file for more details." \n "" \n "The 3rd argument is a ""range of garrison"". At ""-1"" the group will garrison only the closest structures. Set a posative value and they will garrison a selection of buildings in that area." \n "" \n "The 5th argument is a force height of garrison. By default at false the units will garrison random positions. By setting it to true they will prioritise higher positions in the buildings. For example getting on the roof if possible.";
+			id=162;
+		};
+		class Item71
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={342.05499,5,569.57397};
+			};
+			title="Patrol Script";
+			description="This is a simple patrol generator script. By default, this will force the AI to generate 5 waypoints with a 100m spread, and they will stop at each waypoint to search the local area. " \n "" \n "See the CBA website and search for the ""CBA_fnc_taskPatrol"" function for the  more details.";
+			id=163;
+		};
+		class Item72
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={326.9136,5,589.63721};
+			};
+			title="Tasks";
+			description="In this trigger you can see the basic task call. See the ""BSO\shk_taskmaster.sqf"" for more details.";
+			id=164;
+		};
+		class Item73
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={315.21899,5,615.302};
+			};
+			title="Murk Spawner";
+			description="This group has been setup using the Murk Spawner to  despawn at the start of a mission and spawn when the trigger has been activated." \n " You can use this for enemy QRF or to hide ambushes and the like." \n "See ""BSO\murk_spawn.sqf"" for more details";
+			id=165;
+		};
+		class Item74
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={357.01099,5,509.23801};
+			};
+			title="Delayed Start";
+			description="This group has been set a few waypoints that will only start when the trigger has been activated. You can see in the trigger, that these units will only start their waypoints when the Mission is started by an admin. " \n " This can be great for ensuring important units reach their targets when you want them to in relation to the player movements. ";
+			id=166;
+		};
+		class Item75
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={297.20599,5,148.16};
+			};
+			title="Ammo and Loadout boxes";
+			description="You can create your own ammo boxes through Eden." \n " You can also use your own loadout boxes through the BSO Loadouts system.";
+			id=167;
 		};
 	};
 	class Connections
