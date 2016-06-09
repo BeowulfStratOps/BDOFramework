@@ -10,6 +10,8 @@ bso_acre_languages = [["en","English"],["gr","Greek"]];
 bso_acre_language_blufor = ["en"];
 bso_acre_language_opfor = ["gr"];
 bso_acre_language_indfor = ["gr","en"];
+
+waitUntil {alive player};
  
 if (hasInterface) then {
     {

@@ -1,5 +1,8 @@
 ////// ====	Taskmaster
 execVM "mission\briefing.sqf";
+  
+// ACRE
+execVM "bso\acre.sqf";
 
 
 ////// ==== Safety
@@ -17,9 +20,6 @@ _mainAction = ["bso_start_mission", "Start Mission", "", {execVM "bso\safe\safes
 [typeOf player, 1, ["ACE_SelfActions"], _mainAction] call ace_interact_menu_fnc_addActionToClass;
 
   
-  
-// ACRE
-execVM "bso\acre.sqf";
 
 
 /////// ==== Save Disable
