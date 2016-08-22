@@ -1,3 +1,4 @@
+/////bmf-v1_03////
 ////// ====	Taskmaster
 execVM "mission\briefing.sqf";
   
@@ -17,10 +18,16 @@ fc_safestart_init = compile preprocessFileLineNumbers "BSO\safe\safestart_init.s
 execVM "bso\safe\safe_zone.sqf";
 // Adds Admin action to start mission
 _mainAction = ["bso_start_mission", "Start Mission", "", {execVM "bso\safe\safestart_adminAction.sqf"}, {fc_safestart && serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-[typeOf player, 1, ["ACE_SelfActions"], _mainAction] call ace_interact_menu_fnc_addActionToClass;
+[typeOf player, 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction] call ace_interact_menu_fnc_addActionToClass;
 
-  
+//Safe Start Hint
+Hint_BSOStart = true; publicVariable "Hint_BSOStart";
 
+while {Hint_BSOStart} do {
+
+	["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
+	sleep 30;
+	}; 
 
 /////// ==== Save Disable
 enableSaving [false,false];

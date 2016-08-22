@@ -1,3 +1,4 @@
+/////bmf-v1_03////
 if (!isDedicated) then 
 {
 

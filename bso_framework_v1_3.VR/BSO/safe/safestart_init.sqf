@@ -1,3 +1,4 @@
+/////bmf-v1_03////
 // FC: SafeStart initialisation and functions
 // (C) 2014 Cam. See LICENSE.
 
@@ -26,7 +27,7 @@ fc_safestart_fnc_safety = {
 
   _unit allowDamage false;
 
-	["SafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
+	["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
 
 };
 
@@ -50,7 +51,7 @@ fc_safestart_fnc_unsafety = {
 
   _unit allowDamage true;
 
-	["SafeStart",["GAME ON!"]] call BIS_fnc_showNotification;
+	["BSOSafeStart",["GAME ON!"]] call BIS_fnc_showNotification;
 };
 
 /////////////////////////////////////////////////////////////////////////////////
