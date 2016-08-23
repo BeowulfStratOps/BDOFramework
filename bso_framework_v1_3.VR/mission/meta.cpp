@@ -52,3 +52,26 @@ class CfgBsoLoadouts {
   //#include "loadouts\opfor.cpp" //create this file by copying blufor.cpp and renaming
   //#include "loadouts\indep.cpp" //create this file by copying blufor.cpp and renaming
 };
+
+// Used for custom debriefing screens launched by the admin or triggers.
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You have completed your objectives.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class loser
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You have failed your objectives";
+		pictureBackground = "";
+		picture = "KIA";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};	
+};

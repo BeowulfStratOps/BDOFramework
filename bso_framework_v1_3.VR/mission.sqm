@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={277.23798,207.36391,26.176434};
-		dir[]={0.0039801681,-0.89324927,0.44981661};
-		up[]={0.0079047028,0.4495275,0.89313209};
-		aside[]={0.99997514,5.9433769e-006,-0.0088579664};
+		pos[]={223.31764,208.92957,-89.786934};
+		dir[]={0.27244028,-0.61465442,0.74036396};
+		up[]={0.21228673,0.78874105,0.57689923};
+		aside[]={0.93853557,-1.299195e-007,-0.34536728};
 	};
 };
 binarizationWanted=0;
@@ -15584,7 +15584,7 @@ class Mission
 				onActivation="[""BSOMission"",[""Mission Failed - Time limit reached.""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
-				timeout[]={10,10,10};
+				timeout[]={5,5,5};
 				isServerOnly=1;
 			};
 			id=146;
@@ -15612,7 +15612,7 @@ class Mission
 				onActivation="[""BSOMission"",[""Mission Failed - BluFor Wiped Out.""]] call BIS_fnc_showNotification;";
 				sizeA=300;
 				sizeB=350;
-				timeout[]={10,10,10};
+				timeout[]={5,5,5};
 				activationType="NOT PRESENT";
 				activationBy="WEST";
 				isRectangle=1;
