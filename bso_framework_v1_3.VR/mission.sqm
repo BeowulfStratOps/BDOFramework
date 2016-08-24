@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={223.31764,208.92957,-89.786934};
-		dir[]={0.27244028,-0.61465442,0.74036396};
-		up[]={0.21228673,0.78874105,0.57689923};
-		aside[]={0.93853557,-1.299195e-007,-0.34536728};
+		pos[]={221.12889,110.80602,-23.758114};
+		dir[]={0.256071,-0.5141027,0.81871557};
+		up[]={0.15348981,0.8576721,0.4907445};
+		aside[]={0.9544698,-8.1321923e-007,-0.2985343};
 	};
 };
 binarizationWanted=0;
@@ -15585,7 +15585,6 @@ class Mission
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
-				isServerOnly=1;
 			};
 			id=146;
 			type="EmptyDetector";
@@ -15616,7 +15615,6 @@ class Mission
 				activationType="NOT PRESENT";
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=148;
 			type="EmptyDetector";
@@ -16542,7 +16540,6 @@ class Mission
 				onActivation="[""BSOMission"",[""Mission Complete - All Objectives have been complete.""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
-				isServerOnly=1;
 			};
 			id=161;
 			type="EmptyDetector";
