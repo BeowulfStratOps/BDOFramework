@@ -1,3 +1,14 @@
+/////bmf-v1_03////
+//
+////Loadout Template////
+//
+//This loadout template can be used to base for your custom loadouts.
+//Below are templates for a basic rifleman, the various leaders, and a medic.
+//These loadouts include the recommended usage of the Advanced Medical System supplies and radio distribution.
+
+
+
+
 class BLUFOR {
 		name = "Example Base Clases";
 		class Rifleman

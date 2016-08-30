@@ -6,6 +6,6 @@
 
 // End SafeStart on all other clients
 [[],"fc_safestart_fnc_unsafety", true, true, true] call BIS_fnc_MP;
-Hint_BSOStart = false;
+Hint_BSOStart = false; publicVariable "Hint_BSOStart";
 Trigger_BSOStart = true; publicVariable "Trigger_BSOStart";
 

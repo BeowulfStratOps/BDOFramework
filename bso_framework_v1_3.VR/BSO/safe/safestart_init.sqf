@@ -26,9 +26,9 @@ fc_safestart_fnc_safety = {
   fc_safestart_firedEH = _unit addEventHandler ["Fired", {deleteVehicle (_this select 6);}];
 
   _unit allowDamage false;
+  
 
 	["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
-
 };
 
 

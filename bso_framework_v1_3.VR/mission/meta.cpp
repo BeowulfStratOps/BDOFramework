@@ -1,5 +1,9 @@
 /////bmf-v1_03////
 ///////// ======  Mission meta data
+//
+// This file contains meta data specific to you mission. It also has the includes for your custom loadouts, and the debriefing information. 
+//
+
 /*
 Use the fields below to set your mission attributes. For assistance speak to an admin or see the BI wiki for Description.ext
 */
@@ -53,7 +57,7 @@ class CfgBsoLoadouts {
   //#include "loadouts\indep.cpp" //create this file by copying blufor.cpp and renaming
 };
 
-// Used for custom debriefing screens launched by the admin or triggers.
+// Used for custom debriefing screens launched by the admin or triggers ingame. See briefing.sqf for admin interactions
 class CfgDebriefing
 {  
 	class End1
