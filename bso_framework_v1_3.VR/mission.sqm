@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=163;
+		nextID=164;
 	};
 	class Camera
 	{
-		pos[]={221.12889,110.80602,-23.758114};
-		dir[]={0.256071,-0.5141027,0.81871557};
-		up[]={0.15348981,0.8576721,0.4907445};
-		aside[]={0.9544698,-8.1321923e-007,-0.2985343};
+		pos[]={306.44543,155.08797,-62.498577};
+		dir[]={-0.087802358,-0.86459118,0.4949795};
+		up[]={-0.15100697,0.50245631,0.8512969};
+		aside[]={0.98469543,8.0373138e-007,0.17466751};
 	};
 };
 binarizationWanted=0;
@@ -44,13 +44,14 @@ addons[]=
 	"A3_Structures_F_Furniture",
 	"Desert",
 	"ace_medical",
-	"ace_finger"
+	"ace_finger",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -199,6 +200,13 @@ class AddonsMetaData
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item23
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 	};
 };
@@ -944,7 +952,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=88;
+		items=89;
 		class Item0
 		{
 			dataType="Marker";
@@ -6370,7 +6378,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={284.55655,5.0014391,119.66963};
+						position[]={287.19879,5.0014391,114.21401};
 					};
 					side="West";
 					flags=4;
@@ -16554,6 +16562,115 @@ class Mission
 			title="Mission Status Notifications";
 			description="These triggers (along with the BluFor checker in the center of the AO) will call the BSOMissionStatus notification when their conditions have been met. Remove or adjust as required.";
 			id=162;
+		};
+		class Item88
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={282.93301,5,57.714001};
+			};
+			id=163;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections
