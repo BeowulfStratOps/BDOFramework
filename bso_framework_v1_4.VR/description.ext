@@ -7,10 +7,10 @@ DO NOT change these settings unless you know what you are doing and have checked
 #include "mission\meta.cpp" // <!-- Adds your mission meta data - go populate this!!!
 #include "bso\noti\noti_init.cpp" // <!-- Adds safety notifications
 
-class CfgFunctions
-{
-	#include "functions\fhq_tasktracker.hpp"
-};
+//class CfgFunctions
+//{
+//	#include "functions\fhq_tasktracker.hpp"
+//};
 
 
 DisabledAI		= 1;						// <!-- Where 0 Fills empty playable slots with AI, 1 is They Don't fill the empty slots

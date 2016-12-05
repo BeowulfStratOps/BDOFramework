@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={293.00208,309.77863,-740.72235};
-		dir[]={0.15997082,-0.73605329,0.6579082};
-		up[]={0.17390363,0.67691916,0.71521121};
-		aside[]={0.97178245,1.7103739e-006,-0.23629226};
+		pos[]={261.81522,112.28447,-66.234268};
+		dir[]={0.015702721,-0.57518762,0.8180151};
+		up[]={0.011039091,0.81799006,0.57512242};
+		aside[]={0.99992651,1.7139828e-006,-0.019198524};
 	};
 };
 binarizationWanted=0;
@@ -25,7 +25,6 @@ addons[]=
 	"A3_Soft_F_Gamma_Van_01",
 	"BSOLoadouts",
 	"A3_Structures_F_Items_Electronics",
-	"A3_3DEN",
 	"A3_Structures_F_Mil_Flags",
 	"CUP_Misc3_Config",
 	"A3_Characters_F",
@@ -50,7 +49,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=21;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -79,118 +78,111 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="A3_3DEN";
-			name="Arma 3 Eden Update - Eden Editor";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item5
-		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="ace_weather";
 			name="ACE3 - Weather";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item9
+		class Item8
 		{
 			className="ace_zeus";
 			name="ACE3 - Zeus";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item10
+		class Item9
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item11
+		class Item10
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item12
+		class Item11
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item12
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_winddeflection";
 			name="ACE3 - Wind Deflection";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item14
 		{
 			className="bso_fia";
 			name="bso_fia";
 		};
-		class Item16
+		class Item15
 		{
 			className="ace_map";
 			name="ACE3 - Map";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item16
 		{
 			className="Desert";
 			name="Desert";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="cba_modules";
 			name="Community Base Addons - Modules Component";
@@ -885,6 +877,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=15;
 			type="Land_HBarrier_large";
@@ -911,25 +904,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -947,7 +921,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item16
@@ -963,6 +937,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=16;
 			type="Land_HBarrier_large";
@@ -989,25 +964,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1025,7 +981,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item17
@@ -1041,6 +997,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=17;
 			type="Land_HBarrier_large";
@@ -1067,25 +1024,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1103,7 +1041,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item18
@@ -1119,6 +1057,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=18;
 			type="Land_HBarrier_large";
@@ -1145,25 +1084,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1181,7 +1101,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item19
@@ -1197,6 +1117,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=19;
 			type="Land_HBarrier_large";
@@ -1223,25 +1144,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1259,7 +1161,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item20
@@ -1275,6 +1177,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=20;
 			type="Land_HBarrier_large";
@@ -1301,25 +1204,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1337,7 +1221,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item21
@@ -1353,6 +1237,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=21;
 			type="Land_HBarrier_large";
@@ -1379,25 +1264,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1415,7 +1281,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item22
@@ -1431,6 +1297,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=22;
 			type="Land_HBarrier_large";
@@ -1457,25 +1324,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1493,7 +1341,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item23
@@ -1509,6 +1357,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=23;
 			type="Land_HBarrier_large";
@@ -1535,25 +1384,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1571,7 +1401,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item24
@@ -1587,6 +1417,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=24;
 			type="Land_HBarrier_large";
@@ -1613,25 +1444,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1649,7 +1461,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item25
@@ -1664,6 +1476,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=25;
 			type="Land_HBarrier_large";
@@ -1691,25 +1504,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1727,7 +1521,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item26
@@ -1742,6 +1536,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=26;
 			type="Land_HBarrier_large";
@@ -1769,25 +1564,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1805,7 +1581,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item27
@@ -1820,6 +1596,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=27;
 			type="Land_HBarrier_large";
@@ -1847,25 +1624,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1883,7 +1641,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item28
@@ -1898,6 +1656,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=28;
 			type="Land_HBarrier_large";
@@ -1925,25 +1684,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -1961,7 +1701,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item29
@@ -1976,6 +1716,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=29;
 			type="Land_HBarrier_large";
@@ -2003,25 +1744,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2039,7 +1761,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item30
@@ -2054,6 +1776,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=30;
 			type="Land_HBarrier_large";
@@ -2081,25 +1804,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2117,7 +1821,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item31
@@ -2132,6 +1836,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=31;
 			type="Land_HBarrier_large";
@@ -2159,25 +1864,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2195,7 +1881,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item32
@@ -2210,6 +1896,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=32;
 			type="Land_HBarrier_large";
@@ -2237,25 +1924,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2273,7 +1941,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item33
@@ -2288,6 +1956,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=33;
 			type="Land_HBarrier_large";
@@ -2315,25 +1984,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2351,7 +2001,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item34
@@ -2366,6 +2016,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
+				disableSimulation=1;
 			};
 			id=34;
 			type="Land_HBarrier_large";
@@ -2393,25 +2044,6 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
@@ -2429,7 +2061,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item35
@@ -14107,10 +13739,11 @@ class Mission
 			{
 				text="Game Timer";
 				condition="Trigger_BSOStart";
-				onActivation="[""BSOMission"",[""Mission Failed - Time limit reached.""]] call BIS_fnc_showNotification;";
+				onActivation="[-1,{[""BSOMission"",[""Mission Failed - Time limit reached.""]] call BIS_fnc_showNotification;},[]] call CBA_fnc_globalExecute;";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
+				isServerOnly=1;
 			};
 			id=146;
 			type="EmptyDetector";
