@@ -1,11 +1,21 @@
 /////bmf-v1_04////
 
-// Here you can find the mission briefing, admin end conditions and allow for marker visibility to only certain factions.
+// Here you can find the mission briefing, ACRE Languages, admin end conditions and allow for marker visibility to only certain factions.
 // You will have to set your debriefing information in the Meta.cpp file because ArmA.
 // See the BSO Mission Makers Wiki for the downloadable PDF on the FHQ briefing and task system for full instructions
 //
 // The system uses filters for setting who has been set a task or briefing. 
 // Included are the filters for sides in the Add Tasks section. These are the same filters which can be used in the AddBriefings section in the same way.
+//
+//   Task Entries
+//		_taskID - REQUIRED. I.D. of the task used for scripting. 
+//		_description - REQUIRED. Full description of the task.
+//		_title - REQUIRED. Title of task seen in the task list.
+//		_shorttitle - REQUIRED?. Title seen on map if linked to markers, or 3d view. 
+//		_target - marker or object defined location of the task
+//		_initial - Task status. For example "assigned"
+//		_type - Type of task which dictates the icoons used on the map and task list.
+//
 //
 //	The following line is used to mark an objective as successful. Note how only the server calls the task change. More info can be found in the FHQ Guide.
 //       if (isServer) then {["task1", "succeeded"] call FHQ_fnc_ttSetTaskState;};
@@ -15,19 +25,24 @@
 
 [
   {true}, //All factions/units will be able to see the tasks following this filter. This line will also use the "Obj1" marker and create an attack mark linked to the task.
-	["task1", "Clear the Town of the enemy", "Clear the town", "CLEAR", getMarkerPos "obj1", "assigned", "attack"],
+	["Task1", "Locate and destroy the enemy truck", "Destroy the Truck", "Destroy", getMarkerPos "obj1", "assigned", "attack"],
  
    west, // Only BluFor will be able to see these tasks.
-	["Task2w","BluFor Obj.","Full Objective description", "Short Objective Description"],
+	["Task2w","Full BluFor Objective description and information","Blufor Objective Name","BluFor Obj."],
  
    east, // Only OpFor will be able to see these tasks.
-	["Task2e","OpFor Obj.","Full Objective description", "Short Objective Description"],
+	["Task2e","Full OpFor Objective description and information","OpFor Objective Name","OpFor Obj."],
   
    resistance, // Only IndFor will be able to see these tasks.
-	["Task2r","IndFor Obj.","Full Objective description", "Short Objective Description"]
+	["Task2r","Full IndFor Objective description and information","IndFor Objective Name","IndFor Obj."]
 		
 ] call FHQ_fnc_ttAddTasks;
 
+// Much like tasks, you can use filters for factions, group names and specific units 
+//
+// "<br/>" can be used to start new lines and create paragraphs
+//
+// Below are the default entries that are expected in standard Beowulf Missions. Edit them or create new ones, but ensure you get all of the important information accross.
 
 
 [
@@ -65,7 +80,14 @@
 
 
 
+// Here a list of languages to be used in ACRE are set. Define each language as per the examples below, and then set which side uses which.
 
+	bso_acre_languages = [["en","English"],["gr","Greek"]]; // Define languages here
+	
+	bso_acre_language_blufor = ["en"]; //Language all BluFor will speak
+	bso_acre_language_opfor = ["gr"]; //Language all OpFor will speak
+	bso_acre_language_indfor = ["gr","en"]; //Language all IndFor will speak
+	bso_acre_language_civilian = ["gr"]; //Language all Civilians will speak
 
 
 // Mission end conditions. By editing the "end" and "loser" configs in meta.cpp you can have the admin end the mission with a debrief.

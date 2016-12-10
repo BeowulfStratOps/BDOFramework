@@ -8,11 +8,14 @@
 // Turns off antenna direction
 [true] call acre_api_fnc_ignoreAntennaDirection; 
 
-bso_acre_languages = [["en","English"],["gr","Greek"]];
-bso_acre_language_blufor = ["en"];
-bso_acre_language_opfor = ["gr"];
-bso_acre_language_indfor = ["gr","en"];
-
+// Moved to mission/briefing.sqf
+/*
+	bso_acre_languages = [["en","English"],["gr","Greek"]];
+	bso_acre_language_blufor = ["en"];
+	bso_acre_language_opfor = ["gr"];
+	bso_acre_language_indfor = ["gr","en"];
+	bso_acre_language_civilian = ["gr"];
+*/
 waitUntil {alive player};
  
 if (hasInterface) then {
@@ -33,9 +36,13 @@ if (hasInterface) then {
             bso_acre_language_indfor call acre_api_fnc_babelSetSpokenLanguages;
             [bso_acre_language_indfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
         };
+        case civilian: {
+            bso_acre_language_civilian call acre_api_fnc_babelSetSpokenLanguages;
+            [bso_acre_language_civilian select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+        };			
         default {
-            bso_acre_language_indfor call acre_api_fnc_babelSetSpokenLanguages;
-            [bso_acre_language_indfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+            bso_acre_language_blufor call acre_api_fnc_babelSetSpokenLanguages;
+            [bso_acre_language_blufor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
         };
     };
 };
