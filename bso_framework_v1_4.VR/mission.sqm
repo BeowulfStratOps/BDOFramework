@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=232;
+		nextID=233;
 	};
 	class Camera
 	{
-		pos[]={321.36969,398.36499,-86.345978};
-		dir[]={0.0035387487,-0.74397874,0.66837692};
-		up[]={0.0039427504,0.66796702,0.74416625};
-		aside[]={1.0000684,-8.2437191e-007,-0.0052957851};
+		pos[]={321.47583,342.82318,-190.35927};
+		dir[]={0.0087955445,-0.5890063,0.80823201};
+		up[]={0.0064146952,0.80790901,0.5892486};
+		aside[]={1.000011,-9.1279344e-007,-0.010882664};
 	};
 };
 binarizationWanted=0;
@@ -25,7 +25,6 @@ addons[]=
 	"A3_Soft_F_Gamma_Van_01",
 	"BSOLoadouts",
 	"A3_Structures_F_Items_Electronics",
-	"A3_Structures_F_Mil_Flags",
 	"CUP_Misc3_Config",
 	"ace_weather",
 	"ace_zeus",
@@ -44,7 +43,8 @@ addons[]=
 	"cba_modules",
 	"A3_Characters_F",
 	"asr_ai3_cfgcamouflage",
-	"asr_ai3_cfgvehicles"
+	"asr_ai3_cfgvehicles",
+	"bso_misc"
 };
 class AddonsMetaData
 {
@@ -69,6 +69,7 @@ class AddonsMetaData
 		{
 			className="BSOLoadouts";
 			name="BSOLoadouts";
+			author="Jsm";
 		};
 		class Item3
 		{
@@ -79,117 +80,116 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item5
-		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item6
+		class Item5
 		{
 			className="ace_weather";
 			name="ACE3 - Weather";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item7
+		class Item6
 		{
 			className="ace_zeus";
 			name="ACE3 - Zeus";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item8
+		class Item7
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item9
+		class Item8
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item10
+		class Item9
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item11
+		class Item10
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item12
+		class Item11
 		{
 			className="ace_winddeflection";
 			name="ACE3 - Wind Deflection";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item12
 		{
 			className="bso_fia";
 			name="bso_fia";
 			author="BSO Walker";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_map";
 			name="ACE3 - Map";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item14
 		{
 			className="Desert";
 			name="Desert";
 		};
-		class Item16
+		class Item15
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item17
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item19
+		class Item18
 		{
 			className="cba_modules";
 			name="Community Base Addons - Modules Component";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
+		};
+		class Item20
+		{
+			className="bso_misc";
+			name="bso_misc";
+			author="BSO Walker";
 		};
 	};
 };
@@ -703,6 +703,7 @@ class Mission
 				sizeA=0;
 				sizeB=0;
 				interuptable=1;
+				isServerOnly=1;
 			};
 			id=6;
 			type="EmptyDetector";
@@ -862,22 +863,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={169.23138,8.9768047,65.825897};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-			};
-			id=14;
-			type="Flag_UK_F";
-		};
-		class Item13
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={169.00639,6.0404701,69.158691};
 				angles[]={0,3.1211784,0};
 			};
@@ -934,7 +919,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -995,7 +980,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1056,7 +1041,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1117,7 +1102,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1178,7 +1163,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1239,7 +1224,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1300,7 +1285,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1361,7 +1346,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1422,7 +1407,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1483,7 +1468,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1544,7 +1529,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1605,7 +1590,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1666,7 +1651,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1727,7 +1712,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1788,7 +1773,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1849,7 +1834,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1910,7 +1895,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1971,7 +1956,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2032,7 +2017,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2093,7 +2078,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2221,7 +2206,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item34
+		class Item33
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2349,7 +2334,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item35
+		class Item34
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2420,7 +2405,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item36
+		class Item35
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2491,7 +2476,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item37
+		class Item36
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2581,7 +2566,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item38
+		class Item37
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2614,7 +2599,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item39
+		class Item38
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2704,7 +2689,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item40
+		class Item39
 		{
 			dataType="Group";
 			side="East";
@@ -3844,7 +3829,7 @@ class Mission
 			};
 			id=89;
 		};
-		class Item41
+		class Item40
 		{
 			dataType="Group";
 			side="East";
@@ -5024,7 +5009,7 @@ class Mission
 			};
 			id=96;
 		};
-		class Item42
+		class Item41
 		{
 			dataType="Group";
 			side="East";
@@ -5715,7 +5700,7 @@ class Mission
 			};
 			id=104;
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5755,7 +5740,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Group";
 			side="East";
@@ -6921,7 +6906,7 @@ class Mission
 			};
 			id=118;
 		};
-		class Item45
+		class Item44
 		{
 			dataType="Marker";
 			position[]={169.15874,5,59.531448};
@@ -6929,7 +6914,7 @@ class Mission
 			type="Empty";
 			id=125;
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Marker";
 			position[]={169.23509,5,59.620316};
@@ -6937,7 +6922,7 @@ class Mission
 			type="Empty";
 			id=126;
 		};
-		class Item47
+		class Item46
 		{
 			dataType="Marker";
 			position[]={169.23009,5,59.535843};
@@ -6945,7 +6930,7 @@ class Mission
 			type="Empty";
 			id=127;
 		};
-		class Item48
+		class Item47
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7035,7 +7020,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7096,7 +7081,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item50
+		class Item49
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7107,7 +7092,7 @@ class Mission
 			description="Set the mission time limit in this tigger's countdown. " \n "Notice this trigger uses the ""server only"" option, and then passes the action to all clients using the CBA function.";
 			id=135;
 		};
-		class Item51
+		class Item50
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7118,7 +7103,7 @@ class Mission
 			description="Ensure the respawn markers are brought across to your mission.";
 			id=136;
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7129,7 +7114,7 @@ class Mission
 			description="Enable BluForce Tracker here";
 			id=137;
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7140,7 +7125,7 @@ class Mission
 			description="If using alternative factions, ensure you change the languages in the ""BSO\acre.sqf"" script. ";
 			id=138;
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7151,7 +7136,7 @@ class Mission
 			description="You can create your own loadouts for the BSO Loadouts system. Check ""Mission\Meta.sqf"" for details. " \n "" \n "Make sure you set group IDs for your groups in either the group icon or using the ""setGroupID"" command in these group leader inits.";
 			id=139;
 		};
-		class Item55
+		class Item54
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7162,7 +7147,7 @@ class Mission
 			description="If you want units to garrison a building, it is recommended you use this script. If you want them to defend an area and some units garrion buildings. Use the Defend Module." \n "" \n "In this group leader init you can see the occupy building script. See the script file for more details." \n "" \n "The 3rd argument is a ""range of garrison"". At ""-1"" the group will garrison only the closest structures. Set a posative value and they will garrison a selection of buildings in that area." \n "" \n "The 5th argument is a force height of garrison. By default at false the units will garrison random positions. By setting it to true they will prioritise higher positions in the buildings. For example getting on the roof if possible.";
 			id=140;
 		};
-		class Item56
+		class Item55
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7173,7 +7158,7 @@ class Mission
 			description="This is a simple patrol generator Module which will generate a number of waypoints for the AI patrol as per the modules settings." \n "" \n "You can sync multiple groups (leaders) to the module, or have multiple modules." \n "" \n "See the CBA website and search for the ""CBA_fnc_taskPatrol"" function for the  more details.";
 			id=141;
 		};
-		class Item57
+		class Item56
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7184,7 +7169,7 @@ class Mission
 			description="In this trigger you can see the basic task call. See the ""BSO\shk_taskmaster.sqf"" for more details.";
 			id=142;
 		};
-		class Item58
+		class Item57
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7195,7 +7180,7 @@ class Mission
 			description="This group has been setup using the Murk Spawner to  despawn at the start of a mission and spawn when the trigger has been activated." \n " You can use this for enemy QRF or to hide ambushes and the like." \n "See ""BSO\murk_spawn.sqf"" for more details";
 			id=143;
 		};
-		class Item59
+		class Item58
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7206,7 +7191,7 @@ class Mission
 			description="This group has been set a few waypoints that will only start when the trigger has been activated. You can see in the trigger, that these units will only start their waypoints when the Mission is started by an admin. " \n " This can be great for ensuring important units reach their targets when you want them to in relation to the player movements. ";
 			id=144;
 		};
-		class Item60
+		class Item59
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7217,7 +7202,7 @@ class Mission
 			description="You can create your own ammo boxes through the Eden Editor." \n "You can also create your own loadout boxes through the BSO Loadouts system. These Loadout boxes are great for trying out your new loadouts.";
 			id=145;
 		};
-		class Item61
+		class Item60
 		{
 			dataType="Trigger";
 			position[]={251.528,5,60.716};
@@ -7234,7 +7219,7 @@ class Mission
 			id=146;
 			type="EmptyDetector";
 		};
-		class Item62
+		class Item61
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -7245,7 +7230,7 @@ class Mission
 			description="When BluFor are wiped out the mission will end." \n "Notice this trigger uses the ""server only"" option, and then passes the action to all clients using the CBA function.";
 			id=147;
 		};
-		class Item63
+		class Item62
 		{
 			dataType="Trigger";
 			position[]={317.828,5,453.03699};
@@ -7265,7 +7250,7 @@ class Mission
 			id=148;
 			type="EmptyDetector";
 		};
-		class Item64
+		class Item63
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7526,7 +7511,7 @@ class Mission
 				nAttributes=13;
 			};
 		};
-		class Item65
+		class Item64
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7806,7 +7791,7 @@ class Mission
 				nAttributes=14;
 			};
 		};
-		class Item66
+		class Item65
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7858,7 +7843,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item67
+		class Item66
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7899,7 +7884,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item68
+		class Item67
 		{
 			dataType="Object";
 			class PositionInfo
@@ -7960,7 +7945,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item69
+		class Item68
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8001,7 +7986,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item70
+		class Item69
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8062,7 +8047,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item71
+		class Item70
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8103,7 +8088,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item72
+		class Item71
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8164,7 +8149,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item73
+		class Item72
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8273,7 +8258,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item74
+		class Item73
 		{
 			dataType="Group";
 			side="East";
@@ -9533,7 +9518,7 @@ class Mission
 			};
 			id=164;
 		};
-		class Item75
+		class Item74
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -9544,7 +9529,7 @@ class Mission
 			description="The CBA Module can be used to make groups defend an area. " \n "You can have seveal groups sync'd to a single module, or ofcourse multiple modules." \n "" \n "Play close attention to the options in the module available for positioning of the center of module.";
 			id=171;
 		};
-		class Item76
+		class Item75
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9653,7 +9638,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item77
+		class Item76
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9877,7 +9862,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item78
+		class Item77
 		{
 			dataType="Group";
 			side="West";
@@ -11245,7 +11230,7 @@ class Mission
 			};
 			id=174;
 		};
-		class Item79
+		class Item78
 		{
 			dataType="Group";
 			side="West";
@@ -13691,7 +13676,7 @@ class Mission
 			};
 			id=185;
 		};
-		class Item80
+		class Item79
 		{
 			dataType="Group";
 			side="West";
@@ -16137,7 +16122,7 @@ class Mission
 			};
 			id=200;
 		};
-		class Item81
+		class Item80
 		{
 			dataType="Group";
 			side="West";
@@ -18583,7 +18568,7 @@ class Mission
 			};
 			id=210;
 		};
-		class Item82
+		class Item81
 		{
 			dataType="Group";
 			side="West";
@@ -19407,7 +19392,7 @@ class Mission
 			};
 			id=220;
 		};
-		class Item83
+		class Item82
 		{
 			dataType="Group";
 			side="West";
@@ -20231,7 +20216,7 @@ class Mission
 			};
 			id=225;
 		};
-		class Item84
+		class Item83
 		{
 			dataType="Object";
 			class PositionInfo
@@ -20246,6 +20231,45 @@ class Mission
 			};
 			id=231;
 			type="BSO_A_EMPTY";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item84
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={169.231,8.9768047,65.825996};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=232;
+			type="bso_flag";
 			class CustomAttributes
 			{
 				class Attribute0
