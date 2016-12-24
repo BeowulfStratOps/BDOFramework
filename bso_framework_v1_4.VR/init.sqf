@@ -1,4 +1,4 @@
-/////bmf-v1_03////
+/////bmf-v1_04////
 ////// ====	Taskmaster
 execVM "mission\briefing.sqf";
   
@@ -32,6 +32,13 @@ enableSaving [false,false];
 ////// === Mission Log
 diag_log format ["###### %1 ######", missionName];
 diag_log [diag_frameno, diag_ticktime, time, "Executing init.sqf"];
+
+if (!isServer && isNull player) then  //JIP player
+{
+	waitUntil {!isNull player};
+
+	[] execVM "BSO\tele\initTeleportToSL.sqf";
+};
 
 
 while {Hint_BSOStart} do

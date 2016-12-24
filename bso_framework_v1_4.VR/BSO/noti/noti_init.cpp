@@ -1,4 +1,4 @@
-/////bmf-v1_03////
+/////bmf-v1_04////
 class CfgNotifications
 {
 	class BSOSafeStart

@@ -1,4 +1,4 @@
-/////bmf-v1_03////
+/////bmf-v1_04////
 if (!isDedicated) then 
 {
 
