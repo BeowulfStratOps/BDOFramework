@@ -170,6 +170,7 @@ class blufor //Name of your faction referenced in the init call
 			handgun = "hgun_P07_F";
 			handgunItems[] = {};
 			magazines[] = {
+				"16Rnd_9x21_Mag",
 				"1Rnd_HE_Grenade_shell",
 				"1Rnd_HE_Grenade_shell",
 				"30Rnd_556x45_Stanag",
@@ -209,6 +210,7 @@ class blufor //Name of your faction referenced in the init call
 			};
 			backpack = "B_AssaultPack_rgr";
 			backpackMagazines[] = {
+				"16Rnd_9x21_Mag",
 				"1Rnd_HE_Grenade_shell",
 				"1Rnd_HE_Grenade_shell",
 				"1Rnd_HE_Grenade_shell",
@@ -226,7 +228,8 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShellBlue",
 				"SmokeShellGreen",
 				"SmokeShellGreen",
-				"SmokeShellPurple"
+				"SmokeShellPurple",
+				"16Rnd_9x21_Mag"
 				};
 			launcher = "";
 			launcherItems[] = {};

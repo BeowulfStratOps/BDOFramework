@@ -164,6 +164,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 			handgun = "BL_SIDEARM_WP";
 			handgunItems[] = {};
 			magazines[] = {
+				"BL_SIDEARM_MAG",
 				"BL_UGL_HE",
 				"BL_UGL_HE",
 				"BL_RIFLE_MAG",
@@ -203,6 +204,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 			};
 			backpack = "BL_B_SML";
 			backpackMagazines[] = {
+				"BL_SIDEARM_MAG",
 				"BL_UGL_HE",
 				"BL_UGL_HE",
 				"BL_UGL_HE",
@@ -220,7 +222,8 @@ class BL_FACTION //Name of your faction referenced in the init call
 				"BL_HG_SMOKE_3",
 				"BL_HG_SMOKE_2",
 				"BL_HG_SMOKE_2",
-				"BL_HG_SMOKE_4"
+				"BL_HG_SMOKE_4",
+				"BL_SIDEARM_MAG"
 				};
 			launcher = "";
 			launcherItems[] = {};
