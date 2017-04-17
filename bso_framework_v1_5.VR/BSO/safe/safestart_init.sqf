@@ -1,4 +1,4 @@
-/////bmf-v1_04////
+/////bmf-v1_5////
 // FC: SafeStart initialisation and functions
 // (C) 2014 Cam. See LICENSE.
 
