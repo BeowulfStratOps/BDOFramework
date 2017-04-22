@@ -229,7 +229,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="BSO Framework v1.4.1";
+		briefingName="BSO Framework v1.5";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;

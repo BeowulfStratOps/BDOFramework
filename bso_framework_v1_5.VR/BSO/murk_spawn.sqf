@@ -5,7 +5,7 @@
 //	_this select 1: STRING - spawn type ("once","repeated","wave" and "reset")
 //	_this select 2 (optional): NUMBER - spawn lives (the amount of time the unit respawns, or wave number)
 //	_this select 3 (optional): NUMBER - spawn delay
-//	_this select 4 (optional): STRING - init string called for the leader of the group
+//	_this select 4 (optional): STRING - init string called for the leader of the group - THIS DOESN'T SEEM TO WORK!!!!!!
 //	_this select 5 (optional): NUMBER-  will start removal sequence of all dead group members after X seconds (default 120)
 // Usage: 
 //  Example trigger: Anybody Once (or whatever you want), onActivation: triggername setVariable ["murk_spawn",true,true];

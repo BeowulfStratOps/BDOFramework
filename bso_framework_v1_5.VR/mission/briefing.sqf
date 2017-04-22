@@ -1,4 +1,4 @@
-/////bmf-v1_04////
+/////bmf-v1_5////
 
 // Here you can find the mission briefing, ACRE Languages, admin end conditions and allow for marker visibility to only certain factions.
 // You will have to set your debriefing information in the Meta.cpp file because ArmA.
@@ -25,16 +25,16 @@
 
 [
   {true}, //All factions/units will be able to see the tasks following this filter. This line will also use the "Obj1" marker and create an attack mark linked to the task.
-	["Task1", "Locate and destroy the enemy truck", "Destroy the Truck", "Destroy", getMarkerPos "obj1", "assigned", "attack"],
+	["Task1", "Locate and destroy the enemy truck", "1. Destroy the Truck", "Destroy", getMarkerPos "obj1", "assigned", "attack"],
  
    west, // Only BluFor will be able to see these tasks.
-	["Task2w","Full BluFor Objective description and information","Blufor Objective Name","BluFor Obj."],
+	["Task2w","Full BluFor Objective description and information","2. Blufor Objective Name","BluFor Obj."],
  
    east, // Only OpFor will be able to see these tasks.
-	["Task2e","Full OpFor Objective description and information","OpFor Objective Name","OpFor Obj."],
+	["Task2e","Full OpFor Objective description and information","2. OpFor Objective Name","OpFor Obj."],
   
    resistance, // Only IndFor will be able to see these tasks.
-	["Task2r","Full IndFor Objective description and information","IndFor Objective Name","IndFor Obj."]
+	["Task2r","Full IndFor Objective description and information","2. IndFor Objective Name","IndFor Obj."]
 		
 ] call FHQ_fnc_ttAddTasks;
 
@@ -47,14 +47,37 @@
 
 [
 	{true},
-  ["Situation","A brief description of the current situation to cause this mission."],
-  ["Mission","Full description of the mission at hand, including objectives, what you want to achieve, and what is classed as a failure."],
-  ["Intel","Provide any general mission intel such as weather conditions and info about the AO or intelligence about the objectives"],	
+  ["Situation","A brief description of the current situation to cause this mission. This is where you place any fluff."],
+  ["Mission","
+	1. Objective one.
+    <br/>
+	<br/>
+	2. Objective two.
+	<br/>
+	<br/>
+	Full description of the mission at hand, including explanations of objectives, what you want to achieve, and what is classed as a failure.	
+	<br/>
+	Keep this as short and to the point as possible.
+  "],
+  ["Intel","Provide any general mission intel such as weather conditions and info about the AO or intelligence about the objectives"],
+  ["Enviroment","
+  Time of Day - 0000hrs
+  <br/>
+  Weather - Clear
+  <br/>
+  Lighting - Bright
+  <br/>
+  Forecast - Small chance of cloud
+  <br/>
+  <br/>
+  Although not required, the above information is important if the mission has any adverse conditions. Such as rain, darkness, fog or high winds.
+  "],
   ["Execution","Description how you expect the mission should be executed, this can be just assigning a leader, or describing exactly how the players should execute the mission stage by stage."],
-  ["OpFor","Description of the opposing forces in the area."],
+  ["OpFor","Description of the opposing forces in the area. Include information such as composition, disposition and strength"],
   ["BluFor","Information on friendly forces in the area, including what your players are portraying."],
   ["Support","Include any information about support elements."],
-  ["ROE","Include the side's doctrine (Regular/Irregular) and any engagement rules if required"],
+  ["Assets","Include information about equipment and vehicles thats been provided for use by the players."],
+  ["ROE","Include the side's doctrine (Regular/Irregular) and any engagement rules if required. Include if the force has BluForce Trackker."],
   ["COMSIG","Operations comms and signal are follows
 					<br/>
 					<br/>
@@ -64,14 +87,14 @@
 					<br/>
 				3rd Squad - CH3 SR
 					<br/>
-				COMMAND - CH4 SR
+				MMG Team - CH4 SR
 					<br/>
-				MMG Team - CH5 SR
+				COMMAND - CH5 SR
 					<br/>
 					<br/>
 				Company net - CH1 LR
 					<br/>
-				Air Net - CH5 LR
+				Air Net - CH2 LR
 				"], 
   ["Notes","Additional notes about the mission and any tips you want to give the players should go here."],
   ["Credits","Walker"]  

@@ -1,4 +1,4 @@
-/////bmf-v1_04////
+/////bmf-v1_5////
 /*
 Taken from here https://forums.bistudio.com/topic/177851-spectate-mode-through-an-object/?p=2793480 and slowly modified 
 */

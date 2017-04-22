@@ -1514,6 +1514,11 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_250",
 				"ACE_salineIV_250",
 				"ACE_salineIV_250",
+				"ACE_salineIV_250",
+				"ACE_salineIV_250",
+				"ACE_salineIV_250",
+				"ACE_salineIV_250",
+				"ACE_salineIV_250",
 				
 				"ACE_tourniquet",
 				"ACE_tourniquet",
