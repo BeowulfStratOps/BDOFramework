@@ -21,15 +21,14 @@ _murker = _this select 0;
 // Checks each unit in the group against a list of classnames, and then applies the chosen loadout.
 {
 	
-	if (typeof _x == "O_T_Soldier_TL_F") then {[_x,"opfor","teamleader",true] call BSO_fnc_applyLoadout;}; 
-	if (typeof _x == "O_T_Soldier_SL_F") then {[_x,"opfor","squadleader",true] call BSO_fnc_applyLoadout;}; 
-	if (typeof _x == "O_T_Soldier_LAT_F") then {[_x,"opfor","RiflemanLat",true] call BSO_fnc_applyLoadout;}; 		
-	if (typeof _x == "O_T_Soldier_F") then {[_x,"opfor","rifleman",true] call BSO_fnc_applyLoadout;}; 
-	if (typeof _x == "O_T_Soldier_AR_F") then {[_x,"opfor","autorifleman",true] call BSO_fnc_applyLoadout;}; 
-	if (typeof _x == "O_T_Support_MG_F") then {[_x,"opfor","machinegunner",true] call BSO_fnc_applyLoadout;}; 
-	if (typeof _x == "O_T_Soldier_M_F") then {[_x,"opfor","marksman",true] call BSO_fnc_applyLoadout;}; 
-	if (typeof _x == "O_T_Crew_F") then {[_x,"opfor","crew",true] call BSO_fnc_applyLoadout;}; 
-	if (typeof _x == "O_T_Support_Mort_F") then {[_x,"opfor","crew_g",true] call BSO_fnc_applyLoadout;}; 
+	if (typeof _x == "O_Soldier_TL_F") then {[_x,"opfor","teamleader",true] call BSO_fnc_applyLoadout;}; 
+	if (typeof _x == "O_Soldier_SL_F") then {[_x,"opfor","squadleader",true] call BSO_fnc_applyLoadout;}; 
+	if (typeof _x == "O_Soldier_LAT_F") then {[_x,"opfor","RiflemanLat",true] call BSO_fnc_applyLoadout;}; 		
+	if (typeof _x == "O_Soldier_F") then {[_x,"opfor","rifleman",true] call BSO_fnc_applyLoadout;}; 
+	if (typeof _x == "O_Soldier_AR_F") then {[_x,"opfor","autorifleman",true] call BSO_fnc_applyLoadout;}; 
+	if (typeof _x == "O_Support_MG_F") then {[_x,"opfor","machinegunner",true] call BSO_fnc_applyLoadout;}; 
+	if (typeof _x == "O_Soldier_M_F") then {[_x,"opfor","marksman",true] call BSO_fnc_applyLoadout;}; 
+	if (typeof _x == "O_Crew_F") then {[_x,"opfor","crew",true] call BSO_fnc_applyLoadout;}; 
 	
 
 	} foreach units group _murker;
