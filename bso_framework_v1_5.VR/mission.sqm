@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=233;
+		nextID=395;
 	};
 	class Camera
 	{
@@ -44,26 +44,27 @@ addons[]=
 	"A3_Characters_F",
 	"asr_ai3_cfgcamouflage",
 	"asr_ai3_cfgvehicles",
-	"bso_misc"
+	"bso_misc",
+	"ace_rearm"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=22;
 		class Item0
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
@@ -76,7 +77,7 @@ class AddonsMetaData
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
@@ -169,7 +170,7 @@ class AddonsMetaData
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item18
 		{
@@ -183,13 +184,20 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item20
 		{
 			className="bso_misc";
 			name="bso_misc";
 			author="BSO Walker";
+		};
+		class Item21
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -251,7 +259,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=85;
+		items=86;
 		class Item0
 		{
 			dataType="Marker";
@@ -460,7 +468,7 @@ class Mission
 			};
 			id=13;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.22353363;
+			atlOffset=0.22352648;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1710,7 +1718,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={301.25229,5,62.862305};
+				position[]={301.25201,5,62.862};
 			};
 			id=43;
 			type="ace_weather_ModuleSettings";
@@ -1807,7 +1815,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -4440,7 +4448,7 @@ class Mission
 			};
 			id=154;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.22429228;
+			atlOffset=0.22428513;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4542,7 +4550,7 @@ class Mission
 			};
 			id=156;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.22429228;
+			atlOffset=0.22428513;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4644,7 +4652,7 @@ class Mission
 			};
 			id=158;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.22429037;
+			atlOffset=0.22428322;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8050,6 +8058,39 @@ class Mission
 								type[]=
 								{
 									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item85
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={307.73199,5,49.667};
+			};
+			id=233;
+			type="ACE_moduleRearmSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRearmSettings_level";
+					expression="_this setVariable ['level',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
 								};
 							};
 							value=0;
