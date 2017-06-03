@@ -5,7 +5,7 @@
 //	_this select 1: STRING - spawn type ("once","repeated","wave" and "reset")
 //	_this select 2 (optional): NUMBER - spawn lives (the amount of time the unit respawns, or wave number)
 //	_this select 3 (optional): NUMBER - spawn delay
-//	_this select 4 (optional): STRING - init string called for the leader of the group - THIS DOESN'T SEEM TO WORK!!!!!!
+//	_this select 4 (optional): STRING - init string called for the leader of the group - THIS DOESN'T SEEM TO WORK!!!!!! - seems to work if "_this" is used instead of "this"
 //	_this select 5 (optional): NUMBER-  will start removal sequence of all dead group members after X seconds (default 120)
 // Usage: 
 //  Example trigger: Anybody Once (or whatever you want), onActivation: triggername setVariable ["murk_spawn",true,true];
@@ -66,7 +66,6 @@ while { _unitCount > 0 } do {
 	// The currently worked on unit
 	_unitsInGroup = units _unitGroup;
 	_unit = _unitsInGroup select 0;
-	_unitCount = count _unitsInGroup;
 	
 	//hint format ["Deleting: %1 - vehicleVarName: %2", _unit, vehicleVarName _unit]; sleep 1;
 	
@@ -91,6 +90,7 @@ while { _unitCount > 0 } do {
 		deleteVehicle _unit;
 	};
 	sleep 0.01;
+	_unitCount = count units _unitGroup;
 };
 
 // Gathering waypoints
@@ -226,7 +226,7 @@ _fnc_spawnUnit = {
 	// If the old group doesnt have any units in it its a spawned group rather than respawned
 	if ( count (units _oldGroup) == 0) then { deleteGroup _oldGroup; };
 	{
-		_spawnUnit = Object;
+		_spawnUnit = objNull;
 		_unitType = _x select 0; _unitPos  = _x select 1; _unitDir  = _x select 2;
 		_unitName = _x select 3; _unitSkill = _x select 4; _unitRank = _x select 5;
 		_unitWeapons = _x select 6; _unitMagazines = _x select 7; _unitCrew = _x select 8;
@@ -260,7 +260,7 @@ _fnc_spawnUnit = {
 		_spawnUnit setDir _unitDir;
 		_spawnUnit setSkill _unitSkill;
 		_spawnUnit setUnitRank _unitRank;
-		if (_spawntype == "once" OR _spawntype == "repeated") then { 
+		if ((_spawntype == "once" OR _spawntype == "repeated") AND _unitName != "") then { 
 			_spawnUnit call compile format ["%1= _this; _this setVehicleVarName '%1'; PublicVariable '%1';",_unitName];
 		};
 	} forEach _unitArray;
