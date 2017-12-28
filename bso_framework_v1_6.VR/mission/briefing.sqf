@@ -112,6 +112,8 @@
 	bso_acre_language_indfor = ["gr","en"]; //Language all IndFor will speak
 	bso_acre_language_civilian = ["gr"]; //Language all Civilians will speak
 
+	bso_acre_language_ready = true;
+
 
 // Mission end conditions. By editing the "end" and "loser" configs in meta.cpp you can have the admin end the mission with a debrief.
 

@@ -17,6 +17,8 @@
 	bso_acre_language_civilian = ["gr"];
 */
 waitUntil {alive player};
+
+waitUntil {!(isNil "bso_acre_language_ready")}; // wait for languages to be defined
  
 if (hasInterface) then {
     {
@@ -46,3 +48,5 @@ if (hasInterface) then {
         };
     };
 };
+
+bso_acre_babel_ready = true; // allow custom setups to change it up, once generic stuff is done
