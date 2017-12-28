@@ -1,4 +1,4 @@
-/////bmf-v1_5////
+/////bmf-v1_6////
 /*
     GrenadeStop v0.8 for ArmA 3 Alpha by Bake (tweaked slightly by Rarek)
     
