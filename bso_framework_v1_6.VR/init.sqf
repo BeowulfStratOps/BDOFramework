@@ -21,7 +21,7 @@ execVM "bso\safe\safe_zone.sqf";
  if (isNil "Hint_BSOStart") then { Hint_BSOStart = true; publicVariable "Hint_BSOStart"};
 // Adds Admin action to start mission
 _mainAction = ["bso_start_mission", "Start Mission", "", {execVM "bso\safe\safestart_adminAction.sqf"}, {fc_safestart && serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-[typeOf player, 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction] call ace_interact_menu_fnc_addActionToClass;
+["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
 
 
 
