@@ -51,6 +51,31 @@ _initString = if (_countThis >= 5) then { _this select 4; } else { "" }; // Opti
 _bodyRemove = if (_countThis >= 6) then { _this select 5; } else { 600 }; // Optional
 
 // The object (trigger, whatever) the unit is synchronized to hold the trigger variable
+
+try { // just so we don't break anything in this card house
+    if (isServer && hasInterface) then {
+        private _text = "";
+        if (typeName _unit == "OBJECT") then {
+            if (count synchronizedObjects _unit == 0) then {
+                _text = "Murk: missing trigger";
+            };
+        } else {
+            _text = "Murk: not an object";
+        };
+        if (count _text > 0) then {
+            failedmarkercount = missionNamespace getVariable ["failedmarkercount", 0];
+            private _name = format ["failed_murk_%1", failedmarkercount];
+            failedmarkercount = failedmarkercount + 1;
+            createMarkerLocal [_name, _unit call BIS_fnc_position];
+            _name setMarkerShapeLocal "ICON";
+            _name setMarkerTypeLocal "hd_dot";
+            _name setMarkerTextLocal _text;
+        };
+    };
+} catch {
+    diag_log _exception;
+};
+
 _triggerObject = (synchronizedObjects _unit) select 0;
 _triggerObject setVariable ["murk_spawn",false,false];
 
