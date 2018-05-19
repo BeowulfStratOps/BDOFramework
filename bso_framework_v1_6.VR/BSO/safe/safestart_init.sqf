@@ -21,11 +21,9 @@ fc_safestart_fnc_safety = {
   // Server can stop here, we only needed to set the variable.
   if(isDedicated) exitWith {};
 
-  _unit = player;
-
-  fc_safestart_firedEH = _unit addEventHandler ["Fired", {deleteVehicle (_this select 6);}];
-
-  _unit allowDamage false;
+  fc_safestart_firedEH = ["ace_firedPlayer", {deleteVehicle (_this select 6);}] call CBA_fnc_addEventHandler;
+  
+  player allowDamage false;
   
 
 	["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
@@ -45,11 +43,9 @@ fc_safestart_fnc_unsafety = {
   // Server can stop here, we only needed to set the variable.
   if(isDedicated) exitWith {};
 
-  _unit = player;
+  ["ace_firedPlayer", fc_safestart_firedEH] call CBA_fnc_removeEventHandler;
 
-  _unit removeEventHandler ["Fired", fc_safestart_firedEH];
-
-  _unit allowDamage true;
+  player allowDamage true;
 
 	["BSOSafeStart",["GAME ON!"]] call BIS_fnc_showNotification;
 };
