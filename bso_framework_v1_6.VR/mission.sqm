@@ -8,7 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=395;
+		nextID=397;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
 	};
 	class Camera
 	{
@@ -304,7 +308,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=72;
+		items=73;
 		class Item0
 		{
 			dataType="Marker";
@@ -6696,6 +6700,14 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item72
+		{
+			dataType="Marker";
+			position[]={169.19939,5,59.575977};
+			name="spectator_box";
+			type="Empty";
+			id=396;
 		};
 	};
 	class Connections
