@@ -119,7 +119,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -188,7 +188,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs","ACE_Flashlight_XL50",
+				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine",				
@@ -279,7 +279,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_MapTools",				
 				"ACE_fieldDressing",
@@ -352,7 +352,7 @@ class blufor //Name of your faction referenced in the init call
 				"150Rnd_762x54_Box"	
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -413,7 +413,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -476,7 +476,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -538,7 +538,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs","ACE_Flashlight_XL50",
+				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine",				
@@ -617,7 +617,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_MapTools",				
 				"ACE_fieldDressing",
@@ -693,7 +693,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs","ACE_Flashlight_XL50",
+				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine",				
@@ -753,7 +753,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs","ACE_Flashlight_XL50",
+				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine",				
@@ -816,7 +816,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_MapTools",				
 				"ACE_fieldDressing",
@@ -894,7 +894,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -947,7 +947,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs","ACE_Flashlight_XL50",
+				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine",				
@@ -1001,7 +1001,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1054,7 +1054,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1108,7 +1108,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1164,7 +1164,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1221,7 +1221,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1287,7 +1287,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1353,7 +1353,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1509,16 +1509,16 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_epinephrine",
 				"ACE_epinephrine",
 				
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
-				"ACE_salineIV_250",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
+				"ACE_salineIV_500",
 				
 				"ACE_tourniquet",
 				"ACE_tourniquet",
@@ -1556,7 +1556,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs","ACE_Flashlight_XL50",
+				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine",				
@@ -1639,7 +1639,7 @@ class blufor //Name of your faction referenced in the init call
 				"Laserbatteries"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_MapTools",
 				"ACE_fieldDressing",
@@ -1725,7 +1725,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_RangeCard",
 				"ACE_fieldDressing",
@@ -1785,7 +1785,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShellPurple"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1834,7 +1834,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShellPurple"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1883,7 +1883,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1933,7 +1933,7 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShell"
 			};
 			items[] = {
-				"ACE_EarPlugs",
+				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
