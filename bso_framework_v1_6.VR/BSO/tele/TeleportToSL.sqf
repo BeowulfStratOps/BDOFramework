@@ -22,7 +22,6 @@ private ["_leader","_LX","_LY","_LZ"];
 	_LZ = (getpos _leader select 2);
 	
 	player setpos [_LX,_LY,_LZ];
-	player removeAction movetoSL;
 	}
 
 //If leader is inside vehicle, move player into vehicle cargo
@@ -40,6 +39,5 @@ private ["_leader","_LX","_LY","_LZ"];
 	else
 	{
 	player moveincargo vehicle _leader;
-	player removeAction movetoSL;
 	};
 	};
