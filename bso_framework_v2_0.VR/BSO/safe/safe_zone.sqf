@@ -1,16 +1,16 @@
-/////bmf-v1_7////
+/////bmf-v2_0////
 /*
     GrenadeStop v0.8 for ArmA 3 Alpha by Bake (tweaked slightly by Rarek)
-    
+
     DESCRIPTION:
     Stops players from throwing grenades in safety zones.
-    
+
     INSTALLATION:
     Move grenadeStop.sqf to your mission's folder. Then add the
     following line to your init.sqf file (create one if necessary):
     execVM "grenadeStop.sqf";
 	execVM "bso\safe_zone.sqf";
-    
+
     CONFIGURATION:
     Edit the #defines below.
 */

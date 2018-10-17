@@ -1,4 +1,4 @@
-/////bmf-v1_7////
+/////bmf-v2_0////
 class CfgNotifications
 {
 	class BSOSafeStart
@@ -14,6 +14,6 @@ class CfgNotifications
 		iconPicture = "BSO\noti\bso_logo.paa"; // Small icon displayed in left part. Colored by "color", filled by arguments.
 		description = "%1"; // Brief description displayed as structured text. Colored by "color", filled by arguments.
 
-	};	
-	
-};	
+	};
+
+};

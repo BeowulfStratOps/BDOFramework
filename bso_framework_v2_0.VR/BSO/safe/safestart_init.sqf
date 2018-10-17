@@ -1,4 +1,4 @@
-/////bmf-v1_7////
+/////bmf-v2_0////
 // FC: SafeStart initialisation and functions
 // (C) 2014 Cam. See LICENSE.
 
@@ -22,9 +22,9 @@ fc_safestart_fnc_safety = {
   if(isDedicated) exitWith {};
 
   fc_safestart_firedEH = ["ace_firedPlayer", {deleteVehicle (_this select 6);}] call CBA_fnc_addEventHandler;
-  
+
   player allowDamage false;
-  
+
 
 	["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
 };
@@ -59,7 +59,7 @@ waitUntil{time > 3};
 // If the user is the admin, give them an addAction that disables SafeStart.
 if ((serverCommandAvailable "#kick") || (!isMultiplayer)) then {
   systemChat "You are the admin. Use the 'Start the mission!' scroll-menu option to start the mission when all players are ready.";
-  player addAction ["<t color='#73E600'>Start the mission!</t>", "BSO\safe\safestart_adminAction.sqf", [], 1, false, true, "", "(driver _target == player)"];  
+  player addAction ["<t color='#73E600'>Start the mission!</t>", "BSO\safe\safestart_adminAction.sqf", [], 1, false, true, "", "(driver _target == player)"];
 };
 */
 // Clients should exit here.

@@ -1,6 +1,6 @@
-/////bmf-v1_7////
+/////bmf-v2_0////
 /*
-Taken from here https://forums.bistudio.com/topic/177851-spectate-mode-through-an-object/?p=2793480 and slowly modified 
+Taken from here https://forums.bistudio.com/topic/177851-spectate-mode-through-an-object/?p=2793480 and slowly modified
 */
 /*
 Spectator camera script - v0.2
@@ -19,15 +19,15 @@ BIS_fnc_feedback_allowPP = false;
 //_RscLayer = "BIS_fnc_respawnSpectator" call bis_fnc_rscLayer;
 //_RscLayer cutrsc ["RscSpectator","plain"];
 
-// ACRE / TFAR 
+// ACRE / TFAR
 [true] call acre_api_fnc_setSpectator;
 //[player, true] call TFAR_fnc_forceSpectator;
 
 
 ["exitSpect", "onEachFrame", {
-    
+
     if (inputAction "ReloadMagazine" > 0) exitWith { // Check if "Reload" key is pressed
-        ["Terminate"] call BIS_fnc_EGSpectator; 
+        ["Terminate"] call BIS_fnc_EGSpectator;
         player enableSimulation true;
         [false] call acre_api_fnc_setSpectator;
         BIS_fnc_feedback_allowPP = true;

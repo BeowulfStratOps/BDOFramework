@@ -1,7 +1,7 @@
-/////bmf-v1_7////
+/////bmf-v2_0////
 ////// ====	Taskmaster
 execVM "mission\briefing.sqf";
-  
+
 // ACRE
 execVM "bso\acre.sqf";
 
@@ -45,4 +45,4 @@ while {Hint_BSOStart} do
 	{
 		["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
 		sleep 30;
-	}; 
+	};
