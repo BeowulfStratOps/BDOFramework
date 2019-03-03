@@ -60,7 +60,7 @@
 	Keep this as short and to the point as possible.
   "],
   ["Intel","Provide any general mission intel such as weather conditions and info about the AO or intelligence about the objectives"],
-  ["Enviroment","
+  ["Environment","
   Time of Day - 0000hrs
   <br/>
   Weather - Clear
