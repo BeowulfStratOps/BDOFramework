@@ -258,10 +258,17 @@ _fnc_spawnUnit = {
 		// Check if the unit has a crew, if so we know its a vehicle
 		if (count _unitCrew > 0) then { 
 			if (_unitPos select 2 >= 10) then { 
-				_spawnUnit = createVehicle [_unitType,_unitPos, [], 0, "FLY"]; 
-				_spawnUnit setVelocity [50 * (sin _unitDir), 50 * (cos _unitDir), 0];
+				_spawnUnit = createVehicle [_unitType,_unitPos, [], 0, "FLY"];
+				[_spawnUnit, true] remoteExec ["engineOn",0,true];
+				_spawnUnit setDir _unitDir;
+				if (_unitType isKindOf "Plane") then {
+                    _spawnUnit setVelocityModelSpace [0, 100, 7];
+				};
 			}
-			else { _spawnUnit = _unitType createVehicle _unitPos; };
+			else {
+                _spawnUnit = _unitType createVehicle _unitPos; 
+                _spawnUnit setDir _unitDir;
+            };
 			// Create the entire crew
 			_crew = [];
      			{ _unit = _newGroup createUnit [_x, getPos _spawnUnit, [], 0, "NONE"]; _crew set [count _crew, _unit]; } forEach _unitCrew;
@@ -280,9 +287,9 @@ _fnc_spawnUnit = {
 			{_spawnUnit addMagazine _x} forEach _unitMagazines;
 			{_spawnUnit addWeapon _x} forEach _unitWeapons;
 			_spawnUnit selectWeapon (primaryWeapon _spawnUnit);
+ 			_spawnUnit setDir _unitDir;
 		};
 		// Set all the things common to the spawned unit
-		_spawnUnit setDir _unitDir;
 		_spawnUnit setSkill _unitSkill;
 		_spawnUnit setUnitRank _unitRank;
 		if ((_spawntype == "once" OR _spawntype == "repeated") AND _unitName != "") then { 
