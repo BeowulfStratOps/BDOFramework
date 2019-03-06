@@ -1,4 +1,4 @@
-/////bmf-v1_7////
+/////bmf-v1_8////
 //
 //	BSO Murk_Loadout Script v1.0
 //
