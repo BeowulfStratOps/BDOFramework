@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=454;
+		nextID=457;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={310.52823,30,602.01514};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={320.75473,157.68874,628.12195};
+		dir[]={-0.035073485,-0.89449137,0.44576824};
+		up[]={-0.070164591,0.44703233,0.89175749};
+		aside[]={0.99694324,-2.9100192e-007,0.078440592};
 	};
 };
 binarizationWanted=0;
@@ -316,7 +316,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=82;
+		items=83;
 		class Item0
 		{
 			dataType="Marker";
@@ -411,6 +411,7 @@ class Mission
 				sizeA=0;
 				sizeB=0;
 				interuptable=1;
+				isServerOnly=1;
 			};
 			id=8;
 			type="EmptyDetector";
@@ -3451,10 +3452,10 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={303.41818,5,569.03381};
+				position[]={303.418,5,569.034};
 			};
 			title="Defend Module";
-			description="The CBA Module can be used to make groups defend an area. " \n "You can have seveal groups sync'd to a single module, or ofcourse multiple modules." \n "" \n "Play close attention to the options in the module available for positioning of the center of module.";
+			description="The CBA Module can be used to make groups defend an area. " \n "You can have seveal groups sync'd to a single module, or ofcourse multiple modules." \n "" \n "Play close attention to the options in the module available for positioning of the center of module." \n "" \n "Two options that are very importnat are the chance for PATROL and chance for HOLD. With a chance for PATOL, this will be the percentage of units in the group that will patrol the given area. Thee HOLD option is used to force a percentage of units to HOLD their positions once they come into contact (or are called for help). Use a high percentage of HOLD to stop AI wondering off from their defence order.";
 			id=171;
 		};
 		class Item59
@@ -6426,10 +6427,10 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={318.82501,5,637.664};
+				position[]={292.51389,5,640.37543};
 			};
 			title="JEBUS - 1";
-			description="JEBUS can be used to cache AI using triggers (as well as a lot of other functions). " \n "Some of the default options also include things like a pause system if the players are within a minimum range. Take the this into consideration when testing. " \n "The default call is below and attached to the unit nearby, this does however use the default options. See the beeowulfso.com/wiki/jebus for more details" \n "" \n "0 = [this] spawn jebus_fnc_main;";
+			description="JEBUS can be used to cache AI using triggers (as well as a lot of other functions). " \n "Some of the default options also include things like a pause system if the players are within a minimum range. Take the this into consideration when testing. " \n "The default call is below and attached to the unit nearby, this does however use the default options. See the Beowulf Wiki/Google Doc on JEBUS for more details" \n "" \n "0 = [this] spawn jebus_fnc_main;";
 			id=397;
 		};
 		class Item71
@@ -6566,7 +6567,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={379.42099,5.0014391,567.62665};
+						position[]={379.42099,5.0014391,567.62701};
 					};
 					side="East";
 					flags=7;
@@ -6574,7 +6575,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="call{this forceSpeed 0;}";
+						init="call{this setUnitPos ""MIDDLE"";}";
 					};
 					id=402;
 					type="O_Soldier_AR_F";
@@ -7101,7 +7102,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={316.53,5,671.914};
+				position[]={293.819,5,678.13};
 			};
 			title="JEBUS - 2";
 			description="This group has been setup on a ""trigger spawn"". They will spawn based on the trigger, with only one life (IE they won't respawn!)" \n "" \n "0 = [this, ""LIVES="", [1,1]] spawn jebus_fnc_main;";
@@ -7112,7 +7113,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={317.62201,5,706.85101};
+				position[]={297.81583,5,711.46887};
 			};
 			title="JEBUS - 3";
 			description="This group is being cached. They will spawn based on the proximity of the players. The group is configured to spawn and begin its waypoints once players are within 1000m." \n " Cached groups are ""ingame"". But are made invisitble, invulnerable, and will not do anything until they are ""spawned"", at which point they will begin their waypoints.";
@@ -7313,7 +7314,7 @@ class Mission
 				class Item6
 				{
 					dataType="Waypoint";
-					position[]={313.40845,5,703.07471};
+					position[]={313.40799,5,703.07501};
 					expCond="call{true}";
 					expActiv="call{[this, this, 30, 2, 0.1, 0.8] call CBA_fnc_taskDefend}";
 					class Effects
@@ -7328,6 +7329,17 @@ class Mission
 			{
 			};
 			id=445;
+		};
+		class Item82
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={313.496,5,710.05701};
+			};
+			title="CBA_TaskDefend";
+			description="In the activation of this waypoint, the group will execute the CBA_TaskDefend once the waypoint is compelte. This is exactly the same as the pre-placed modules used for CBA Defend, but exectured via the init field." \n " This can be done with standard units that arn't spawned in, but is in particul useful when used with JEBUS to have AI perform tasks once they are spawened in." \n "" \n "[this, this, 30, 2, 0.1, 0.8] call CBA_fnc_taskDefend" \n "The init used here will have this AI Group defend the area they are currently in, with a 30 meter radius, occupying only buildings with more then 2 positions, they have a 0.1 chance of patroling the area, and a 0.8 chance of holding the area (and not running off!)" \n "" \n "See https://cbateam.github.io/CBA_A3/docs/files/ai/fnc_taskDefend-sqf.html for more info on the paramaters and other CBA tasking.";
+			id=456;
 		};
 	};
 	class Connections
