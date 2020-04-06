@@ -2,9 +2,6 @@
 // ACRE Default Babel (off), Split Channels
 [false, true] call acre_api_fnc_setupMission;
 
-// AI can here players through ACRE
-[true] call acre_api_fnc_setRevealToAI;
-
 // Turns off antenna direction
 [true] call acre_api_fnc_ignoreAntennaDirection; 
 
