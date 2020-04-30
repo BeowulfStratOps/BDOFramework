@@ -102,20 +102,11 @@
 ] call FHQ_fnc_ttAddBriefing;
 
 
-
-// Here a list of languages to be used in ACRE are set. Define each language as per the examples below, and then set which side uses which.
-
-	bso_acre_languages = [["en","English"],["gr","Greek"]]; // Define languages here
-
-	bso_acre_language_blufor = ["en"]; //Language all BluFor will speak
-	bso_acre_language_opfor = ["gr"]; //Language all OpFor will speak
-	bso_acre_language_indfor = ["gr","en"]; //Language all IndFor will speak
-	bso_acre_language_civilian = ["gr"]; //Language all Civilians will speak
-
-	bso_acre_language_ready = true;
-
+// Language definitions have been moved to acre.sqf
 
 // Mission end conditions. By editing the "end" and "loser" configs in meta.cpp you can have the admin end the mission with a debrief.
+
+// TODO: simplify. move out maybe?
 
 _mainAction = ["bso_end_mission", "Mission End Conditions", "", {}, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
 ["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
@@ -127,7 +118,7 @@ _sub2 = ["bso_end_mission_2", "Mission Failed", "", {[-2,{["loser",false,4] call
 ["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin","bso_end_mission"], _sub2, true] call ace_interact_menu_fnc_addActionToClass;
 
 
-
+// Keep this here
 
 //Below is an example on how you can make only certain factions see certain markers.
 /*

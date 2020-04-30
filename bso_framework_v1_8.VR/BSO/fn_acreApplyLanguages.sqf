@@ -1,18 +1,4 @@
 /////bmf-v1_8////
-// ACRE Default Babel (off), Split Channels
-[false, true] call acre_api_fnc_setupMission;
-
-// Moved to mission/briefing.sqf
-/*
-	bso_acre_languages = [["en","English"],["gr","Greek"]];
-	bso_acre_language_blufor = ["en"];
-	bso_acre_language_opfor = ["gr"];
-	bso_acre_language_indfor = ["gr","en"];
-	bso_acre_language_civilian = ["gr"];
-*/
-waitUntil {alive player};
-
-waitUntil {!(isNil "bso_acre_language_ready")}; // wait for languages to be defined
 
 if (hasInterface) then {
     {
@@ -42,5 +28,3 @@ if (hasInterface) then {
         };
     };
 };
-
-bso_acre_babel_ready = true; // allow custom setups to change it up, once generic stuff is done

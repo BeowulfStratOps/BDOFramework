@@ -1,7 +1,7 @@
 /////bmf-v1_8////
 ///////// ======  Mission meta data
 //
-// This file contains meta data specific to you mission. It also has the includes for your custom loadouts, and the debriefing information. 
+// This file contains meta data specific to you mission. It also has the includes for your custom loadouts, and the debriefing information.
 //
 
 /*
@@ -14,8 +14,8 @@ overviewText = "0-60<br />COOP<br />Standard<br />Spectator Box<br />Advanced Me
 
 The OverviewText string is used to easily edit your mission description that appears on the server when your mission is selected.
  Carefully edit each parameter as below, and then construct your string using "<br />" to break each line. YOU CANNOT USE RETURN OR ADDITIONAL SPACES IN THIS LINE, YOU MUST USE BREAK
- DO NOT FILL IN THE DESCRIPTION FIELD IN THE EDITOR'S MISSION INTEL WINDOW, THIS WILL OVERRIDE YOUR STRING	
- 
+ DO NOT FILL IN THE DESCRIPTION FIELD IN THE EDITOR'S MISSION INTEL WINDOW, THIS WILL OVERRIDE YOUR STRING
+
 
 0-60 															// <!-- Suggested Minimum-Maximum players
 
@@ -23,7 +23,7 @@ COOP 															//<!-- Game type - COOP/TvT/Dynamic
 
 Standard Length													//<!-- Expected Game Length - Short (30 Mins ) / Standard ( 1 - 1/2 Hour ) / Long ( 1 1/2 Hours + ) / Persistant (ALiVE Database Enabled)
 
-Spectator Box													//<! -- Respawns - Spectator/Spectator box/Tickets/Limit/Unlimited 
+Spectator Box													//<! -- Respawns - Spectator/Spectator box/Tickets/Limit/Unlimited
 
 Advanced Medical												//<! -- Medical System - Standard/Advanced/Medevac
 
@@ -40,7 +40,7 @@ loadScreen = "mission\BSO_frame.jpg";									// <!-- Loading Screen Picture (Se
 OnLoadName = "BSO Framework";									// <!-- Mission Name (Just Text)
 OnLoadMission = "BSO mission framework template"; 			// <!-- A VERY brief overview (Copy from above)
 
-author="Walker";												// <!-- This is you!!				
+author="Walker";												// <!-- This is you!!
 
 class Header {
 	maxPlayers = 60;						// <!-- CHANGE Where the number is the total playable slots
@@ -50,16 +50,19 @@ class Header {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //BSO Loadout System (Add custom loadouts to your mission)
-	
+
 class CfgBsoLoadouts {
 	#include "loadouts\blufor.cpp"
   //#include "loadouts\opfor.cpp" //create this file by copying blufor.cpp and renaming
   //#include "loadouts\indep.cpp" //create this file by copying blufor.cpp and renaming
 };
 
+
+// TODO: use this as the only source for end actions?
+
 // Used for custom debriefing screens launched by the admin or triggers ingame. See briefing.sqf for admin interactions
 class CfgDebriefing
-{  
+{
 	class End1
 	{
 		title = "Mission Completed";
@@ -77,5 +80,5 @@ class CfgDebriefing
 		pictureBackground = "";
 		picture = "KIA";
 		pictureColor[] = {0.0,0.3,0.6,1};
-	};	
+	};
 };
