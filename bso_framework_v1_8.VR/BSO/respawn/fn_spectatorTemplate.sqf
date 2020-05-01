@@ -9,7 +9,21 @@ if (_corpse isKindOf "ace_spectator_virtual") exitWith {};
 
 // If player died while already in spectator, ignore
 if (!ace_spectator_isSet) then {
-    // Negligible respawn delay can result in entering spectator after respawn
-    // So we just use this value rather than living state of the unit
-    [true, !serverCommandAvailable "#kick"] call ace_spectator_fnc_setSpectator;
+
+    private _fadeTime = 2.5;
+    private _respawnTime = 3; // from description.ext
+
+    // -- tickets out --
+
+    setPlayerRespawnTime 99999;
+    [] spawn {
+        sleep 3;
+        [true, !serverCommandAvailable "#kick"] call ace_spectator_fnc_setSpectator;
+    };
+    /*
+        move people back in with  setPlayerRespawnTime 0; [maybe wait a frame] setPlayerRespawnTime _fadeTime + _respawnTime; // TODO: do this during init as well
+    */
+
+    // -- tickets remaining --
+    // TODO: showMenu
 };
