@@ -7,5 +7,5 @@ class bso
 		class acreCustomLanguages {};
 	};
 	#include "safe\cfgFunctions.hpp"
-	#include "respawn\cfgFunctions.hpp"
 };
+#include "respawn\cfgFunctions.hpp"

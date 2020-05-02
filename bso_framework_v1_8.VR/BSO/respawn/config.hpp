@@ -1,8 +1,9 @@
 
 class CfgRespawnTemplates {
     class BSO_Respawn_System {
-        displayName = "BSO ACE spectator";
-        onPlayerKilled = "bso_fnc_spectatorTemplate";
+        displayName = "BSO Advanced Respawn System";
+        onPlayerKilled = "bso_respawn_fnc_playerKilled";
+        onPlayerRespawn = "bso_respawn_fnc_playerRespawn";
         respawnTypes[] = {3};
     };
 };

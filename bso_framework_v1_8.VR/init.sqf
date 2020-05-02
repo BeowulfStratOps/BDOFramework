@@ -16,5 +16,9 @@ execVM "mission\acre.sqf";
 // safety
 [] call bso_fnc_safety;
 
+// respawn setup
+[] call bso_respawn_fnc_respawnInit;
 
-// DO STUFF HERE!
+waitUntil {!isNull player};
+
+// DO STUFF BELOW HERE!

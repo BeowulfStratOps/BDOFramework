@@ -1,5 +1,16 @@
-class respawn
+class bso_respawn
 {
-	file = "bso\respawn";
-	class spectatorTemplate {};
+	class respawn
+	{
+		file = "bso\respawn";
+		class playerKilled {};
+		class playerRespawn {};
+		class respawnInit {};
+		class addRespawnPoint {};
+		class addActivePoint {};
+		class getActivePoints {};
+		class setSpectator {};
+		class handleSpectatorExit {};
+		class consumeTicket {};
+	};
 };

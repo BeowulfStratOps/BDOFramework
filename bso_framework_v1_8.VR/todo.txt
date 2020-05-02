@@ -1,0 +1,52 @@
+-safestart as module
+-init.sqf: show place for custom stuff
+
+-separate acre/markers/briefing(/tasks)
+
+-simple acre stuff:
+ -move acre stuff all to simplified acre
+ -easy way to have single duded speaking different languages
+ channel setup as mission maker
+
+admin stuff to description.ext
+ Not possible apparently :(
+
+ at least out of visible files / simplify ending setup
+ ace_interact_menu_newControllableObject
+ figure out why it doesn't work for jips
+
+respawn templates
+ choice between ace_spectator or bso_respawns with templates
+
+ ace spectator:
+  option: restrict to watch on side
+
+ advanced (based on "Tickets","MenuPosition"):
+  https://community.bistudio.com/wiki/Arma_3_Respawn
+  class CfgRespawnTemplates
+  define set of spawn points / sides,
+  define with personal tickets and side tickets
+  wave: provide function that takes respawn point and side
+  messages / hooks for out of tickets stuff?
+  enabling/disabling, adding/removing wrapper?
+  support multiple sides?
+  special options for specialists?
+  simple zeus / admin convenience stuff?
+
+
+
+advanced admin actions
+- teleport here
+- teleport side leader (jip logic, if available. otherwise ???)
+- full heal
+- all of those: for all players at once
+- ???
+- acre force unfuck
+- apply loadout
+
+admin addon:
+ cna it be shown when unconscious?
+
+jebus module:
+ force speed
+ loadouts
