@@ -1,36 +1,35 @@
-//Safe Start Hint
- if (isNil "Hint_BSOStart") then { Hint_BSOStart = true; publicVariable "Hint_BSOStart"};
+if (isNil "Trigger_BSOStart") then { Trigger_BSOStart = false; };
 
-/////bmf-v1_8////
-if (hasInterface) then
-{
-	[] spawn
-	{
+if (Trigger_BSOStart) exitWith {};
 
-		sleep 0.01; // TODO: CBA
+if (!hasInterface) exitWith {};
 
-		if (currentWeapon player != "") then {
-
-			[player, currentWeapon player, currentMuzzle player] call ace_safemode_fnc_lockSafety;
-
-		};
+[{
+	if (currentWeapon player != "") then {
+		[player, currentWeapon player, currentMuzzle player] call ace_safemode_fnc_lockSafety;
 	};
+}, [], 0.01] call CBA_fnc_waitAndExecute;
 
-	[] spawn { // TODO: CBA
-		while {Hint_BSOStart} do
-		{
-			["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
-			sleep 30;
-		};
+[] spawn {
+	while {!Trigger_BSOStart} do
+	{
+		["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
+		sleep 30;
 	};
 };
 
+[{time > 3}, bso_fnc_setSafety] call CBA_fnc_waitUntilAndExecute;
 
-[] call bso_fnc_safetyInit;
-[] call bso_fnc_safeZone;
+// TODO: not really needed anymore, but might as well keep around. make it easy to configure.
+// [] call bso_fnc_safeZone;
 
 
-// TODO: make reliable
+// TODO: use add admin admin function once it exists
 // Adds Admin action to start mission
-_mainAction = ["bso_start_mission", "Start Mission", "", {execVM "bso\safe\safestart_adminAction.sqf"}, {fc_safestart && serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
+
+// TODO: adjust bso admin zeus gameon function
+
+[{!isNull player}, {
+	private _mainAction = ["bso_start_mission", "Start Mission", "", {[] call bso_fnc_gameOn}, {!Trigger_BSOStart && serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction] call ace_interact_menu_fnc_addActionToObject;
+}] call CBA_fnc_waitUntilAndExecute;

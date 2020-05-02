@@ -1,10 +1,4 @@
-fc_safestart = false;
-
-// Server can stop here, we only needed to set the variable.
-if(isDedicated) exitWith {};
-
-["ace_firedPlayer", fc_safestart_firedEH] call CBA_fnc_removeEventHandler;
-
+if (!hasInterface) exitwith {};
 player allowDamage true;
-
+["ace_firedPlayer", bso_safestart_firedEH] call CBA_fnc_removeEventHandler;
 ["BSOSafeStart",["GAME ON!"]] call BIS_fnc_showNotification;
