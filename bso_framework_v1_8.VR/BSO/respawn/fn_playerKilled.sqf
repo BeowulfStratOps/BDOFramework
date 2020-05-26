@@ -12,7 +12,6 @@ if (_activeSpawnPoints == 0 || {!([] call bso_respawn_fnc_consumeTicket)}) exitW
     [] call bso_respawn_fnc_setSpectator;
 };
 
-bso_respawn_menuPosition_active = true;
-
 systemChat str _this;
-_this call bso_respawn_fnc_respawnMenuPosition;
+
+// close menuposition / add event handler to do it.
