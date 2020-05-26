@@ -50,3 +50,7 @@ admin addon:
 jebus module:
  force speed
  loadouts
+
+
+enable spectate in MenuPosition?
+make sure spectator becomes available if vehicle is destroyed
