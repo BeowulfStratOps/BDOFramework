@@ -33,7 +33,7 @@ respawn templates
   special options for specialists?
   simple zeus / admin convenience stuff?
 
-
+make jip tp action toggleable as mission maker
 
 advanced admin actions
 - teleport here

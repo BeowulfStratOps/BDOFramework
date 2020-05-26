@@ -15,4 +15,4 @@ if (_activeSpawnPoints == 0 || {!([] call bso_respawn_fnc_consumeTicket)}) exitW
 bso_respawn_menuPosition_active = true;
 
 systemChat str _this;
-_this call BIS_fnc_respawnMenuPosition;
+_this call bso_respawn_fnc_respawnMenuPosition;

@@ -12,5 +12,9 @@ class bso_respawn
 		class setSpectator {};
 		class handleSpectatorExit {};
 		class consumeTicket {};
+
+		class respawnMenuPosition {};
+		class showRespawnMenu {};
+		class showRespawnMenuPosition {};
 	};
 };

@@ -1,0 +1,240 @@
+ 1:02:44 Error in expression <autorespawnTooltips select 1);
+} else {
+_ctrlAutorespawn ctrlSetTextColor [1,1,1>
+ 1:02:44   Error position: <_ctrlAutorespawn ctrlSetTextColor [1,1,1>
+ 1:02:44   Error Undefined variable in expression: _ctrlautorespawn
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuHeader.sqf [BIS_fnc_showRespawnMenuHeader]..., line 44
+ 1:02:44 Error in expression <able ["bis_fnc_secondsToString", {}]);
+
+_ctrlCounter ctrlsetstructuredtext parse>
+ 1:02:44   Error position: <_ctrlCounter ctrlsetstructuredtext parse>
+ 1:02:44   Error Undefined variable in expression: _ctrlcounter
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuHeader.sqf [BIS_fnc_showRespawnMenuHeader]..., line 94
+ 1:02:44 Error in expression <kets = -1;
+_noRespawnPositions = false;
+_ctrlCounter ctrlShow true;
+_ctrlCounter>
+ 1:02:44   Error position: <_ctrlCounter ctrlShow true;
+_ctrlCounter>
+ 1:02:44   Error Undefined variable in expression: _ctrlcounter
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuHeader.sqf [BIS_fnc_showRespawnMenuHeader]..., line 32
+ 1:02:44 Error in expression <pawnControlsSpectate_ctrlLocList} else {BIS_RscRespawnControlsMap_ctrlLocList};
+>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlLocList};
+>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlloclist
+ 1:02:44 File bso\respawn\fn_showRespawnMenuPosition.sqf [bso_respawn_fnc_showRespawnMenuPosition]..., line 10
+ 1:02:44 Error in expression <espawnControlsMap_ctrlLocList};
+lbClear _list;		
+BIS_RscRespawnControls_posMetad>
+ 1:02:44   Error position: <_list;		
+BIS_RscRespawnControls_posMetad>
+ 1:02:44   Error Undefined variable in expression: _list
+ 1:02:44 File bso\respawn\fn_showRespawnMenuPosition.sqf [bso_respawn_fnc_showRespawnMenuPosition]..., line 11
+ 1:02:44 Error in expression <awnControlsSpectate_ctrlRoleList} else {BIS_RscRespawnControlsMap_ctrlRoleList};>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlRoleList};>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlrolelist
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 64
+ 1:02:44 Error in expression <ontrolsSpectate_ctrlComboLoadout} else {BIS_RscRespawnControlsMap_ctrlComboLoado>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlComboLoado>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlcomboloadout
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 65
+ 1:02:44 Error in expression <ntrolsSpectate_ctrlButtonDetails} else {BIS_RscRespawnControlsMap_ctrlButtonDeta>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlButtonDeta>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlbuttondetails
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 67
+ 1:02:44 Error in expression <pectate_ctrlPicturePrimaryWeapon} else {BIS_RscRespawnControlsMap_ctrlPicturePri>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlPicturePri>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlpictureprimaryweapon
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 68
+ 1:02:44 Error in expression <ctate_ctrlPictureSecondaryWeapon} else {BIS_RscRespawnControlsMap_ctrlPictureSec>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlPictureSec>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlpicturesecondaryweapon
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 69
+ 1:02:44 Error in expression <ntrolsSpectate_ctrlPictureOptics} else {BIS_RscRespawnControlsMap_ctrlPictureOpt>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlPictureOpt>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlpictureoptics
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 70
+ 1:02:44 Error in expression <ControlsSpectate_ctrlPictureItem} else {BIS_RscRespawnControlsMap_ctrlPictureIte>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlPictureIte>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlpictureitem
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 71
+ 1:02:44 Error in expression <tate_ctrlBackgroundPrimaryWeapon} else {BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlbackgroundprimaryweapon
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 72
+ 1:02:44 Error in expression <te_ctrlBackgroundSecondaryWeapon} else {BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlbackgroundsecondaryweapon
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 73
+ 1:02:44 Error in expression <olsSpectate_ctrlBackgroundOptics} else {BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlbackgroundoptics
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 74
+ 1:02:44 Error in expression <trolsSpectate_ctrlBackgroundItem} else {BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlBackground>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlbackgrounditem
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 75
+ 1:02:44 Error in expression <ontrolsSpectate_ctrlRoleDisabled} else {BIS_RscRespawnControlsMap_ctrlRoleDisabl>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlRoleDisabl>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlroledisabled
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 78
+ 1:02:44 Error in expression <rolsSpectate_ctrlLoadoutDisabled} else {BIS_RscRespawnControlsMap_ctrlLoadoutDis>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlLoadoutDis>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlloadoutdisabled
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 79
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <sMap_ctrlBackgroundItem};
+_hideArray = [_list,_combo,_buttonDetails,_picturePrim>
+ 1:02:44   Error position: <_list,_combo,_buttonDetails,_picturePrim>
+ 1:02:44   Error Undefined variable in expression: _list
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 76
+ 1:02:44 Error in expression <cRespawnControlsSpectate_display} else {BIS_RscRespawnControlsMap_display};
+_ctr>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_display};
+_ctr>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_display
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 6
+ 1:02:44 Error in expression <pectate_ctrlDetailsControlsGroup} else {BIS_RscRespawnControlsMap_ctrlDetailsCon>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlDetailsCon>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrldetailscontrolsgroup
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 7
+ 1:02:44 Error in expression <ControlsSpectate_ctrlDetailsList} else {BIS_RscRespawnControlsMap_ctrlDetailsLis>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlDetailsLis>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrldetailslist
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 8
+ 1:02:44 Error in expression <awnControlsSpectate_ctrlRoleList} else {BIS_RscRespawnControlsMap_ctrlRoleList};>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlRoleList};>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlrolelist
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 9
+ 1:02:44 Error in expression <ontrolsSpectate_ctrlComboLoadout} else {BIS_RscRespawnControlsMap_ctrlComboLoado>
+ 1:02:44   Error position: <BIS_RscRespawnControlsMap_ctrlComboLoado>
+ 1:02:44   Error Undefined variable in expression: bis_rscrespawncontrolsmap_ctrlcomboloadout
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 10
+ 1:02:44 Error in expression <er",time]
+}]];
+};
+};
+case "remove": 
+{	
+_display displayRemoveEventHandler ["mou>
+ 1:02:44   Error position: <_display displayRemoveEventHandler ["mou>
+ 1:02:44   Error Undefined variable in expression: _display
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 58
+ 1:02:44 Error in expression <ols_details = true;
+};
+case "close": {	
+_detailsList ctrlSetStructuredText parse>
+ 1:02:44   Error position: <_detailsList ctrlSetStructuredText parse>
+ 1:02:44   Error Undefined variable in expression: _detailslist
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 245
+ 1:02:44 Error in expression <etailsList: %3,_roleList: %4,_combo %5",_display,_ctrlGroup,_detailsList,_roleLi>
+ 1:02:44   Error position: <_display,_ctrlGroup,_detailsList,_roleLi>
+ 1:02:44   Error Undefined variable in expression: _display
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventoryDetails.sqf [BIS_fnc_showRespawnMenuInventoryDetails]..., line 13
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <mit 0;
+_loadoutDisabled ctrlCommit 0;
+
+{_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error position: <_x ctrlSetFade 1;_x ctrlCommit 0} forEac>
+ 1:02:44   Error Undefined variable in expression: _x
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 90
+ 1:02:44 Error in expression <ll bis_fnc_getRespawnInventories;
+[true,_list,_respawnInventories] call BIS_fnc_>
+ 1:02:44   Error position: <_list,_respawnInventories] call BIS_fnc_>
+ 1:02:44   Error Undefined variable in expression: _list
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuInventory.sqf [BIS_fnc_showRespawnMenuInventory]..., line 94
+ 1:02:44 Error in expression <ayersText;
+
+
+if (_tickets >= 0) then
+{
+
+_ctrlTickets ctrlsetstructuredtext parse>
+ 1:02:44   Error position: <_ctrlTickets ctrlsetstructuredtext parse>
+ 1:02:44   Error Undefined variable in expression: _ctrltickets
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuHeader.sqf [BIS_fnc_showRespawnMenuHeader]..., line 67
+ 1:02:44 Error in expression <t ["%1/%2",_livingCount,_playersCount];
+_ctrlTeam ctrlSetText _playersText;
+
+
+if>
+ 1:02:44   Error position: <_ctrlTeam ctrlSetText _playersText;
+
+
+if>
+ 1:02:44   Error Undefined variable in expression: _ctrlteam
+ 1:02:44 File A3\functions_f\respawn\fn_showRespawnMenuHeader.sqf [BIS_fnc_showRespawnMenuHeader]..., line 61
+ 1:02:47 Duplicate weapon Throw detected for B_Soldier_SL_F
+ 1:02:47 Duplicate weapon Put detected for B_Soldier_SL_F
+ 1:02:47 Inventory item with given name: [] not found
+ 1:02:53 [ACRE] (sys_io) INFO: Pipe error: Read CreateFileA WinErrCode: 2
