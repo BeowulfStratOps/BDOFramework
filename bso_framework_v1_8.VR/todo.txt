@@ -16,10 +16,9 @@ admin stuff to description.ext
  figure out why it doesn't work for jips
 
 respawn templates
- choice between ace_spectator or bso_respawns with templates
-
  ace spectator:
   option: restrict to watch on side
+  admin: find a safe place when pressing esc
 
  advanced (based on "Tickets","MenuPosition"):
   https://community.bistudio.com/wiki/Arma_3_Respawn
@@ -36,16 +35,16 @@ respawn templates
 make jip tp action toggleable as mission maker
 
 advanced admin actions
-- teleport here
-- teleport side leader (jip logic, if available. otherwise ???)
-- full heal
-- all of those: for all players at once
-- ???
-- acre force unfuck
-- apply loadout
+ teleport here
+ teleport side leader (jip logic, if available. otherwise ???)
+ full heal
+ all of those: for all players at once
+ ???
+ acre force unfuck
+ apply loadout
 
 admin addon:
- cna it be shown when unconscious?
+ can it be shown when unconscious?
 
 jebus module:
  force speed
@@ -54,3 +53,5 @@ jebus module:
 
 enable spectate in MenuPosition?
 make sure spectator becomes available if vehicle is destroyed
+
+doublecheck safe start is actually working
