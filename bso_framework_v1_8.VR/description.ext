@@ -21,8 +21,8 @@ showCompass		= 1;						// <!-- Allow Compass
 showWatch		= 1;						// <!-- Allow Watch
 
 respawn		= 3;							// <!-- Sets respawn type (3 = Base, to respawn at the respawn marker in the editor)
-respawnTemplates[] = {"BSO_Respawn_System"};// <!-- Enables the Beowulf Advacend Respawn System Enhanced (ARSE)
-respawnDelay	= 5;						// <!-- Delay between death and respawn
+respawnTemplates[] = {"BSO_Respawn_System", "MenuPosition"};// <!-- Enables the Beowulf Advacend Respawn System Enhanced (ARSE)
+respawnDelay	= 6;						// <!-- Delay between death and respawn
 respawnDialog	= 0;						// <!-- Displays dialogue when killed (leave this at 0)
 respawnOnStart	= -1;						// <!-- Respawns players on the start of a mission. Leave 0 unless using magic
 
