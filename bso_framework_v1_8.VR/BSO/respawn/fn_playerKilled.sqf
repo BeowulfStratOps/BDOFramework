@@ -10,8 +10,7 @@ private _activeSpawnPoints = count ([side group player] call bso_respawn_fnc_get
 
 if (_activeSpawnPoints == 0 || {!([] call bso_respawn_fnc_consumeTicket)}) exitWith {
     [] call bso_respawn_fnc_setSpectator;
+    _corpse setVariable ["BIS_fnc_showRespawnMenu_disable", true];
 };
 
-systemChat str _this;
-
-// close menuposition / add event handler to do it.
+_corpse setVariable ["BIS_fnc_showRespawnMenu_disable", false];

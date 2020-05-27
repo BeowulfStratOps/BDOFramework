@@ -4,7 +4,6 @@ class bso_respawn
 	{
 		file = "bso\respawn";
 		class playerKilled {};
-		class playerRespawn {};
 		class respawnInit {};
 		class addRespawnPoint {};
 		class addActivePoint {};
