@@ -1,5 +1,7 @@
 /////bmf-v1_8////
 
+[false, bso_acre_splitChannels] call acre_api_fnc_setupMission;
+
 if (hasInterface) then {
     {
         _x call acre_api_fnc_babelAddLanguageType;
