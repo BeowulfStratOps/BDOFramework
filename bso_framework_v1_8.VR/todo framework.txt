@@ -8,12 +8,7 @@
  -easy way to have single duded speaking different languages
  channel setup as mission maker
 
-admin stuff to description.ext
- Not possible apparently :(
-
- at least out of visible files / simplify ending setup
- ace_interact_menu_newControllableObject
- figure out why it doesn't work for jips
+admin stuff out of framework
 
 respawn templates
  ace spectator:
@@ -34,24 +29,19 @@ respawn templates
 
 make jip tp action toggleable as mission maker
 
-advanced admin actions
- teleport here
- teleport side leader (jip logic, if available. otherwise ???)
- full heal
- all of those: for all players at once
- ???
- acre force unfuck
- apply loadout
-
-admin addon:
- can it be shown when unconscious?
-
-jebus module:
- force speed
- loadouts
-
-
 enable spectate in MenuPosition?
 make sure spectator becomes available if vehicle is destroyed
 
 doublecheck safe start is actually working
+
+admin:
+
+change task(even triggers mb?) states
+
+open arsenal
+
+ai scaling
+
+automatically delete markers
+
+game on: time reset, disable ai simulation etc.

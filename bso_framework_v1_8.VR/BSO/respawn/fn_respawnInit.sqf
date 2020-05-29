@@ -1,12 +1,13 @@
 if (hasInterface) then
 {
 	[{!isNull player}, {
+		// TODO: catch non existing sides
 		private _personalTickets = getNumber (missionConfigFile >> "BSORespawns" >> (str side group player) >> "personalTickets");
 		if (_personalTickets > 0) then {
 			[player, _personalTickets] call BIS_fnc_respawnTickets;
 		};
 		setPlayerRespawnTime (3 + getMissionConfigValue ["respawnDelay", 3]);
-	}];
+	}] call CBA_fnc_waitUntilAndExecute;
 	["ace_spectatorSet", {
 		params ["_isSpectator", "_player"];
 		if (!_isSpectator && local _player) then {
