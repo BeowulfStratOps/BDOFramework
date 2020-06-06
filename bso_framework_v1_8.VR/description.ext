@@ -71,4 +71,4 @@ class BSORespawns
 // [west, 15] call bis_fnc_respawnTickets;
 
 // Spawn all blufor currently in spectator on the MHQ spawn. Second parameter (false in example) decides if tickets will be consumed
-// ["MHQ", false] call bis_fnc_waveRespawn;
+// ["MHQ", false] call bso_fnc_waveRespawn;

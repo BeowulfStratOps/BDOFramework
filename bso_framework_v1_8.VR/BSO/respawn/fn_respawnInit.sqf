@@ -26,7 +26,7 @@ bso_respawn_activeSpawnPoints = [[], [], [], []]; // empty for all sides
 	private _tickets = getNumber (_config >> "sideTickets");
 	[_side, _tickets] call BIS_fnc_respawnTickets;
 	{
-		[_side, _x] call bso_respawn_fnc_AddRespawnPoint;
+		[_side, configName _x] call bso_respawn_fnc_AddRespawnPoint;
 	} forEach ("true" configClasses _config);
 } foreach [west, east, resistance, civilian];
 

@@ -7,11 +7,15 @@ class bso_respawn
 		class playerRespawn {};
 		class respawnInit { postInit=1; };
 		class addRespawnPoint {};
+		class getRespawnPoint {};
 		class addActivePoint {};
 		class getActivePoints {};
 		class setSpectator {};
 		class handleSpectatorExit {};
 		class consumeTicket {};
 		class spectateButton {};
+		class waveRespawn {};
+		class doWaveRespawn {};
+		class handleAdminRespawn {};
 	};
 };
