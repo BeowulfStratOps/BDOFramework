@@ -34,6 +34,7 @@ class BSORespawns
 	{
 		sideTickets = 20; // tickets for this side. default 0.
 		personalTickets = 0; // tickets per person. will be consumed first. default 0 -> Entry could be skipped in this case.
+		personalTicketsUnit[] = {{"jtac_0", 3}, {"pl_0", 2}}; // Specific personal ticket count for certain units. Those replace the amount given in personalTickets for those units.
 		// once there are no more tickets, people will be sent to ace spectator (no box). Happens automatically and does not require the onTicketsDepleted to do anything special.
 
 		// If there are no respawn points defined, players will be sent to ace spectator anyways, but will keep their tickets (can be used for wave respawn with tickets)
