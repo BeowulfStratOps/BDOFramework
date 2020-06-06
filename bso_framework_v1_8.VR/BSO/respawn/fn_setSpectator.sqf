@@ -2,20 +2,24 @@ params [["_instant", false]];
 
 setPlayerRespawnTime 99999;
 
-private _fnc = {
-	if (serverCommandAvailable "#kick") then {
-		bso_respawn_handleRespawnFnc = [bso_respawn_fnc_handleAdminRespawn, []]
-	} else {
-		bso_respawn_handleRespawnFnc = nil;
-	};
-	//[true, !serverCommandAvailable "#kick"] call ace_spectator_fnc_setSpectator;
-	[true, true] call ace_spectator_fnc_setSpectator;
-};
+bso_respawn_handleRespawnFnc = nil;
 
 if (_instant) then {
-	[] call _fnc;
+	[true] call ace_spectator_fnc_setSpectator;
 } else {
-	[_fnc, [], 3] call CBA_fnc_waitAndExecute;
+	[{[true] call ace_spectator_fnc_setSpectator}, [], 3] call CBA_fnc_waitAndExecute;
 };
 
-// TODO: un-force spectator on admin when he logs in. and set handleresapwnfnc
+[{!isNull findDisplay 60000},
+{
+	private _spec = findDisplay 60000;
+	_spec displayAddEventHandler ["KeyDown", {
+		private _key = _this # 1;
+		if (_key in actionKeys "reloadMagazine") then {
+			[] call bso_respawn_fnc_handleAdminRespawn;
+			true
+		} else {
+			false
+		}
+	}];
+}] call CBA_fnc_waitUntilAndExecute;

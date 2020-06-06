@@ -11,7 +11,6 @@ class bso_respawn
 		class addActivePoint {};
 		class getActivePoints {};
 		class setSpectator {};
-		class handleSpectatorExit {};
 		class consumeTicket {};
 		class spectateButton {};
 		class waveRespawn {};

@@ -1,6 +1,5 @@
 params ["_corpse"];
 
-
 // Virtual spectators should be ignored by the template (otherwise they break) (from original ace code)
 if (_corpse isKindOf "ace_spectator_virtual") exitWith {};
 

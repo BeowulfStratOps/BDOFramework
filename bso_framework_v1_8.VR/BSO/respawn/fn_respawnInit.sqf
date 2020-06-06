@@ -19,12 +19,6 @@ if (hasInterface) then
 		};
 		setPlayerRespawnTime (3 + getMissionConfigValue ["respawnDelay", 3]);
 	}] call CBA_fnc_waitUntilAndExecute;
-	["ace_spectatorSet", {
-		params ["_isSpectator", "_player"];
-		if (!_isSpectator && local _player) then {
-			[] call bso_respawn_fnc_handleSpectatorExit;
-		};
-	}] call CBA_fnc_addEventHandler;
 };
 
 if (!isServer) exitWith {};

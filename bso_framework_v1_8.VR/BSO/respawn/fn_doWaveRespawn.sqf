@@ -14,4 +14,5 @@ bso_respawn_handleRespawnFnc = [{
 	[] call _callback;
 }, [_location, _callback]];
 
-[false] call ace_spectator_fnc_setSpectator
+[false] call ace_spectator_fnc_setSpectator;
+setPlayerRespawnTime 0;

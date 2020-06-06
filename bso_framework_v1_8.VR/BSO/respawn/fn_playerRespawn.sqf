@@ -1,5 +1,7 @@
 if (!bso_respawn_isInSpectator) exitWith {}; // let MenuPosition do its thing
 
+setPlayerRespawnTime (3 + getMissionConfigValue ["respawnDelay", 3]);
+
 bso_respawn_isInSpectator = false;
 player setVariable ["BIS_fnc_showRespawnMenu_disable", true];
 
