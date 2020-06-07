@@ -101,24 +101,16 @@
 
 ] call FHQ_fnc_ttAddBriefing;
 
+/*
+ * Language definitions have been moved to mission\acre.sqf
+ */
 
-// Language definitions have been moved to acre.sqf
 
 // Mission end conditions. By editing the "end" and "loser" configs in meta.cpp you can have the admin end the mission with a debrief.
+["Mission Success", "end1", true] call bso_fnc_addEndAction;
+["Mission Failed", "loser", false] call bso_fnc_addEndAction;
 
-// TODO: simplify. move out maybe?
-
-_mainAction = ["bso_end_mission", "Mission End Conditions", "", {}, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
-
-_sub1 = ["bso_end_mission_1", "Mission Success", "", {[-2,{["end1",true,4] call BIS_fnc_endMission;},[]] call CBA_fnc_globalExecute;}, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-_sub2 = ["bso_end_mission_2", "Mission Failed", "", {[-2,{["loser",false,4] call BIS_fnc_endMission;},[]] call CBA_fnc_globalExecute;}, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-
-["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin","bso_end_mission"], _sub1, true] call ace_interact_menu_fnc_addActionToClass;
-["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin","bso_end_mission"], _sub2, true] call ace_interact_menu_fnc_addActionToClass;
-
-
-// Keep this here
+// TODO: Keep this here, but make it a bit nicer.
 
 //Below is an example on how you can make only certain factions see certain markers.
 /*

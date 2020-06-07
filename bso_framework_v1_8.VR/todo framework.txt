@@ -8,36 +8,32 @@
  -easy way to have single duded speaking different languages
  channel setup as mission maker
 
-move admin stuff out of framework
+- make admin stuff more reliable / move it out of the mission makers handling
+properly integrate with admin addon
 
 respawn templates
  ace spectator:
   option: restrict to watch on side
-  admin: find a safe place when pressing esc
+  - admin: find a safe place when pressing esc
 
  advanced (based on "Tickets","MenuPosition"):
   - https://community.bistudio.com/wiki/Arma_3_Respawn
   - class CfgRespawnTemplates
   - define set of spawn points / sides,
   - define with personal tickets and side tickets
-  wave: provide function that takes respawn point and side
+  - wave: provide function that takes respawn point and side
   messages / hooks for out of tickets stuff?
   enabling/disabling, adding/removing wrapper?
-  support multiple sides?
-  special options for specialists?
-  simple zeus / admin convenience stuff?
-  personal tickets only for specific people
+  - support multiple sides?
+  - special options for specialists?
 
 
 make jip tp action toggleable as mission maker
 
 - enable spectate in MenuPosition?
 - make sure spectator becomes available if vehicle is destroyed
-automatically go to spectator when there are no more options
+- automatically go to spectator when there are no more options
 can options become available while people are in spectator?
-
-doublecheck safe start is actually working
-
 
 ai scaling
 

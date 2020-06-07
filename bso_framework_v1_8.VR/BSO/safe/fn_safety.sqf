@@ -23,13 +23,8 @@ if (!hasInterface) exitWith {};
 // TODO: not really needed anymore, but might as well keep around. make it easy to configure.
 // [] call bso_fnc_safeZone;
 
-
-// TODO: use add admin admin function once it exists
-// Adds Admin action to start mission
-
 // TODO: adjust bso admin zeus gameon function
 
-[{!isNull player}, {
-	private _mainAction = ["bso_start_mission", "Start Mission", "", {[] call bso_fnc_gameOn}, {!Trigger_BSOStart && serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction] call ace_interact_menu_fnc_addActionToObject;
-}] call CBA_fnc_waitUntilAndExecute;
+// TODO: backward compatibility for admin tools?
+
+["Start Mission", {[] call bso_fnc_gameOn}, {!Trigger_BSOStart}] call bso_fnc_addAdminAction;
