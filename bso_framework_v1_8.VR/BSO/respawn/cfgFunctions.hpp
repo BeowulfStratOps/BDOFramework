@@ -16,5 +16,6 @@ class bso_respawn
 		class waveRespawn {};
 		class doWaveRespawn {};
 		class handleAdminRespawn {};
+		class isTemplateActive {};
 	};
 };

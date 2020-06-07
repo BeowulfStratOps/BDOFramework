@@ -1,4 +1,4 @@
-if (hasInterface) then
+if (hasInterface && [side group player] call bso_respawn_fnc_isTemplateActive) then
 {
 	[{!isNull player}, {
 		private _config = missionConfigFile >> "BSORespawns" >> (str side group player);
@@ -22,6 +22,8 @@ if (hasInterface) then
 };
 
 if (!isServer) exitWith {};
+
+if ({[_x] call bso_respawn_fnc_isTemplateActive} count [west, east, resistance, civilian] == 0) exitwith {};
 
 bso_respawn_activeSpawnPoints = [[], [], [], []]; // empty for all sides
 
