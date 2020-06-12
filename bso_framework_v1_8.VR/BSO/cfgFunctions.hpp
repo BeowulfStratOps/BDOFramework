@@ -9,4 +9,3 @@ class bso // TODO: rename to bso_mission or bso_framework
 	};
 	#include "safe\cfgFunctions.hpp"
 };
-#include "respawn\cfgFunctions.hpp"
