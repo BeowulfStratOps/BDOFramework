@@ -107,8 +107,8 @@
 
 
 // Mission end conditions. By editing the "end" and "loser" configs in meta.cpp you can have the admin end the mission with a debrief.
-["Mission Success", "end1", true] call bso_fnc_addEndAction;
-["Mission Failed", "loser", false] call bso_fnc_addEndAction;
+["Mission Success", "end1", true] call bso_admin_fnc_addMissionEnd;
+["Mission Failed", "loser", false] call bso_admin_fnc_addMissionEnd;
 
 // TODO: Keep this here, but make it a bit nicer.
 

@@ -10,7 +10,7 @@ if (!hasInterface) exitWith {};
 	};
 }, [], 0.01] call CBA_fnc_waitAndExecute;
 
-[] spawn {
+[] spawn { // TODO: use CBA
 	while {!Trigger_BSOStart} do
 	{
 		["BSOSafeStart",["SafeStart is active and weapons are disabled"]] call BIS_fnc_showNotification;
@@ -23,8 +23,4 @@ if (!hasInterface) exitWith {};
 // TODO: not really needed anymore, but might as well keep around. make it easy to configure.
 // [] call bso_fnc_safeZone;
 
-// TODO: adjust bso admin zeus gameon function
-
-// TODO: backward compatibility for admin tools?
-
-["Start Mission", {[] call bso_fnc_gameOn}, {!Trigger_BSOStart}] call bso_fnc_addAdminAction;
+["Start Mission", {[] call bso_fnc_gameOn}, {!Trigger_BSOStart}] call bso_admin_fnc_addAdminAction;

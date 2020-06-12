@@ -45,3 +45,5 @@ game on: time reset, disable ai simulation etc.
 admin:
 change task(even triggers mb?) states
 open arsenal
+
+slow down time before gameon.

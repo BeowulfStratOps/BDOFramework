@@ -18,4 +18,8 @@ execVM "mission\acre.sqf";
 
 waitUntil {!isNull player};
 
+if (didJIP) then {
+	call bso_fnc_addJipTp; // TODO: create
+};
+
 // DO STUFF BELOW HERE!
