@@ -6,4 +6,5 @@ class safety
 	class safeZone {};
 	class setSafety {};
 	class unsetSafety {};
+	class timeSlow {};
 };

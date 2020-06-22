@@ -6,44 +6,30 @@
 -simple acre stuff:
  -move acre stuff all to simplified acre
  -easy way to have single duded speaking different languages
- channel setup as mission maker
+ +channel setup as mission maker? meh. What for.
 
 - make admin stuff more reliable / move it out of the mission makers handling
-properly integrate with admin addon
+- properly integrate with admin addon
 
-respawn templates
- ace spectator:
-  option: restrict to watch on side
-  - admin: find a safe place when pressing esc
+- make jip tp action toggleable as mission maker
 
- advanced (based on "Tickets","MenuPosition"):
-  - https://community.bistudio.com/wiki/Arma_3_Respawn
-  - class CfgRespawnTemplates
-  - define set of spawn points / sides,
-  - define with personal tickets and side tickets
-  - wave: provide function that takes respawn point and side
-  messages / hooks for out of tickets stuff?
-  enabling/disabling, adding/removing wrapper?
-  - support multiple sides?
-  - special options for specialists?
++ ai scaling ?? Not sure how the framework could help with that
 
++ automatically delete markers ?? Sounds unnecessary and just annoying
 
-make jip tp action toggleable as mission maker
+disable ai simulation before gameon:
+ how does that affect knowsAbout?
+ Does this mess with any functions we use, e.g. jebus, cba_defend, garrison ?
+  vehicles?
+  drone ai?
+  friendly ai?
 
-- enable spectate in MenuPosition?
-- make sure spectator becomes available if vehicle is destroyed
-- automatically go to spectator when there are no more options
-can options become available while people are in spectator?
+- slow down time before gameon.
 
-ai scaling
-
-automatically delete markers
-
-game on: time reset, disable ai simulation etc.
+tp on gameon script? or trigger stuff? module even?
+ more like a function to be called on gameon for people who didn't jip, or jipped before gameon. basciall whoever is in game when gameon happens.
+ generic move to vehicle, move to (random) marker type script?
 
 
-admin:
-change task(even triggers mb?) states
-open arsenal
-
-slow down time before gameon.
+document stuff
+cleanup indentation/newlines/bmf

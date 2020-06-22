@@ -16,10 +16,12 @@ execVM "mission\acre.sqf";
 // safety
 [] call bso_fnc_safety;
 
+// slows down time until gameon
+[] call bso_fnc_timeSlow;
+
 waitUntil {!isNull player};
 
-if (didJIP) then {
-	call bso_fnc_addJipTp; // TODO: create
-};
+// add's a "Teleport to Leader" action for JIPs
+[] call bso_fnc_addJipTp;
 
 // DO STUFF BELOW HERE!

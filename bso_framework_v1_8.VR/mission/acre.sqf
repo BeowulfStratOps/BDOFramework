@@ -15,5 +15,6 @@ bso_acre_splitChannels = true;
 
 // Set up different spoken languages for individiual units, using their Variable Name.
 // If used, it must be called _after_ bso_fnc_acreApplyLanguages.
-// You can have multiple of those.
+// You can have multiple of those:
+//
 // ["translator_1", ["en", "gr"]] call bso_fnc_acreCustomLanguages;

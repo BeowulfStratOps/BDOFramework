@@ -1,3 +1,5 @@
+if (!didJIP) exitwith {};
+
 [] spawn { // TODO: CBA!
 	sleep 5;
 	movetoSL = player addAction ["Teleport To SL", {
