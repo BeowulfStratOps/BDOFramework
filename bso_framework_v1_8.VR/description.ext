@@ -12,7 +12,9 @@ class CfgFunctions
 #include "mission\meta.cpp" // <!-- Adds your mission meta data - go populate this!!!
 #include "bso\noti\noti_init.cpp"
 
+
 DisabledAI		= 1;						// <!-- Where 0 Fills empty playable slots with AI, 1 is They Don't fill the empty slots
+
 joinUnassigned		= 1;					// <!-- Where 0 forces joining players into the first empty slot, 1 leaves them to select their own
 disableChannels[]	={2,4,6};				// <!-- Restrict chat channels where (0=Global),(1=Side),(2=Command),(3=Group),(4=Vehicle),(5=Direct),(6=System)
 enableDebugConsole	= 1;					// <!-- Enable the debug console where (0=disabled),(1=Admins Only),(2=Everyone) DO NOT SET AS 2!
@@ -20,67 +22,11 @@ showGPS			= 1;						// <!-- Allow GPS
 showCompass		= 1;						// <!-- Allow Compass
 showWatch		= 1;						// <!-- Allow Watch
 
-respawn		= 3;							// <!-- Sets respawn type (3 = Base, to respawn at the respawn marker in the editor)
-respawnTemplates[] = {"BSO_Respawn_System", "MenuPosition"};// <!-- Enables the Beowulf Advacend Respawn System Enhanced (ARSE)
-respawnDelay	= 6;						// <!-- Delay between death and respawn
+respawn		= 3;							// <!-- Sets respawn type. Leave at 3.
+respawnTemplates[] = {"BSO_Respawn_System", "MenuPosition"};// <!-- Enables the Beowulf Advacend Respawn System Enhanced
+respawnDelay	= 20;						// <!-- Delay between death and respawn. Should be more than 3 to enable a smooth transition // TODO: test big values
 respawnDialog	= 0;						// <!-- Displays dialogue when killed (leave this at 0)
-respawnOnStart	= -1;						// <!-- Respawns players on the start of a mission. Leave 0 unless using magic
+respawnOnStart	= -1;						// <!-- Do not respawn players on the start of a mission. Leave -1 unless using magic
 
-allowFunctionsLog = 1;
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// TODO: move to a nice place
-// TODO: get most up to date version from plugin
-
-class BSORespawns
-{
-    class west
-    {
-        sideTickets = 20; // tickets for this side. default 0.
-        personalTickets = 0; // tickets per person. will be consumed first. default 0 -> Entry could be skipped in this case.
-        personalTicketsUnit[] = {{"jtac_0", 3}, {"pl_0", 2}}; // Specific personal ticket count for certain units. Those replace the amount given in personalTickets for those units.
-        // once there are no more tickets, people will be sent to ace spectator (no box). Happens automatically and does not require the onTicketsDepleted to do anything special.
-
-        // If there are no respawn points defined, players will be sent to ace spectator anyways, but will keep their tickets (can be used for wave respawn with tickets)
-
-        onTicketsDepleted = "mission\respawnTicketsDepleted.sqf"; // File will be executed on the server when side tickets run out. This is optional and can be used for custom behaviour. Only parameter is the side.
-
-        class MHQ // Some vehicle spawn point. This is the name it will be referenced by and needs to be unique
-        {
-            name = "Mobile HQ"; // displayed name
-            object = "b_mhq"; // variable name of a vehicle. Spawn point will become unavailable if vehicle is destroyed
-        };
-        class FirstObjective // Some marker spawn point
-        {
-            name = "First Object Respawn";
-            marker = "obj_1"; // some map marker
-            disabled = true; // won't show up until enabled via command (see below)
-        };
-        class PilotRespawn
-        {
-            name = "Airfield";
-            marker = "airfield";
-            units[] = {"jtac_0"}; // only those units will be able to see this spawnpoint
-        };
-    };
-    class east // other sides. can be skipped. valid sides are west, east, guer, civ
-    {
-        // [...]
-        class opfor_MHQ // spawn names must be different from west
-        {
-            // [...]
-        };
-    };
-};
-
-// available commands
-
-// Enable a spawn point:
-// ["FirstObjective"] call bso_fnc_enableSpawnPoint;
-
-// Add 15 tickets to blufor
-// [west, 15] call bis_fnc_respawnTickets;
-
-// Spawn all blufor currently in spectator on the MHQ spawn. Second parameter (false in example) decides if tickets will be consumed
-// ["MHQ", false] call bso_fnc_waveRespawn;
+// edit this files to enable respawns
+#include "respawns.hpp"
