@@ -26,10 +26,7 @@ disable ai simulation before gameon:
 
 - slow down time before gameon.
 
-tp on gameon script? or trigger stuff? module even?
- more like a function to be called on gameon for people who didn't jip, or jipped before gameon. basciall whoever is in game when gameon happens.
- generic move to vehicle, move to (random) marker type script?
-
+- tp on gameon help: variable that becomes true for like 10sec when gameon is called. to be used with triggers.
 
 document stuff
 cleanup indentation/newlines/bmf

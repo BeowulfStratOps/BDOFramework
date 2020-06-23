@@ -1,5 +1,9 @@
 if (isNil "Trigger_BSOStart") then { Trigger_BSOStart = false; };
 
+if (isServer) then {
+	Trigger_BSOGameOn = false; publicVariable "Trigger_BSOGameOn";
+};
+
 if (Trigger_BSOStart) exitWith {};
 
 if (!hasInterface) exitWith {};

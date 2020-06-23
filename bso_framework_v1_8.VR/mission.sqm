@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=569;
+		nextID=571;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={314.10425,30,98.68132};
-		dir[]={-0.034037571,-0.75049317,0.6600067};
-		up[]={-0.038652785,0.66087711,0.74949807};
-		aside[]={0.99867505,4.2709871e-009,0.051503275};
+		pos[]={311.78586,30,82.293259};
+		dir[]={0.10923004,-0.62602443,0.77212179};
+		up[]={0.087689556,0.77980113,0.61985511};
+		aside[]={0.99014407,1.853914e-008,-0.14007308};
 	};
 };
 binarizationWanted=0;
@@ -304,7 +304,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=65;
+		items=67;
 		class Item0
 		{
 			dataType="Marker";
@@ -5726,6 +5726,31 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item65
+		{
+			dataType="Trigger";
+			position[]={238.47501,5,131.34599};
+			class Attributes
+			{
+				text="Teleport On GameOn Trigger";
+				condition="call{Trigger_BSOGameOn}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=569;
+			type="EmptyDetector";
+		};
+		class Item66
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={239.16299,5,124.88};
+			};
+			title="TP on gameon";
+			description="TODO";
+			id=570;
 		};
 	};
 	class Connections
