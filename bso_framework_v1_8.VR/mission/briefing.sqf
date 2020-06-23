@@ -1,4 +1,4 @@
-/////bmf-v1_8////
+/////bmf-v2_0////
 
 // Here you can find the mission briefing, ACRE Languages, admin end conditions and allow for marker visibility to only certain factions.
 // You will have to set your debriefing information in the Meta.cpp file because ArmA.
@@ -109,8 +109,6 @@
 // Mission end conditions. By editing the "end" and "loser" configs in meta.cpp you can have the admin end the mission with a debrief.
 ["Mission Success", "end1", true] call bso_admin_fnc_addMissionEnd;
 ["Mission Failed", "loser", false] call bso_admin_fnc_addMissionEnd;
-
-// TODO: Keep this here, but make it a bit nicer.
 
 //Below is an example on how you can make only certain factions see certain markers.
 /*

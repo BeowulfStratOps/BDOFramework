@@ -1,4 +1,4 @@
-/////bmf-v1_8////
+/////bmf-v2_0////
 
 [false, bso_acre_splitChannels] call acre_api_fnc_setupMission;
 

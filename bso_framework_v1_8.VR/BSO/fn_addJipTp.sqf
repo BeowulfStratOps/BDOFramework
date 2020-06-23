@@ -1,3 +1,5 @@
+/////bmf-v2_0////
+
 if (!didJIP) exitwith {};
 
 [] spawn { // TODO: CBA!

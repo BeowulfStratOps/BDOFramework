@@ -1,4 +1,6 @@
-class bso // TODO: rename to bso_mission or bso_framework
+/////bmf-v2_0////
+
+class bso
 {
 	class main
 	{

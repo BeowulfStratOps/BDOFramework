@@ -30,3 +30,5 @@ disable ai simulation before gameon:
 
 document stuff
 cleanup indentation/newlines/bmf
+
+HC support?

@@ -1,4 +1,4 @@
-/////bmf-v1_8////
+/////bmf-v2_0////
 
 // Set up babel languages
 bso_acre_languages = [["en","English"],["gr","Greek"]];

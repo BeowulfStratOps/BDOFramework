@@ -1,3 +1,5 @@
+/////bmf-v2_0////
+
 if (isNil "Trigger_BSOStart") then { Trigger_BSOStart = false; };
 
 if (isServer) then {

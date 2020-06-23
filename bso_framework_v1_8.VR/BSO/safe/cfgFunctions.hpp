@@ -1,3 +1,5 @@
+/////bmf-v2_0////
+
 class safety
 {
 	file = "bso\safe";
