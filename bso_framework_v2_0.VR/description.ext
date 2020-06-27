@@ -24,7 +24,7 @@ showWatch		= 1;						// <!-- Allow Watch
 
 respawn		= 3;							// <!-- Sets respawn type. Leave at 3.
 respawnTemplates[] = {"BSO_Respawn_System", "MenuPosition"};// <!-- Enables the Beowulf Advacend Respawn System Enhanced
-respawnDelay	= 20;						// <!-- Delay between death and respawn. Should be more than 3 to enable a smooth transition // TODO: test big values
+respawnDelay	= 6;						// <!-- Delay between death and respawn. Should be more than 3 to enable a smooth transition // TODO: test big values
 respawnDialog	= 0;						// <!-- Displays dialogue when killed (leave this at 0)
 respawnOnStart	= -1;						// <!-- Do not respawn players on the start of a mission. Leave -1 unless using magic
 

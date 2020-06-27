@@ -28,7 +28,9 @@ disable ai simulation before gameon:
 
 - tp on gameon help: variable that becomes true for like 10sec when gameon is called. to be used with triggers.
 
-document stuff
+document stuff, provide examples for config and functions
 cleanup indentation/newlines/bmf
 
 HC support?
+bso_fnc_showNotification to abstract away isServer crap?
+add unitsExcept, to make exclusing pilots easier?
