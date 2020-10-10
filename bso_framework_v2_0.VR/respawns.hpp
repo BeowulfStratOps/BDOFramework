@@ -1,6 +1,6 @@
 
 // Use the template below to activate respawns
-// See wiki for further references and examples // TODO: link
+// See wiki for further references and examples https://beowulfso.com/wiki/BSO_Respawn_System
 
 /*
 class BSORespawns
@@ -36,5 +36,3 @@ class BSORespawns
     };
 };
 */
-
-// For full documentation, see https://beowulfso.com/wiki/BSO_Respawn_System

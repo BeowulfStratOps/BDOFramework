@@ -23,7 +23,7 @@ COOP 															//<!-- Game type - COOP/TvT/Dynamic
 
 Standard Length													//<!-- Expected Game Length - Short (30 Mins ) / Standard ( 1 - 1/2 Hour ) / Long ( 1 1/2 Hours + ) / Persistant (ALiVE Database Enabled)
 
-Spectator Box													//<! -- Respawns - Spectator/Spectator box/Tickets/Limit/Unlimited
+Spectator														//<! -- Respawns - Spectator/Spectator box/Tickets/Limit/Unlimited
 
 Advanced Medical												//<! -- Medical System - Standard/Advanced/Medevac
 

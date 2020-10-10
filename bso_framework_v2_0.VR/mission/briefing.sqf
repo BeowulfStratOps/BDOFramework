@@ -118,15 +118,22 @@ if (!isDedicated) then
 	waitUntil {!isNull player};
 	switch (side player) do
 	{
-		case WEST:
+		case west:
 		{
 			{_x setMarkerAlphaLocal 1} forEach ["objA"]; // Define the markers this faction will be able to see but others cannot.
 		};
-		case EAST:
+		case east:
 		{
 			{_x setMarkerAlphaLocal 1} forEach ["obj1","obj2","obj3"];
 		};
-
+        case resistance:
+		{
+			{_x setMarkerAlphaLocal 1} forEach [];
+		};
+		case civilian:
+		{
+			{_x setMarkerAlphaLocal 1} forEach [];
+		};
 	};
 };
 */
