@@ -22,6 +22,11 @@
 //
 // "<br/>" can be used to start new lines and create paragraphs
 
+[] call bso_fnc_setupDacParams;
+
+
+
+
 
 [
   {true}, //All factions/units will be able to see the tasks following this filter. This line will also use the "Obj1" marker and create an attack mark linked to the task.

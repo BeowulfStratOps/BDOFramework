@@ -8,6 +8,7 @@ class CfgFunctions
 {
 	#include "bso\cfgFunctions.hpp"
 	#include "jebus\cfgFunctions.hpp"
+
 };
 #include "mission\meta.cpp" // <!-- Adds your mission meta data - go populate this!!!
 #include "bso\noti\noti_init.cpp"

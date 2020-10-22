@@ -8,6 +8,7 @@ class bso
 		class acreApplyLanguages {};
 		class acreCustomLanguages {};
 		class addJipTp {};
+		class setupDacParams {};
 	};
 	#include "safe\cfgFunctions.hpp"
 };

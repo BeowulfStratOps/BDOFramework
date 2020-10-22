@@ -58,6 +58,22 @@ class CfgBsoLoadouts {
 };
 
 
+class params
+{
+	
+ class f_param_headlessClient
+	{
+		title = "Headless Client";
+		values[] = {0,1};
+		texts[] = {"Off","Auto-Detect"};
+		default = 1;
+		code = "f_param_headlessClient = %1";
+	};	
+	
+	
+};
+
+
 // Used for custom debriefing screens launched by the admin or triggers ingame. See briefing.sqf for admin interactions
 class CfgDebriefing
 {
