@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=48;
+		nextID=54;
 	};
 	class Camera
 	{
-		pos[]={2145.6526,95.905273,5671.6357};
-		dir[]={0.88931847,-0.43106344,0.15314253};
-		up[]={0.42484453,0.90230465,0.073157124};
-		aside[]={0.16971675,-4.7439971e-007,-0.98557162};
+		pos[]={2069.2856,121.20651,5680.749};
+		dir[]={0.86196291,-0.42987931,0.26909199};
+		up[]={0.41038629,0.90286052,0.12811428};
+		aside[]={0.29802558,-2.8121576e-007,-0.95464832};
 	};
 };
 binarizationWanted=0;
@@ -524,7 +524,7 @@ class Mission
 			{
 				name="z0";
 				text="(z0) DAC - Global WP";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z0"",[1,0,1],[40],[40],[40],[20],[0,2,0,0,2]] spawn DAC_Zone}";
 				sizeA=419.858;
 				sizeB=309.09601;
@@ -545,7 +545,7 @@ class Mission
 			{
 				name="z1";
 				text="(z1) DAC - Units North (3x Mech, 1x Armour)";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z1"",[1,1,1,1],[],[3,4,1,4],[1,1,1,4],[],[0,2,0,0,2]] spawn DAC_Zone}";
 				sizeA=79.067001;
 				sizeB=24.042999;
@@ -567,7 +567,7 @@ class Mission
 			{
 				name="z11";
 				text="(z11) DAC - 1xCamps East";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z11"",[11,0,1],[ ],[ ],[ ],[1,4,50,0,100,20,[z5,z3]],[0,2,0,2,2]] spawn DAC_Zone}";
 				sizeA=15.57;
 				sizeB=16.014;
@@ -588,7 +588,7 @@ class Mission
 			{
 				name="z12";
 				text="(z12) DAC - 1xCamps East";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z12"",[12,0,1],[ ],[ ],[ ],[1,4,50,0,100,20,[z1,z2,z3]],[0,2,0,0,2]] spawn DAC_Zone}";
 				sizeA=21.280001;
 				sizeB=20.771;
@@ -609,7 +609,7 @@ class Mission
 			{
 				name="z13";
 				text="(z13) DAC - 1xCamps East";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z13"",[13,0,1],[ ],[ ],[ ],[1,4,50,0,100,20,[z5,z3]],[0,2,0,1,2]] spawn DAC_Zone}";
 				sizeA=15.57;
 				sizeB=16.014;
@@ -630,7 +630,7 @@ class Mission
 			{
 				name="z3";
 				text="(z3) DAC - Initial Patrols";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z3"",[1,0,0],[4,4,40,6],[],[],[],[0,2,0,0,0]] spawn DAC_Zone}";
 				sizeA=301.40201;
 				sizeB=162.44099;
@@ -651,7 +651,7 @@ class Mission
 			{
 				name="z5";
 				text="(z5) DAC - Initial Patrols";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z5"",[1,0,0],[3,4,40,6],[],[],[],[0,2,0,0,2]] spawn DAC_Zone}";
 				sizeA=50.525002;
 				sizeB=106.141;
@@ -989,7 +989,7 @@ class Mission
 			{
 				name="z2";
 				text="(z2) DAC - Units North (3x Mech, 1x Armour)";
-				condition="call{time > 5}";
+				condition="call{time > 3}";
 				onActivation="call{fun=[""z2"",[1,1,1,1],[],[3,4,1,4],[1,1,1,4],[],[0,2,0,0,2]] spawn DAC_Zone}";
 				sizeA=79.067001;
 				sizeB=24.042999;

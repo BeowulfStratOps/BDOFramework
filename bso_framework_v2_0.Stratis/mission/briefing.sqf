@@ -21,13 +21,6 @@
 //       if (isServer) then {["task1", "succeeded"] call FHQ_fnc_ttSetTaskState;};
 //
 // "<br/>" can be used to start new lines and create paragraphs
-
-[] call bso_fnc_setupDacParams;
-
-
-
-
-
 [
   {true}, //All factions/units will be able to see the tasks following this filter. This line will also use the "Obj1" marker and create an attack mark linked to the task.
 	["Task1", "Locate and destroy the enemy truck", "1. Destroy the Truck", "Destroy", getMarkerPos "obj1", "assigned", "attack"],

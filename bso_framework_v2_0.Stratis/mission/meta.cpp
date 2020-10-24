@@ -57,7 +57,7 @@ class CfgBsoLoadouts {
   //#include "loadouts\indep.cpp" //create this file by copying blufor.cpp and renaming
 };
 
-
+/*
 class params
 {
 	
@@ -72,7 +72,7 @@ class params
 	
 	
 };
-
+*/
 
 // Used for custom debriefing screens launched by the admin or triggers ingame. See briefing.sqf for admin interactions
 class CfgDebriefing

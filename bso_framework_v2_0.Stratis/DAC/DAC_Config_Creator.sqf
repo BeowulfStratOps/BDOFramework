@@ -10,9 +10,25 @@
 
 scalar = "any";DAC_Init_Camps = 0;
 
-waituntil{time > 3};
+waituntil{time > 0.3};
 
-if(isAIcontroller) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} else {if(isnull player) then {DAC_Code = 3} else {DAC_Code = 2}};
+//===============|
+// HC Checker + DAC Code assignment	 |
+//===============|=============================================================================================|
+//Checks if not multiplayer or HC is not present
+// single player = isServer
+// muliplayer but no HC_1 = isServer
+// muliplayer + HC_1 is preset = use HC_1
+isAIcontroller = if ((!isMultiplayer) || (isNil "HC_1")) then {
+    isServer;
+} else {
+(!hasInterface && !isDedicated)};
+
+// Check if isAicontroller is defined - Fix for editor errors
+if (isNil "isAIcontroller") then {isAIcontroller = false; DAC_Code = 0}
+else {
+// DAC HC's check for DAC server
+if(isAIcontroller) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} else {if(isnull player) then {DAC_Code = 3} else {DAC_Code = 2}};};
 
 //===============|
 // DAC_Settings	 |
