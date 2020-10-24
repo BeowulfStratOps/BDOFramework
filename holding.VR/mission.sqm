@@ -1,0 +1,268 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=10;
+	};
+	class Camera
+	{
+		pos[]={6997.3428,486.17252,6346.3838};
+		dir[]={-0.37622583,-0.54389149,-0.75010473};
+		up[]={-0.24384399,0.8391524,-0.48616716};
+		aside[]={-0.89387453,1.891749e-007,0.4483344};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"dac_source"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="DAC_Source";
+			name="DAC_Source.pbo";
+			author="Silola";
+		};
+	};
+};
+randomSeed=1291135;
+class ScenarioData
+{
+	author="Walker";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=10;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={6800.375,5,5795.1104};
+			angle=3.6954021;
+			class Attributes
+			{
+				name="z0";
+				text="(z0) DAC - Global WP";
+				condition="call{time > 3}";
+				onActivation="call{fun=[""z0"",[1,0,1],[40],[40],[40],[20],[0,2,0,0,2]] spawn DAC_Zone}";
+				sizeA=419.858;
+				sizeB=309.09601;
+				sizeC=0;
+				repeatable=1;
+				activationBy="LOGIC";
+				isRectangle=1;
+			};
+			id=0;
+			type="EmptyDetector";
+		};
+		class Item1
+		{
+			dataType="Trigger";
+			position[]={7525.9722,7.2460022,6200.1104};
+			angle=0.50670397;
+			class Attributes
+			{
+				name="z1";
+				text="(z1) DAC - Units North (3x Mech, 1x Armour)";
+				condition="call{time > 3}";
+				onActivation="call{fun=[""z1"",[1,1,1,1],[],[3,4,1,4],[1,1,1,4],[],[0,2,0,0,2]] spawn DAC_Zone}";
+				sizeA=79.067001;
+				sizeB=24.042999;
+				sizeC=0;
+				repeatable=1;
+				activationBy="LOGIC";
+				isRectangle=1;
+			};
+			id=1;
+			type="EmptyDetector";
+			atlOffset=2.2460022;
+		};
+		class Item2
+		{
+			dataType="Trigger";
+			position[]={6675.0176,5,6029.8726};
+			angle=5.3074064;
+			class Attributes
+			{
+				name="z11";
+				text="(z11) DAC - 1xCamps East";
+				condition="call{time > 3}";
+				onActivation="call{fun=[""z11"",[11,0,1],[ ],[ ],[ ],[1,4,50,0,100,20,[z5,z3]],[0,2,0,2,2]] spawn DAC_Zone}";
+				sizeA=15.57;
+				sizeB=16.014;
+				sizeC=0;
+				repeatable=1;
+				activationBy="LOGIC";
+				isRectangle=1;
+			};
+			id=2;
+			type="EmptyDetector";
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={7757.1816,5,6142.5649};
+			angle=0.9601379;
+			class Attributes
+			{
+				name="z12";
+				text="(z12) DAC - 1xCamps East";
+				condition="call{time > 3}";
+				onActivation="call{fun=[""z12"",[12,0,1],[ ],[ ],[ ],[1,4,50,0,100,20,[z1,z2,z3]],[0,2,0,0,2]] spawn DAC_Zone}";
+				sizeA=21.280001;
+				sizeB=20.771;
+				sizeC=0;
+				repeatable=1;
+				activationBy="LOGIC";
+				isRectangle=1;
+			};
+			id=3;
+			type="EmptyDetector";
+		};
+		class Item4
+		{
+			dataType="Trigger";
+			position[]={6952.9736,5,5600.002};
+			angle=5.3074064;
+			class Attributes
+			{
+				name="z13";
+				text="(z13) DAC - 1xCamps East";
+				condition="call{time > 3}";
+				onActivation="call{fun=[""z13"",[13,0,1],[ ],[ ],[ ],[1,4,50,0,100,20,[z5,z3]],[0,2,0,1,2]] spawn DAC_Zone}";
+				sizeA=15.57;
+				sizeB=16.014;
+				sizeC=0;
+				repeatable=1;
+				activationBy="LOGIC";
+				isRectangle=1;
+			};
+			id=4;
+			type="EmptyDetector";
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={6691.5313,5,5796.5605};
+			angle=3.6705596;
+			class Attributes
+			{
+				name="z3";
+				text="(z3) DAC - Initial Patrols";
+				condition="call{time > 3}";
+				onActivation="call{fun=[""z3"",[1,0,0],[4,4,40,6],[],[],[],[0,2,0,0,0]] spawn DAC_Zone}";
+				sizeA=301.40201;
+				sizeB=162.44099;
+				sizeC=0;
+				repeatable=1;
+				activationBy="LOGIC";
+				isRectangle=1;
+			};
+			id=5;
+			type="EmptyDetector";
+		};
+		class Item6
+		{
+			dataType="Trigger";
+			position[]={6420.8872,5,5580.5396};
+			angle=2.4797287;
+			class Attributes
+			{
+				name="z5";
+				text="(z5) DAC - Initial Patrols";
+				condition="call{time > 3}";
+				onActivation="call{fun=[""z5"",[1,0,0],[3,4,40,6],[],[],[],[0,2,0,0,2]] spawn DAC_Zone}";
+				sizeA=50.525002;
+				sizeB=106.141;
+				sizeC=0;
+				repeatable=1;
+				activationBy="LOGIC";
+				isRectangle=1;
+			};
+			id=6;
+			type="EmptyDetector";
+		};
+		class Item7
+		{
+			dataType="Trigger";
+			position[]={6460.6768,21.108999,5721.0244};
+			angle=5.6838026;
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{[z1] call DAC_Activate;}";
+				sizeA=78.150002;
+				sizeB=619.39099;
+				sizeC=0;
+				activationBy="ANYPLAYER";
+			};
+			id=7;
+			type="EmptyDetectorAreaR250";
+			atlOffset=16.108999;
+		};
+		class Item8
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6559.3188,5.0000005,5697.645};
+				angles[]={0.054944519,6.0235138,0.084796004};
+			};
+			name="HC_1";
+			isPlayable=1;
+			id=8;
+			type="HeadlessClient_F";
+			atlOffset=4.7683716e-007;
+		};
+		class Item9
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6549.46,5,5696.0625};
+				angles[]={0.30288482,6.0235138,6.1245303};
+			};
+			id=9;
+			type="DAC_Source_Extern";
+		};
+	};
+};
