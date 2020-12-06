@@ -1,20 +1,20 @@
-/////bmf-v1_8////
+/////bmf-v2_0////
 
 // Here you can find the mission briefing, ACRE Languages, admin end conditions and allow for marker visibility to only certain factions.
 // You will have to set your debriefing information in the Meta.cpp file because ArmA.
 // See the BSO Mission Makers Wiki for the downloadable PDF on the FHQ briefing and task system for full instructions
 //
-// The system uses filters for setting who has been set a task or briefing. 
+// The system uses filters for setting who has been set a task or briefing.
 // Included are the filters for sides in the Add Tasks section. These are the same filters which can be used in the AddBriefings section in the same way.
 //
 //   Task Entries
-//		_taskID - REQUIRED. I.D. of the task used for scripting. 
+//		_taskID - REQUIRED. I.D. of the task used for scripting.
 //		_description - REQUIRED. Full description of the task.
 //		_title - REQUIRED. Title of task seen in the task list.
-//		_shorttitle - REQUIRED?. Title seen on map if linked to markers, or 3d view. 
+//		_shorttitle - REQUIRED?. Title seen on map if linked to markers, or 3d view.
 //		_target - marker or object defined location of the task
 //		_initial - Task status. For example "assigned"
-//		_type - Type of task which dictates the icoons used on the map and task list.
+//		_type - Type of task which dictates the icons used on the map and task list.
 //
 //
 //	The following line is used to mark an objective as successful. Note how only the server calls the task change. More info can be found in the FHQ Guide.
@@ -26,19 +26,19 @@
 [
   {true}, //All factions/units will be able to see the tasks following this filter. This line will also use the "Obj1" marker and create an attack mark linked to the task.
 	["Task1", "Locate and destroy the enemy truck", "1. Destroy the Truck", "Destroy", getMarkerPos "obj1", "assigned", "attack"],
- 
+
    west, // Only BluFor will be able to see these tasks.
 	["Task2w","Full BluFor Objective description and information","2. Blufor Objective Name","BluFor Obj."],
- 
+
    east, // Only OpFor will be able to see these tasks.
 	["Task2e","Full OpFor Objective description and information","2. OpFor Objective Name","OpFor Obj."],
-  
+
    resistance, // Only IndFor will be able to see these tasks.
 	["Task2r","Full IndFor Objective description and information","2. IndFor Objective Name","IndFor Obj."]
-		
+
 ] call FHQ_fnc_ttAddTasks;
 
-// Much like tasks, you can use filters for factions, group names and specific units 
+// Much like tasks, you can use filters for factions, group names and specific units
 //
 // "<br/>" can be used to start new lines and create paragraphs
 //
@@ -55,7 +55,7 @@
 	2. Objective two.
 	<br/>
 	<br/>
-	Full description of the mission at hand, including explanations of objectives, what you want to achieve, and what is classed as a failure.	
+	Full description of the mission at hand, including explanations of objectives, what you want to achieve, and what is classed as a failure.
 	<br/>
 	Keep this as short and to the point as possible.
   "],
@@ -77,7 +77,7 @@
   ["BluFor","Information on friendly forces in the area, including what your players are portraying."],
   ["Support","Include any information about support elements."],
   ["Assets","Include information about equipment and vehicles thats been provided for use by the players."],
-  ["ROE","Include the side's doctrine (Regular/Irregular) and any engagement rules if required. Include if the force has BluForce Trackker."],
+  ["ROE","Include the side's doctrine (Regular/Irregular) and any engagement rules if required. Include if the force has BluForce Tracker."],
   ["COMSIG","Operations comms and signal are follows
 					<br/>
 					<br/>
@@ -95,57 +95,45 @@
 				Company net - CH1 LR
 					<br/>
 				Air Net - CH2 LR
-				"], 
+				"],
   ["Notes","Additional notes about the mission and any tips you want to give the players should go here."],
-  ["Credits","Walker"]  
-  
+  ["Credits","Walker"]
+
 ] call FHQ_fnc_ttAddBriefing;
 
-
-
-// Here a list of languages to be used in ACRE are set. Define each language as per the examples below, and then set which side uses which.
-
-	bso_acre_languages = [["en","English"],["gr","Greek"]]; // Define languages here
-	
-	bso_acre_language_blufor = ["en"]; //Language all BluFor will speak
-	bso_acre_language_opfor = ["gr"]; //Language all OpFor will speak
-	bso_acre_language_indfor = ["gr","en"]; //Language all IndFor will speak
-	bso_acre_language_civilian = ["gr"]; //Language all Civilians will speak
-
-	bso_acre_language_ready = true;
+/*
+ * Language definitions have been moved to mission\acre.sqf
+ */
 
 
 // Mission end conditions. By editing the "end" and "loser" configs in meta.cpp you can have the admin end the mission with a debrief.
-
-_mainAction = ["bso_end_mission", "Mission End Conditions", "", {}, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin"], _mainAction, true] call ace_interact_menu_fnc_addActionToClass;
-
-_sub1 = ["bso_end_mission_1", "Mission Success", "", {[-2,{["end1",true,4] call BIS_fnc_endMission;},[]] call CBA_fnc_globalExecute;}, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-_sub2 = ["bso_end_mission_2", "Mission Failed", "", {[-2,{["loser",false,4] call BIS_fnc_endMission;},[]] call CBA_fnc_globalExecute;}, {serverCommandAvailable "#kick"}] call ace_interact_menu_fnc_createAction;
-
-["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin","bso_end_mission"], _sub1, true] call ace_interact_menu_fnc_addActionToClass;
-["CAManBase", 1, ["ACE_SelfActions","bso_admin_admin","bso_end_mission"], _sub2, true] call ace_interact_menu_fnc_addActionToClass;
-
-
-
+["Mission Success", "end1", true] call bso_admin_fnc_addMissionEnd;
+["Mission Failed", "loser", false] call bso_admin_fnc_addMissionEnd;
 
 //Below is an example on how you can make only certain factions see certain markers.
 /*
-if (!isDedicated) then 
+if (!isDedicated) then
 {
 	{_x setMarkerAlphaLocal 0} forEach ["obj1","obj2","obj3","objA"]; // Define all markers to have selective visibility here.
 	waitUntil {!isNull player};
-	switch (side player) do 
+	switch (side player) do
 	{
-		case WEST: 
+		case west:
 		{
 			{_x setMarkerAlphaLocal 1} forEach ["objA"]; // Define the markers this faction will be able to see but others cannot.
 		};
-		case EAST: 
+		case east:
 		{
 			{_x setMarkerAlphaLocal 1} forEach ["obj1","obj2","obj3"];
-		};	
-		
+		};
+        case resistance:
+		{
+			{_x setMarkerAlphaLocal 1} forEach [];
+		};
+		case civilian:
+		{
+			{_x setMarkerAlphaLocal 1} forEach [];
+		};
 	};
 };
 */

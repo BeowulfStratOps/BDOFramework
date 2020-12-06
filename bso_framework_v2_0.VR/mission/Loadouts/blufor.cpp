@@ -23,8 +23,8 @@ You are still able to quickly make changes, alterations and new classes to your 
  30Rnd_556x45_Stanag_Tracer_Red				- Standard Rifle Tracer magazine
 
  hgun_P07_F									- Standard Sidearm
- 16Rnd_9x21_Mag								- Standard Sidearm Magazine 
- 
+ 16Rnd_9x21_Mag								- Standard Sidearm Magazine
+
  LMG_Zafir_F								- Automatic Rifle
  150Rnd_762x54_Box							- Automatic Rifle Magazine
 
@@ -41,15 +41,15 @@ You are still able to quickly make changes, alterations and new classes to your 
  ACE_20Rnd_762x51_Mag_Tracer				- Marksman Rifle Tracer magazine
  optic_SOS									- Marksman Rifle Optic
  bipod_01_F_blk								- Marksman Rifle Bipod
- 
+
  MMG_02_sand_F								- Machinegun
  130Rnd_338_Mag								- Machinegun Magazine
- 
- tf47_at4_heat								- Light AntiTank Launcher
- tf47_m3maaws								- Medium AntiTank Launcher
- tf47_optic_m3maaws							- MAT Optic
- tf47_m3maaws_HEAT							- MAT ammo - AT
- tf47_m3maaws_HE							- MAT ammo - HE
+
+ rhs_weap_M136								- Light AntiTank Launcher
+ rhs_weap_maaws								- Medium AntiTank Launcher
+ rhs_optic_maaws							- MAT Optic
+ rhs_mag_maaws_HEAT							- MAT ammo - AT
+ rhs_mag_maaws_HE							- MAT ammo - HE
  launch_B_Titan_short_F						- Heavy AntiTank Launcher
  Titan_AT									- HAT ammo
  launch_B_Titan_F							- Surface-to-Air Missile Launcher
@@ -57,44 +57,44 @@ You are still able to quickly make changes, alterations and new classes to your 
 
  SMG_02_F									- Crew/Pilot Weapon
  30Rnd_9x21_Mag_SMG_02						- Crew/Pilot Magazine
- 
+
  HandGrenade								- Handgrenade Fragmentation.
  SmokeShell									- Handgrenade Smoke. Standard Smoke
  SmokeShellRed								- Handgrenade Smoke. First Colour
  SmokeShellGreen							- Handgrenade Smoke. Second Colour
  SmokeShellBlue								- Handgrenade Smoke. Third Colour
  SmokeShellPurple							- Handgrenade Smoke. Forth Colour
- 
- 
- 
+
+
+
  U_B_CTRG_1									- Uniform
  V_PlateCarrierL_CTRG						- Vest
  H_HelmetSpecB								- Headgear
- 
- U_B_HeliPilotCoveralls						- Pilot Uniform 
+
+ U_B_HeliPilotCoveralls						- Pilot Uniform
  V_TacVest_blk								- Pilot Vest/Gear
  H_PilotHelmetHeli_B						- Pilot Headgear
- 
+
  U_B_CTRG_2									- Vehicle Crew Uniform
  V_TacVest_blk								- Vehicle Crew Vest/Gear
- H_HelmetCrew_B								- Vehicle Crew Headgear 
- 
+ H_HelmetCrew_B								- Vehicle Crew Headgear
+
  ACE_Flashlight_XL50						- Handheld Map Torch
  NVGoggles									- Night Vision Goggles
  Binocular									- Binoculars
  ATMine_Range_Mag							- AntiTank Mine
- 
+
  ACRE_PRC343								- Personal Radio
  ACRE_PRC148								- Long Range Radio
  ACRE_PRC117F								- Backpack Radio
- 
+
  B_AssaultPack_rgr							- Backpack Small
  B_Kitbag_rgr								- Backpack Standard
  B_Carryall_oli								- Backpack AT
  B_Carryall_oli								- Backpack Large
  B_Carryall_oli								- Backpack Radio
- 
- 
+
+
 */
 class blufor //Name of your faction referenced in the init call
  {
@@ -109,7 +109,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -123,9 +123,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -152,7 +152,7 @@ class blufor //Name of your faction referenced in the init call
 			launcher = "";
 			launcherItems[] = {};
 			backpackItems[] = {
-				
+
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_morphine"
@@ -162,7 +162,7 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
+		};
 		class SquadLeader {
 			name = "Squad Leader";
 			primaryWeapon = "arifle_TRG21_GL_F";
@@ -175,7 +175,7 @@ class blufor //Name of your faction referenced in the init call
 				"1Rnd_HE_Grenade_shell",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -191,9 +191,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_MapTools",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
@@ -201,7 +201,7 @@ class blufor //Name of your faction referenced in the init call
 			personalRadios[] = {
 				"ACRE_PRC343",
 				"ACRE_PRC148"
-			};	
+			};
 			assignedItems[] = {
 				"ItemGPS",
 				"ItemMap",
@@ -218,12 +218,12 @@ class blufor //Name of your faction referenced in the init call
 				"UGL_FlareRed_F",
 				"1Rnd_SmokeRed_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
-				"1Rnd_SmokeRed_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",		
-				"1Rnd_Smoke_Grenade_shell",		
-				"1Rnd_Smoke_Grenade_shell",	
+				"1Rnd_SmokeRed_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
 				"SmokeShell",
 				"SmokeShellBlue",
 				"SmokeShellGreen",
@@ -234,20 +234,20 @@ class blufor //Name of your faction referenced in the init call
 			launcher = "";
 			launcherItems[] = {};
 			backpackItems[] = {
-				
+
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_epinephrine",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",			
-				"ACE_epinephrine"	
-				
+				"ACE_quikclot",
+				"ACE_epinephrine"
+
 				};
 			uniform[] = {"U_B_CTRG_1"};
 			vest[] = {"V_PlateCarrierL_CTRG"};
@@ -266,7 +266,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -281,19 +281,19 @@ class blufor //Name of your faction referenced in the init call
 			items[] = {
 				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
-				"ACE_MapTools",				
+				"ACE_MapTools",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
 			personalRadios[] = {
 				"ACRE_PRC343",
 				"ACRE_PRC148"
-			};	
+			};
 			assignedItems[] = {
 				"ItemGPS",
 				"ItemMap",
@@ -310,25 +310,25 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShellGreen",
 				"SmokeShellPurple",
 				"SmokeShellBlue",
-				"150Rnd_762x54_Box",				
+				"150Rnd_762x54_Box",
 				};
 			launcher = "";
 			launcherItems[] = {};
 			backpackItems[] = {
-				
+
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_epinephrine",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",			
-				"ACE_epinephrine"		
-				
+				"ACE_quikclot",
+				"ACE_epinephrine"
+
 				};
 			uniform[] = {"U_B_CTRG_1"};
 			vest[] = {"V_PlateCarrierL_CTRG"};
@@ -349,77 +349,16 @@ class blufor //Name of your faction referenced in the init call
 				"HandGrenade",
 				"HandGrenade",
 				"SmokeShell",
-				"150Rnd_762x54_Box"	
+				"150Rnd_762x54_Box"
 			};
 			items[] = {
 				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_fieldDressing",
-				"ACE_fieldDressing"
-			};
-			personalRadios[] = {
-				"ACRE_PRC343"
-			};
-			assignedItems[] = {
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch"
-			};
-			backpack = "B_Kitbag_rgr";
-			backpackMagazines[] = {
-				"150Rnd_762x54_Box",
-				"150Rnd_762x54_Box",
-				"150Rnd_762x54_Box",
-				"150Rnd_762x54_Box"	
-				};
-			launcher = "";
-			launcherItems[] = {};
-			backpackItems[] = {
-				"ACE_fieldDressing",
-				"ACE_fieldDressing",
-				"ACE_morphine",				
-				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_SpareBarrel"
-				};
-			uniform[] = {"U_B_CTRG_1"};
-			vest[] = {"V_PlateCarrierL_CTRG"};
-			headgear[] = {"H_HelmetSpecB"};
-			nvg = "NVGoggles";
-			insignia = "";
-		};			
-		class AutoAsst
-		{
-			name = "AR Asst.";
-			primaryWeapon = "arifle_TRG21_F";
-			primaryWeaponItems[] = {"acc_pointer_IR","optic_Hamr"};
-			handgun = "";
-			handgunItems[] = {};
-			magazines[] = {
-				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
-				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag_Tracer_Red",
-				"30Rnd_556x45_Stanag_Tracer_Red",
-				"HandGrenade",
-				"HandGrenade",
-				"SmokeShell"
-			};
-			items[] = {
-				"ACE_salineIV_500",
-				"ACE_Flashlight_XL50",
-				"ACE_fieldDressing",
-				"ACE_fieldDressing",
-				"ACE_morphine",				
-				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -443,9 +382,9 @@ class blufor //Name of your faction referenced in the init call
 			backpackItems[] = {
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_SpareBarrel"
 				};
 			uniform[] = {"U_B_CTRG_1"};
@@ -453,12 +392,10 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-			binoculars = "Binocular";
-		};				
-	
-		class RiflemanLAT
+		};
+		class AutoAsst
 		{
-			name = "Rifleman (LAT)";
+			name = "AR Asst.";
 			primaryWeapon = "arifle_TRG21_F";
 			primaryWeaponItems[] = {"acc_pointer_IR","optic_Hamr"};
 			handgun = "";
@@ -466,7 +403,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -480,9 +417,72 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing"
+			};
+			personalRadios[] = {
+				"ACRE_PRC343"
+			};
+			assignedItems[] = {
+				"ItemMap",
+				"ItemCompass",
+				"ItemWatch"
+			};
+			backpack = "B_Kitbag_rgr";
+			backpackMagazines[] = {
+				"150Rnd_762x54_Box",
+				"150Rnd_762x54_Box",
+				"150Rnd_762x54_Box",
+				"150Rnd_762x54_Box"
+				};
+			launcher = "";
+			launcherItems[] = {};
+			backpackItems[] = {
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_morphine",
+				"ACE_tourniquet",
+				"ACE_quikclot",
+				"ACE_SpareBarrel"
+				};
+			uniform[] = {"U_B_CTRG_1"};
+			vest[] = {"V_PlateCarrierL_CTRG"};
+			headgear[] = {"H_HelmetSpecB"};
+			nvg = "NVGoggles";
+			insignia = "";
+			binoculars = "Binocular";
+		};
+
+		class RiflemanLAT
+		{
+			name = "Rifleman (LAT)";
+			primaryWeapon = "arifle_TRG21_F";
+			primaryWeaponItems[] = {"acc_pointer_IR","optic_Hamr"};
+			handgun = "";
+			handgunItems[] = {};
+			magazines[] = {
+				"30Rnd_556x45_Stanag",
+				"30Rnd_556x45_Stanag",
+				"30Rnd_556x45_Stanag",
+				"30Rnd_556x45_Stanag",
+				"30Rnd_556x45_Stanag",
+				"30Rnd_556x45_Stanag_Tracer_Red",
+				"30Rnd_556x45_Stanag_Tracer_Red",
+				"HandGrenade",
+				"HandGrenade",
+				"SmokeShell"
+			};
+			items[] = {
+				"ACE_salineIV_500",
+				"ACE_Flashlight_XL50",
+				"ACE_fieldDressing",
+				"ACE_fieldDressing",
+				"ACE_morphine",
+				"ACE_tourniquet",
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -499,9 +499,9 @@ class blufor //Name of your faction referenced in the init call
 				"150Rnd_762x54_Box",
 				"HandGrenade",
 				"HandGrenade",
-				"SmokeShell"			
+				"SmokeShell"
 				};
-			launcher = "tf47_at4_heat";
+			launcher = "rhs_weap_M136";
 			launcherItems[] = {};
 			backpackItems[] = {
 				"ACE_fieldDressing",
@@ -513,7 +513,7 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
+		};
 
 		class Grenadier
 		{
@@ -527,7 +527,7 @@ class blufor //Name of your faction referenced in the init call
 				"1Rnd_HE_Grenade_shell",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
@@ -541,9 +541,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -571,12 +571,12 @@ class blufor //Name of your faction referenced in the init call
 				"UGL_FlareRed_F",
 				"1Rnd_SmokeRed_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
-				"1Rnd_SmokeRed_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",		
-				"1Rnd_Smoke_Grenade_shell",		
-				"1Rnd_Smoke_Grenade_shell",						
+				"1Rnd_SmokeRed_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
 				"HandGrenade",
 				"HandGrenade",
 				"SmokeShell"
@@ -593,7 +593,7 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
+		};
 		class TeamLeaderMG
 		{
 			name = "TeamLeader - MG";
@@ -604,7 +604,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -619,19 +619,19 @@ class blufor //Name of your faction referenced in the init call
 			items[] = {
 				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
-				"ACE_MapTools",				
+				"ACE_MapTools",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
 			personalRadios[] = {
 				"ACRE_PRC343",
 				"ACRE_PRC148"
-			};	
+			};
 			assignedItems[] = {
 				"ItemGPS",
 				"ItemMap",
@@ -646,26 +646,26 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShellGreen",
 				"SmokeShellPurple",
 				"SmokeShellBlue",
-				"130Rnd_338_Mag",	
-				"130Rnd_338_Mag"				
+				"130Rnd_338_Mag",
+				"130Rnd_338_Mag"
 				};
 			launcher = "";
 			launcherItems[] = {};
 			backpackItems[] = {
-				
+
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_epinephrine",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",			
-				"ACE_epinephrine"		
-				
+				"ACE_quikclot",
+				"ACE_epinephrine"
+
 				};
 			uniform[] = {"U_B_CTRG_1"};
 			vest[] = {"V_PlateCarrierL_CTRG"};
@@ -696,9 +696,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -721,9 +721,9 @@ class blufor //Name of your faction referenced in the init call
 			backpackItems[] = {
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_SpareBarrel"
 				};
 			uniform[] = {"U_B_CTRG_1"};
@@ -731,8 +731,8 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
-		
+		};
+
 		class MachinegunAsst
 		{
 			name = "MG Asst.";
@@ -743,7 +743,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -756,9 +756,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -781,9 +781,9 @@ class blufor //Name of your faction referenced in the init call
 			backpackItems[] = {
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_SpareBarrel"
 				};
 			uniform[] = {"U_B_CTRG_1"};
@@ -792,7 +792,7 @@ class blufor //Name of your faction referenced in the init call
 			nvg = "NVGoggles";
 			insignia = "";
 			binoculars = "Binocular";
-		};		
+		};
 		class TeamLeaderMAT
 		{
 			name = "TeamLeader - MAT";
@@ -803,7 +803,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -818,19 +818,19 @@ class blufor //Name of your faction referenced in the init call
 			items[] = {
 				"ACE_salineIV_500",
 				"ACE_Flashlight_XL50",
-				"ACE_MapTools",				
+				"ACE_MapTools",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
 			personalRadios[] = {
 				"ACRE_PRC343",
 				"ACRE_PRC148"
-			};	
+			};
 			assignedItems[] = {
 				"ItemGPS",
 				"ItemMap",
@@ -845,26 +845,26 @@ class blufor //Name of your faction referenced in the init call
 				"SmokeShellGreen",
 				"SmokeShellPurple",
 				"SmokeShellBlue",
-				"tf47_m3maaws_HEAT",	
-				"tf47_m3maaws_HE"				
+				"rhs_mag_maaws_HEAT",
+				"rhs_mag_maaws_HE"
 				};
 			launcher = "";
 			launcherItems[] = {};
 			backpackItems[] = {
-				
+
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_epinephrine",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",			
-				"ACE_epinephrine"		
-				
+				"ACE_quikclot",
+				"ACE_epinephrine"
+
 				};
 			uniform[] = {"U_B_CTRG_1"};
 			vest[] = {"V_PlateCarrierL_CTRG"};
@@ -884,7 +884,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -898,9 +898,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -914,19 +914,19 @@ class blufor //Name of your faction referenced in the init call
 			};
 			backpack = "B_Carryall_oli";
 			backpackMagazines[] = {
-				"tf47_m3maaws_HEAT",
-				"tf47_m3maaws_HE",
-				"tf47_m3maaws_HEAT"
+				"rhs_mag_maaws_HEAT",
+				"rhs_mag_maaws_HE",
+				"rhs_mag_maaws_HEAT"
 				};
-			launcher = "tf47_m3maaws";
-			launcherItems[] = {"tf47_optic_m3maaws"};
+			launcher = "rhs_weap_maaws";
+			launcherItems[] = {"rhs_optic_maaws"};
 			backpackItems[] = {};
 			uniform[] = {"U_B_CTRG_1"};
 			vest[] = {"V_PlateCarrierL_CTRG"};
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
+		};
 		class MediumATAsst
 		{
 			name = "MAT Asst.";
@@ -937,7 +937,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -950,9 +950,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -966,9 +966,9 @@ class blufor //Name of your faction referenced in the init call
 			};
 			backpack = "B_Carryall_oli";
 			backpackMagazines[] = {
-				"tf47_m3maaws_HEAT",
-				"tf47_m3maaws_HE",
-				"tf47_m3maaws_HEAT"
+				"rhs_mag_maaws_HEAT",
+				"rhs_mag_maaws_HE",
+				"rhs_mag_maaws_HEAT"
 				};
 			launcher = "";
 			launcherItems[] = {};
@@ -979,8 +979,8 @@ class blufor //Name of your faction referenced in the init call
 			nvg = "NVGoggles";
 			insignia = "";
 			binoculars = "Binocular";
-		};			
-		
+		};
+
 		class HeavyAT
 		{
 			name = "HAT Gunner";
@@ -991,7 +991,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1005,9 +1005,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1033,7 +1033,7 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
+		};
 		class HeavyATAsst
 		{
 			name = "HAT Asst.";
@@ -1044,7 +1044,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1058,9 +1058,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1087,7 +1087,7 @@ class blufor //Name of your faction referenced in the init call
 			nvg = "NVGoggles";
 			insignia = "";
 			binoculars = "Binocular";
-		};		
+		};
 		class AntiAir
 		{
 			name = "AA Gunner";
@@ -1098,7 +1098,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1112,9 +1112,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1143,7 +1143,7 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
+		};
 		class AntiAirAsst
 		{
 			name = "AA Asst.";
@@ -1154,7 +1154,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1168,9 +1168,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1200,7 +1200,7 @@ class blufor //Name of your faction referenced in the init call
 			nvg = "NVGoggles";
 			insignia = "";
 			binoculars = "Binocular";
-		};		
+		};
 		class ExpExpert
 		{
 			name = "Exp. Expert";
@@ -1211,7 +1211,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1225,9 +1225,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1244,20 +1244,20 @@ class blufor //Name of your faction referenced in the init call
 				"DemoCharge_Remote_Mag",
 				"DemoCharge_Remote_Mag",
 				"SatchelCharge_Remote_Mag",
-				"ATMine_Range_Mag",			
+				"ATMine_Range_Mag",
 				"HandGrenade",
 				"HandGrenade",
-				"SmokeShell",	
+				"SmokeShell",
 				"SmokeShell"
 				};
 			launcher = "";
 			launcherItems[] = {};
-			backpackItems[] = {	
+			backpackItems[] = {
 				"ACE_Clacker",
 				"ACE_DefusalKit",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
 				"ACE_quikclot"
 				};
@@ -1277,7 +1277,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1291,9 +1291,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1323,7 +1323,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_wirecutter",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
 				"ACE_quikclot"
 				};
@@ -1332,7 +1332,7 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
+		};
 		class Medic
 		{
 			name = "Combat Medic";
@@ -1344,8 +1344,8 @@ class blufor //Name of your faction referenced in the init call
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",			
-				"30Rnd_556x45_Stanag",					
+				"30Rnd_556x45_Stanag",
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
 				"30Rnd_556x45_Stanag_Tracer_Red",
 				"HandGrenade",
@@ -1357,16 +1357,16 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
 			personalRadios[] = {
 				"ACRE_PRC343",
 				"ACRE_PRC148"
-			};	
+			};
 			assignedItems[] = {
 				"ItemMap",
 				"ItemCompass",
@@ -1402,7 +1402,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				
+
 				"ACE_elasticBandage",
 				"ACE_elasticBandage",
 				"ACE_elasticBandage",
@@ -1423,7 +1423,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_elasticBandage",
 				"ACE_elasticBandage",
 				"ACE_elasticBandage",
-				
+
 				"ACE_packingBandage",
 				"ACE_packingBandage",
 				"ACE_packingBandage",
@@ -1439,7 +1439,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_packingBandage",
 				"ACE_packingBandage",
 				"ACE_packingBandage",
-				
+
 				"ACE_quikclot",
 				"ACE_quikclot",
 				"ACE_quikclot",
@@ -1455,7 +1455,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_quikclot",
 				"ACE_quikclot",
 				"ACE_quikclot",
-				
+
 				"ACE_atropine",
 				"ACE_atropine",
 				"ACE_atropine",
@@ -1466,38 +1466,38 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_atropine",
 				"ACE_atropine",
 				"ACE_atropine",
-				
-				"ACE_morphine",				
+
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				"ACE_morphine",				
+				"ACE_quikclot",
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
-				
+				"ACE_quikclot",
+
 				"ACE_epinephrine",
 				"ACE_epinephrine",
 				"ACE_epinephrine",
@@ -1508,7 +1508,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_epinephrine",
 				"ACE_epinephrine",
 				"ACE_epinephrine",
-				
+
 				"ACE_salineIV_500",
 				"ACE_salineIV_500",
 				"ACE_salineIV_500",
@@ -1519,7 +1519,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_500",
 				"ACE_salineIV_500",
 				"ACE_salineIV_500",
-				
+
 				"ACE_tourniquet",
 				"ACE_tourniquet",
 				"ACE_tourniquet",
@@ -1531,8 +1531,8 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetSpecB"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
-		class PlatoonLeader 
+		};
+		class PlatoonLeader
 		{
 			name = "Platoon Leader";
 			primaryWeapon = "arifle_TRG21_GL_F";
@@ -1543,7 +1543,7 @@ class blufor //Name of your faction referenced in the init call
 				"1Rnd_HE_Grenade_shell",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1559,16 +1559,16 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_salineIV_500","ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_MapTools",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
 			personalRadios[] = {
 				"ACRE_PRC343","ACRE_PRC148"
-			};	
+			};
 			assignedItems[] = {
 				"ItemGPS",
 				"ItemMap",
@@ -1581,9 +1581,9 @@ class blufor //Name of your faction referenced in the init call
 				"1Rnd_HE_Grenade_shell",
 				"1Rnd_HE_Grenade_shell",
 				"1Rnd_HE_Grenade_shell",
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",		
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
@@ -1591,9 +1591,9 @@ class blufor //Name of your faction referenced in the init call
 				"UGL_FlareGreen_F",
 				"UGL_FlareGreen_F",
 				"1Rnd_SmokeGreen_Grenade_shell",
-				"1Rnd_SmokeGreen_Grenade_shell",		
-				"1Rnd_SmokeGreen_Grenade_shell",		
-				"SmokeShellGreen",	
+				"1Rnd_SmokeGreen_Grenade_shell",
+				"1Rnd_SmokeGreen_Grenade_shell",
+				"SmokeShellGreen",
 				"SmokeShellGreen",
 				"SmokeShellBlue",
 				"SmokeShellBlue",
@@ -1628,7 +1628,7 @@ class blufor //Name of your faction referenced in the init call
 				"1Rnd_HE_Grenade_shell",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
-				"30Rnd_556x45_Stanag",				
+				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag",
 				"30Rnd_556x45_Stanag_Tracer_Red",
@@ -1644,16 +1644,16 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_MapTools",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
 			personalRadios[] = {
 				"ACRE_PRC343",
 				"ACRE_PRC148"
-			};	
+			};
 			assignedItems[] = {
 				"ItemGPS",
 				"ItemMap",
@@ -1666,9 +1666,9 @@ class blufor //Name of your faction referenced in the init call
 				"1Rnd_HE_Grenade_shell",
 				"1Rnd_HE_Grenade_shell",
 				"1Rnd_HE_Grenade_shell",
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",	
-				"1Rnd_Smoke_Grenade_shell",		
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_Smoke_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
 				"1Rnd_SmokeRed_Grenade_shell",
@@ -1676,9 +1676,9 @@ class blufor //Name of your faction referenced in the init call
 				"UGL_FlareGreen_F",
 				"UGL_FlareGreen_F",
 				"1Rnd_SmokeGreen_Grenade_shell",
-				"1Rnd_SmokeGreen_Grenade_shell",		
-				"1Rnd_SmokeGreen_Grenade_shell",		
-				"SmokeShellGreen",	
+				"1Rnd_SmokeGreen_Grenade_shell",
+				"1Rnd_SmokeGreen_Grenade_shell",
+				"SmokeShellGreen",
 				"SmokeShellGreen",
 				"SmokeShellBlue",
 				"SmokeShellBlue",
@@ -1701,7 +1701,7 @@ class blufor //Name of your faction referenced in the init call
 			binoculars = "Laserdesignator";
 			insignia = "";
 		};
-		
+
 		class Marksman
 		{
 			name = "Marksman";
@@ -1712,14 +1712,14 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"20Rnd_762x51_Mag",
 				"20Rnd_762x51_Mag",
-				"20Rnd_762x51_Mag",				
+				"20Rnd_762x51_Mag",
 				"20Rnd_762x51_Mag",
 				"20Rnd_762x51_Mag",
 				"ACE_20Rnd_762x51_Mag_Tracer",
 				"ACE_20Rnd_762x51_Mag_Tracer",
 				"16Rnd_9x21_Mag",
 				"16Rnd_9x21_Mag",
-				"16Rnd_9x21_Mag",				
+				"16Rnd_9x21_Mag",
 				"HandGrenade",
 				"HandGrenade",
 				"SmokeShell"
@@ -1730,7 +1730,7 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_RangeCard",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
 				"ACE_quikclot"
 			};
@@ -1765,7 +1765,7 @@ class blufor //Name of your faction referenced in the init call
 			nvg = "NVGoggles";
 			binoculars = "Rangefinder";
 			insignia = "";
-		};		
+		};
 
 		class Pilot
 		{
@@ -1777,7 +1777,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
-				"30Rnd_9x21_Mag_SMG_02",				
+				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"SmokeShellBlue",
@@ -1789,9 +1789,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1815,7 +1815,7 @@ class blufor //Name of your faction referenced in the init call
 			nvg = "NVGoggles";
 			insignia = "";
 		};
-		
+
 		class AirCrew
 		{
 			name = "Air Crew";
@@ -1826,7 +1826,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
-				"30Rnd_9x21_Mag_SMG_02",				
+				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"SmokeShellBlue",
@@ -1838,9 +1838,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1863,8 +1863,8 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_PilotHelmetHeli_B"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};		
-		
+		};
+
 		class CrewC
 		{
 			name = "Crew Commander";
@@ -1875,7 +1875,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
-				"30Rnd_9x21_Mag_SMG_02",				
+				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"SmokeShellBlue",
@@ -1887,9 +1887,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1913,8 +1913,8 @@ class blufor //Name of your faction referenced in the init call
 			nvg = "NVGoggles";
 			binoculars = "Binocular";
 			insignia = "";
-		};		
-		
+		};
+
 		class Crew
 		{
 			name = "Crewman";
@@ -1925,7 +1925,7 @@ class blufor //Name of your faction referenced in the init call
 			magazines[] = {
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
-				"30Rnd_9x21_Mag_SMG_02",				
+				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"30Rnd_9x21_Mag_SMG_02",
 				"SmokeShellBlue",
@@ -1937,9 +1937,9 @@ class blufor //Name of your faction referenced in the init call
 				"ACE_Flashlight_XL50",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
-				"ACE_morphine",				
+				"ACE_morphine",
 				"ACE_tourniquet",
-				"ACE_quikclot",	
+				"ACE_quikclot",
 				"ACE_fieldDressing",
 				"ACE_fieldDressing"
 			};
@@ -1962,5 +1962,5 @@ class blufor //Name of your faction referenced in the init call
 			headgear[] = {"H_HelmetCrew_B"};
 			nvg = "NVGoggles";
 			insignia = "";
-		};			
+		};
 	};
