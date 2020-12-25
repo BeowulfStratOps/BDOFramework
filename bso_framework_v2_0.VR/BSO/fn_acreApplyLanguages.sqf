@@ -1,8 +1,12 @@
 /////bmf-v2_0////
 
+// Must be executed in scheduled mode
+
 [false, bso_acre_splitChannels] call acre_api_fnc_setupMission;
 
 if (!hasInterface) exitWith {};
+
+waitUntil {!isNull player};
 
 if (isNil "bso_acre_addedLanguages") then
 {

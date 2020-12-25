@@ -10,6 +10,9 @@ bso_acre_language_civilian = ["gr"];
 // Split radio channels. Sides will start with different radio frequency ranges. Radios can be picked up from bodies/people tho. Independent from Babel
 bso_acre_splitChannels = true;
 
+// Set lower volume level for direct speech
+[{!isNull acre_player}, {acre_sys_gui_volumeLevel = 0.25;}] call CBA_fnc_waitUntilAndExecute;
+
 // Don't remove this!
 [] call bso_fnc_acreApplyLanguages;
 
