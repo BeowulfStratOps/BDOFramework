@@ -6,7 +6,6 @@ class safety
 	class safety {};
 	class gameOn {};
 	class safeZone {};
-	class setSafety {};
 	class unsetSafety {};
 	class timeSlow {};
 };
