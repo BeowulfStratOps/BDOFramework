@@ -102,7 +102,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Rifleman";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -160,9 +160,9 @@ class BL_FACTION //Name of your faction referenced in the init call
 		class SquadLeader {
 			name = "Squad Leader";
 			primaryWeapon = "BL_RIFLE_UGL";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG","BL_UGL_HE"};
 			handgun = "BL_SIDEARM_WP";
-			handgunItems[] = {};
+			handgunItems[] = {"BL_SIDEARM_MAG"};
 			magazines[] = {
 				"BL_SIDEARM_MAG",
 				"BL_UGL_HE",
@@ -254,9 +254,9 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "TeamLeader";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "BL_SIDEARM_WP";
-			handgunItems[] = {};
+			handgunItems[] = {"BL_SIDEARM_MAG"};
 			magazines[] = {
 				"BL_RIFLE_MAG",
 				"BL_RIFLE_MAG",
@@ -334,7 +334,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		class Autorifleman {
 			name = "Autorifleman";
 			primaryWeapon = "BL_AUTORIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_AUTORIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -391,7 +391,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "AR Asst.";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -453,9 +453,9 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "TeamLeader - MG";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "BL_SIDEARM_WP";
-			handgunItems[] = {};
+			handgunItems[] = {"BL_SIDEARM_MAG"};
 			magazines[] = {
 				"BL_RIFLE_MAG",
 				"BL_RIFLE_MAG",
@@ -533,9 +533,9 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Machinegunner";
 			primaryWeapon = "BL_MG_WP";
-			primaryWeaponItems[] = {"BL_RAIL"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_MG_MAG"};
 			handgun = "BL_SIDEARM_WP";
-			handgunItems[] = {};
+			handgunItems[] = {"BL_SIDEARM_MAG"};
 			magazines[] = {
 				"BL_MG_MAG",
 				"BL_MG_MAG",
@@ -590,7 +590,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "MG Asst.";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -651,7 +651,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Rifleman (LAT)";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -710,7 +710,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Grenadier";
 			primaryWeapon = "BL_RIFLE_UGL";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG","BL_UGL_HE"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -789,9 +789,9 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "TeamLeader - MAT";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "BL_SIDEARM_WP";
-			handgunItems[] = {};
+			handgunItems[] = {"BL_SIDEARM_MAG"};
 			magazines[] = {
 				"BL_RIFLE_MAG",
 				"BL_RIFLE_MAG",
@@ -869,7 +869,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "MAT Gunner";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -910,7 +910,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 				"BL_MAT_MAG_AT"
 				};
 			launcher = "BL_MAT_WP";
-			launcherItems[] = {"BL_MAT_OPTIC"};
+			launcherItems[] = {"BL_MAT_OPTIC","BL_MAT_MAG_AT"};
 			backpackItems[] = {};
 			uniform[] = {"BL_UNIFORM"};
 			vest[] = {"BL_VEST"};
@@ -922,7 +922,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "MAT Asst.";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -976,7 +976,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "HAT Gunner";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1017,7 +1017,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 				"BL_HAT_MAG"
 				};
 			launcher = "BL_HAT_WP";
-			launcherItems[] = {};
+			launcherItems[] = {"BL_HAT_MAG"};
 			backpackItems[] = {};
 			uniform[] = {"BL_UNIFORM"};
 			vest[] = {"BL_VEST"};
@@ -1029,7 +1029,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "HAT Asst.";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1083,7 +1083,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "AA Gunner";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1123,7 +1123,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 				"BL_SAM_MAG"
 				};
 			launcher = "BL_SAM_WP";
-			launcherItems[] = {};
+			launcherItems[] = {"BL_SAM_MAG"};
 			backpackItems[] = {
 				"ACE_fieldDressing",
 				"ACE_fieldDressing",
@@ -1139,7 +1139,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "AA Asst.";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1196,7 +1196,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Exp. Expert";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1261,7 +1261,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Combat Engineer";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1326,7 +1326,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Combat Medic";
 			primaryWeapon = "BL_RIFLE_WP";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1445,17 +1445,6 @@ class BL_FACTION //Name of your faction referenced in the init call
 				"ACE_quikclot",
 				"ACE_quikclot",
 				
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				"ACE_atropine",
-				
 				"ACE_morphine",				
 				"ACE_tourniquet",
 				"ACE_quikclot",	
@@ -1508,6 +1497,33 @@ class BL_FACTION //Name of your faction referenced in the init call
 				"ACE_salineIV_500",
 				"ACE_salineIV_500",
 				"ACE_salineIV_500",
+				
+				"ACE_tourniquet",
+				"ACE_tourniquet",
+				"ACE_tourniquet",
+				"ACE_tourniquet",
+				"ACE_tourniquet",
+				
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
+				"ACE_elasticBandage",
 				
 				"ACE_tourniquet",
 				"ACE_tourniquet",
@@ -1525,9 +1541,9 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Platoon Leader";
 			primaryWeapon = "BL_RIFLE_UGL";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG","BL_UGL_HE"};
 			handgun = "BL_SIDEARM_WP";
-			handgunItems[] = {};
+			handgunItems[] = {"BL_SIDEARM_MAG"};
 			magazines[] = {
 				"BL_UGL_HE",
 				"BL_RIFLE_MAG",
@@ -1609,7 +1625,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "JTAC";
 			primaryWeapon = "BL_RIFLE_UGL";
-			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_OPTIC","BL_RIFLE_MAG","BL_UGL_HE"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1695,9 +1711,9 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Marksman";
 			primaryWeapon = "BL_MARK_RIFLE";
-			primaryWeaponItems[] = {"BL_MARK_OPTIC","BL_MARK_BIPOD","BL_RAIL"};
+			primaryWeaponItems[] = {"BL_MARK_OPTIC","BL_MARK_BIPOD","BL_RAIL","BL_MARK_MAG"};
 			handgun = "BL_SIDEARM_WP";
-			handgunItems[] = {};
+			handgunItems[] = {"BL_SIDEARM_MAG"};
 			magazines[] = {
 				"BL_MARK_MAG",
 				"BL_MARK_MAG",
@@ -1760,7 +1776,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Pilot";
 			primaryWeapon = "BL_CREW_WP";
-			primaryWeaponItems[] = {"BL_RAIL"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_CREW_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1809,7 +1825,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Air Crew";
 			primaryWeapon = "BL_CREW_WP";
-			primaryWeaponItems[] = {"BL_RAIL"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_CREW_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1858,7 +1874,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Crew Commander";
 			primaryWeapon = "BL_CREW_WP";
-			primaryWeaponItems[] = {"BL_RAIL"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_CREW_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
@@ -1908,7 +1924,7 @@ class BL_FACTION //Name of your faction referenced in the init call
 		{
 			name = "Crewman";
 			primaryWeapon = "BL_CREW_WP";
-			primaryWeaponItems[] = {"BL_RAIL"};
+			primaryWeaponItems[] = {"BL_RAIL","BL_CREW_MAG"};
 			handgun = "";
 			handgunItems[] = {};
 			magazines[] = {
