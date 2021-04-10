@@ -132,6 +132,8 @@ for "_parameterIndex" from 1 to (count _this - 1) do {
         case "DEBUG" : {_debug = true};
     };
 };
+
+if (!isnil "_exitTrigger" && {_exitTrigger isEqualType ""}) then { _exitTrigger = missionNamespace getVariable _exitTrigger; };
  
 //Add additional respawn positions where applicable
 {
