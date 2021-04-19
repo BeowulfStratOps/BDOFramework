@@ -56,7 +56,7 @@ switch (_CampTyp) do
 //-------------------------------------------------------------------------------------------------------------------------
 	case 3: // Bunkers with HMG, Mortar, Machinegunner, AntiAir and AntiTank
 	{
-		_campBasic     = ["Land_BagBunker_Large_F",["Land_BagBunker_Tower_F",10,10,0],["Flag_FIA_F",0,10,0],["Logic",10,10,0],0];
+		_campBasic     = ["Land_BagBunker_Large_F",["Land_BagBunker_Tower_F",10,10,0],["Flag_FIA_F",0,10,0],["Logic",20,20,0],0];
 		_campAmmo      = [];
 		_campStatic    = [["O_BSO_FIA_M252",-3,13,0,"O_BSO_FIA_INS"],["O_BSO_FIA_M2",10.3,-1,140,"O_BSO_FIA_INS"]];
 		_campAddUnit   = ["O_BSO_FIA_MG","O_BSO_FIA_AA","O_BSO_FIA_AT"];

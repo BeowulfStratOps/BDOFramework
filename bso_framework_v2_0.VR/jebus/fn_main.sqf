@@ -133,8 +133,7 @@ for "_parameterIndex" from 1 to (count _this - 1) do {
     };
 };
 
-if (!isnil "_exitTrigger" && {_exitTrigger isEqualType ""}) then { _exitTrigger = missionNamespace getVariable _exitTrigger; };
- 
+ if (!isnil "_exitTrigger") then { _exitTrigger = missionNamespace getVariable _exitTrigger; };
 //Add additional respawn positions where applicable
 {
     _respawnPosList pushBack (getMarkerPos _x);
