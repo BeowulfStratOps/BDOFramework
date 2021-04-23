@@ -3,60 +3,48 @@
  private["_box"];
  _box = _this select 0;
 if (isServer) then {
-clearMagazineCargoGlobal _box;
-clearWeaponCargoGlobal _box;
-clearItemCargoGlobal _box;
-clearItemCargoGlobal _box;
+
+	clearMagazineCargoGlobal _box;
+	clearWeaponCargoGlobal _box;
+	clearItemCargoGlobal _box;
+	clearItemCargoGlobal _box;
+
+	_box addMagazineCargoGlobal  ["hlc_24Rnd_75x55_ap_stgw", 40];
+	_box addMagazineCargoGlobal  ["hlc_24Rnd_75x55_T_stgw", 20];
+
+	_box addMagazineCargoGlobal  ["UK3CB_Sten_34Rnd_Magazine_R", 10];
+	_box addMagazineCargoGlobal  ["UK3CB_Sten_34Rnd_Magazine_RT", 4];
+
+	_box addMagazineCargoGlobal  ["rhsgref_296Rnd_792x57_SmK_belt", 3];
+	_box addMagazineCargoGlobal  ["rhsgref_50Rnd_792x57_SmK_drum", 4];
 
 
-_box addMagazineCargoGlobal  ["rhs_mag_30Rnd_556x45_M855_Stanag", 120];
-_box addMagazineCargoGlobal  ["rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red", 80];
-_box addMagazineCargoGlobal  ["hlc_20Rnd_762x51_B_fal", 120];
-_box addMagazineCargoGlobal  ["hlc_20Rnd_762x51_T_fal", 80];
-_box addMagazineCargoGlobal  ["20Rnd_762x51_Mag", 200];
-_box addMagazineCargoGlobal  ["hlc_30Rnd_9x19_GD_MP5", 200];
+	_box addMagazineCargoGlobal  ["rhssaf_mag_br_m84", 16];
+	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_white", 8];
+	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_orange", 1];
+	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_blue", 1];
+	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_red", 1];
 
-_box addMagazineCargoGlobal  ["rhs_mag_m67", 60];
-_box addMagazineCargoGlobal  ["ACE_M84", 60];
-_box addMagazineCargoGlobal  ["SmokeShell", 40];
-_box addMagazineCargoGlobal  ["ACE_M14", 40];
+	_box addMagazineCargoGlobal  ["DemoCharge_Remote_Mag", 2];
+	_box addWeaponCargoGlobal  ["rhs_weap_m72_ASM", 2];
 
-_box addMagazineCargoGlobal  ["hlc_100Rnd_762x51_M_M60E4", 100];
+	_box addMagazineCargoGlobal  ["1Rnd_HE_Grenade_shell", 6];
+	_box addMagazineCargoGlobal  ["1Rnd_SmokePurple_Grenade_shell", 2];
+	_box addMagazineCargoGlobal  ["1Rnd_SmokeRed_Grenade_shell", 2];
+	_box addMagazineCargoGlobal  ["1Rnd_SmokeGreen_Grenade_shell", 2];
+	_box addMagazineCargoGlobal  ["1Rnd_SmokeBlue_Grenade_shell", 2];
+	_box addMagazineCargoGlobal  ["1Rnd_Smoke_Grenade_shell", 4];
 
+	_box addMagazineCargoGlobal  ["UK3CB_BHP_9_13Rnd", 120];
 
-_box addMagazineCargoGlobal  ["rhs_charge_tnt_x2_mag", 10];
-_box addMagazineCargoGlobal  ["DemoCharge_Remote_Mag", 10];
-_box addMagazineCargoGlobal  ["SatchelCharge_Remote_Mag", 2];
+	_box addItemCargoGlobal  ["ACE_SpareBarrel", 2];
 
-
-_box addMagazineCargoGlobal  ["1Rnd_HE_Grenade_shell", 120];
-_box addMagazineCargoGlobal  ["1Rnd_SmokePurple_Grenade_shell", 20];
-_box addMagazineCargoGlobal  ["1Rnd_SmokeRed_Grenade_shell", 20];
-_box addMagazineCargoGlobal  ["1Rnd_SmokeGreen_Grenade_shell", 20];
-_box addMagazineCargoGlobal  ["1Rnd_SmokeBlue_Grenade_shell", 20];
-_box addMagazineCargoGlobal  ["1Rnd_Smoke_Grenade_shell", 100];
-
-
-_box addMagazineCargoGlobal  ["RH_18Rnd_9x19_VP", 120];
-
-_box addMagazineCargoGlobal  ["SmokeShell", 60];
-_box addMagazineCargoGlobal  ["SmokeShellGreen", 20];
-_box addMagazineCargoGlobal  ["SmokeShellRed", 20];
-_box addMagazineCargoGlobal  ["SmokeShellBlue", 20];
-_box addMagazineCargoGlobal  ["SmokeShellOrange", 20];
-
-
-
-_box addItemCargoGlobal  ["ACE_salineIV_500", 100];
-_box addItemCargoGlobal  ["ACE_tourniquet", 100];
-_box addItemCargoGlobal  ["ACE_morphine", 100];
-_box addItemCargoGlobal  ["ACE_epinephrine", 100];
-_box addItemCargoGlobal  ["ACE_elasticBandage", 100];
-_box addItemCargoGlobal  ["ACE_packingBandage", 100];
-
-_box addItemCargoGlobal  ["ACE_CableTie", 100];
-
-
+	_box addItemCargoGlobal  ["ACE_salineIV_500", 10];
+	_box addItemCargoGlobal  ["ACE_tourniquet", 10];
+	_box addItemCargoGlobal  ["ACE_morphine", 10];
+	_box addItemCargoGlobal  ["ACE_epinephrine", 5];
+	_box addItemCargoGlobal  ["ACE_elasticBandage", 20];
+	_box addItemCargoGlobal  ["ACE_packingBandage", 20];
 
 };
 

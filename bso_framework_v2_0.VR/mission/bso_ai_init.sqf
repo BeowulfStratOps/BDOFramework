@@ -1,34 +1,41 @@
 // Call on a group leader in editor with below 
-//[this, HC_2] execVM "mission\bso_ai_init.sqf";
-if (isServer) then { 
-	_groupLeader = _this select 0;
+//[this] execVM "mission\bso_ai_init.sqf";
+_groupLeader = _this select 0;
+if (local _groupLeader) then { // Runs where unit is local
 	
 	{
+	
+	/*
 		_type = typeOf _x;
-
+		_rifleman = selectRandom ["Rifleman","Rifleman2"];
 		switch _type do 
 		{
-			case "O_bso_arl_REBEL7": {[_x] execVM "mission\bso_AIParaflare.sqf"; _x addItem "SAN_Headlamp_v1"; _x assignItem "SAN_Headlamp_v1";}; 
-			case "O_bso_arl_GL": {[_x] execVM "mission\bso_AIParaflare.sqf"; _x addItem "SAN_Headlamp_v1"; _x assignItem "SAN_Headlamp_v1";}; 
-			case "O_bso_arl_REBEL": {[_x] execVM "mission\bso_AIParaflare.sqf"; _x addItem "SAN_Headlamp_v1"; _x assignItem "SAN_Headlamp_v1";}; 
-			case "O_bso_arl_REBEL5": {[_x] execVM "mission\bso_AIParaflare.sqf"; removeAllPrimaryWeaponItems _x; _x addPrimaryWeaponItem "rhs_acc_2dpzenit";}; 
-			default {};
+			case "rhs_msv_emr_rifleman": {[_x,"opfor",_rifleman,true] call BSO_fnc_applyLoadout;};
+			case "rhs_msv_emr_sergeant": {[_x,"opfor","Leader",true] call BSO_fnc_applyLoadout;};
+			case "rhs_msv_emr_at": {[_x,"opfor","RPG",true] call BSO_fnc_applyLoadout;};
+			case "rhs_msv_emr_arifleman": {[_x,"opfor","Autorifleman",true] call BSO_fnc_applyLoadout;};
+			case "rhs_msv_emr_medic": {[_x,"opfor","Medic",true] call BSO_fnc_applyLoadout;};
+			case "rhs_msv_emr_marksman": {[_x,"opfor","Marksman",true] call BSO_fnc_applyLoadout;};
+			case "rhs_msv_emr_junior_sergeant": {[_x,"opfor","Rifleman2",true] call BSO_fnc_applyLoadout;};
+			case "rhs_msv_emr_aa": {[_x,"opfor","AntiAir",true] call BSO_fnc_applyLoadout;};
+			case "rhs_pilot": {[_x,"opfor","Pilot",true] call BSO_fnc_applyLoadout;};
 		};
+	*/	
+		
+		_x addEventHandler ["Killed", {
+			params ["_unit", "_killer", "_instigator", "_useEffects"];
+			
+			{_unit removeMagazine _x} forEach magazines _unit;
+			_unit removeItems  "FirstAidKit";
+			_unit removeItems  "ACE_fieldDressing";
+			_unit removeItems  "ACE_morphine";
+			_unit removeItems  "ACE_epinephrine";
+			_unit removeItems  "ACE_splint";
+			_unit removeItems  "ACE_tourniquet";
+			}
+		];		
+		
+		
 	} forEach units group _groupLeader;
-	
-
-	// This handles transfer of AI to HC if present
-	_hc = _this select 1;; // manually change to alternate HC
-	
-	if (isNull _hc) exitWith {};
-	waitUntil {time > 20}; // wait for madness to complete
-	_hcID = owner _hc;
-	_unitGroup = group _groupLeader;
-	
-	_unitGroup setGroupOwner _hcID;
-
-	diag_log format ["BSO_AI_INIT: Group %1 transferred to %2, at %3", _groupLeader, _hc, time];
-	
-	
 	
 };

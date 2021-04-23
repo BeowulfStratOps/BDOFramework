@@ -63,8 +63,19 @@ switch (_CampTyp) do
 		_campUserObj   = [["Land_fort_artillery_nest",-5,15,315],["Land_BagBunker_Small_F",10,-1,320],["Box_FIA_Ammo_F",2,12,0]];
 		_campRandomObj = [];
 		_campWall      = [];
-		_campObjInit   = [[],[],[],["[(group _x), _x, 30, [], false, true, 0, true] call lambs_wp_fnc_taskGarrison;"],[],[],[]];
+		_campObjInit   = [[],[],[],["[_x] execVM ""mission\bso_dac_AI.sqf""; [(group _x), _x, 30, [], false, true, 0, true] call lambs_wp_fnc_taskGarrison;"],[],[],[]];
 	};
+	case 4: // WINTER Bunkers with HMG, Mortar, Machinegunner, AntiAir and AntiTank
+	{
+		_campBasic     = ["CUP_Winter_obj_fortified_nest_big",["Land_Bunker_02_light_right_F",10,10,0],["Flag_FIA_F",0,10,0],["Logic",20,20,0],0];
+		_campAmmo      = [];
+		_campStatic    = [["O_BSO_FIA_M252",-3,13,0,"O_BSO_FIA_INS"],["O_BSO_CCCP_DSHKM",10.3,-1,140,"O_BSO_FIA_INS"]];
+		_campAddUnit   = ["O_BSO_FIA_MG","O_BSO_FIA_AA","O_BSO_FIA_AT"];
+		_campUserObj   = [["Land_fort_bagfence_round",-5,14,315],["Land_fort_bagfence_round",11,-2,140],["Box_FIA_Ammo_F",2,12,0]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],["[_x] execVM ""mission\bso_dac_AI.sqf""; [(group _x), _x, 30, [], false, true, 0, true] call lambs_wp_fnc_taskGarrison;"],[],[],[]];
+	};	
 //-------------------------------------------------------------------------------------------------------------------------
 	Default {
 				if(DAC_Basic_Value != 5) then
