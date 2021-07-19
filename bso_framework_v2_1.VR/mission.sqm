@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1;
+		nextID=3;
 	};
 	class Camera
 	{
-		pos[]={341.30383,155.30525,367.16046};
-		dir[]={-0.22142358,-0.56993896,0.79130715};
-		up[]={-0.15358244,0.82168514,0.54886073};
-		aside[]={0.96302253,-2.3212488e-007,0.26947358};
+		pos[]={274.89688,73.869881,94.706757};
+		dir[]={0.22924744,-0.72273809,0.65202773};
+		up[]={0.23972952,0.69110298,0.68184149};
+		aside[]={0.94341171,-1.7835555e-007,-0.33169478};
 	};
 };
 binarizationWanted=0;
@@ -845,7 +845,7 @@ class Mission
 				position[]={297.20599,5,148.16};
 			};
 			title="Ammo and Loadout boxes";
-			description="You can create your own ammo boxes through the Eden Editor." \n "You can also create your own loadout boxes through the BSO Loadouts system. These Loadout boxes are great for trying out your new loadouts.";
+			description="You can create your own ammo boxes by editing the ""mission\ammoBox.sqf"" file for the magazines, items and weapons you require." \n "" \n "You can also create your own loadout boxes through the BSO Loadouts system. These Loadout boxes are great for trying out your new loadouts.";
 			id=145;
 		};
 		class Item16
@@ -2875,6 +2875,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this] execVM ""mission\ammoBox.sqf"";}";
 			};
 			id=231;
 			type="BSO_A_EMPTY";
@@ -6232,7 +6233,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1033.5007,5,1368.6665};
-						angles[]={-0,6.0235152,0};
+						angles[]={0,6.0235152,0};
 					};
 					name="HC_1";
 					isPlayable=1;
@@ -6245,7 +6246,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1033.5007,5,1272.0464};
-						angles[]={-0,6.0235152,0};
+						angles[]={0,6.0235152,0};
 					};
 					id=636;
 					type="DAC_Source_Extern";

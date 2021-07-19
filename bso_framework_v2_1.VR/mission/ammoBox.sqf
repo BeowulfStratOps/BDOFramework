@@ -9,33 +9,46 @@ if (isServer) then {
 	clearItemCargoGlobal _box;
 	clearItemCargoGlobal _box;
 
-	_box addMagazineCargoGlobal  ["hlc_24Rnd_75x55_ap_stgw", 40];
-	_box addMagazineCargoGlobal  ["hlc_24Rnd_75x55_T_stgw", 20];
+	_box addMagazineCargoGlobal  ["30Rnd_556x45_Stanag", 40];
+	_box addMagazineCargoGlobal  ["30Rnd_556x45_Stanag_Tracer_Red", 20];
 
-	_box addMagazineCargoGlobal  ["UK3CB_Sten_34Rnd_Magazine_R", 10];
-	_box addMagazineCargoGlobal  ["UK3CB_Sten_34Rnd_Magazine_RT", 4];
+	_box addMagazineCargoGlobal  ["150Rnd_762x54_Box", 6];
+	_box addMagazineCargoGlobal  ["130Rnd_338_Mag", 4];
+	
+	_box addMagazineCargoGlobal  ["20Rnd_762x51_Mag", 4];
+	_box addMagazineCargoGlobal  ["ACE_20Rnd_762x51_Mag_Tracer", 4];
+	
+	_box addMagazineCargoGlobal  ["16Rnd_9x21_Mag", 4];
+	
+	_box addMagazineCargoGlobal  ["30Rnd_9x21_Mag_SMG_02", 4];
 
-	_box addMagazineCargoGlobal  ["rhsgref_296Rnd_792x57_SmK_belt", 3];
-	_box addMagazineCargoGlobal  ["rhsgref_50Rnd_792x57_SmK_drum", 4];
-
-
-	_box addMagazineCargoGlobal  ["rhssaf_mag_br_m84", 16];
-	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_white", 8];
-	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_orange", 1];
-	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_blue", 1];
-	_box addMagazineCargoGlobal  ["rhssaf_mag_brd_m83_red", 1];
+	_box addMagazineCargoGlobal  ["HandGrenade", 16];
+	_box addMagazineCargoGlobal  ["SmokeShell", 8];
+	_box addMagazineCargoGlobal  ["SmokeShellRed", 1];
+	_box addMagazineCargoGlobal  ["SmokeShellGreen", 1];
+	_box addMagazineCargoGlobal  ["SmokeShellBlue", 1];
+	_box addMagazineCargoGlobal  ["SmokeShellPurple", 1];
 
 	_box addMagazineCargoGlobal  ["DemoCharge_Remote_Mag", 2];
-	_box addWeaponCargoGlobal  ["rhs_weap_m72_ASM", 2];
+	_box addMagazineCargoGlobal  ["ATMine_Range_Mag", 2];
+	
+	_box addWeaponCargoGlobal  ["launch_NLAW_F", 2];
+	
+	_box addWeaponCargoGlobal  ["rhs_mag_maaws_HEAT", 2];
+	_box addWeaponCargoGlobal  ["rhs_mag_maaws_HE", 2];
+	
+	_box addWeaponCargoGlobal  ["Titan_AT", 2];
+	
+	_box addWeaponCargoGlobal  ["Titan_AA", 2];
 
 	_box addMagazineCargoGlobal  ["1Rnd_HE_Grenade_shell", 6];
-	_box addMagazineCargoGlobal  ["1Rnd_SmokePurple_Grenade_shell", 2];
+	_box addMagazineCargoGlobal  ["1Rnd_Smoke_Grenade_shell", 4];
 	_box addMagazineCargoGlobal  ["1Rnd_SmokeRed_Grenade_shell", 2];
 	_box addMagazineCargoGlobal  ["1Rnd_SmokeGreen_Grenade_shell", 2];
+	_box addMagazineCargoGlobal  ["1Rnd_SmokePurple_Grenade_shell", 2];
 	_box addMagazineCargoGlobal  ["1Rnd_SmokeBlue_Grenade_shell", 2];
-	_box addMagazineCargoGlobal  ["1Rnd_Smoke_Grenade_shell", 4];
-
-	_box addMagazineCargoGlobal  ["UK3CB_BHP_9_13Rnd", 120];
+	_box addMagazineCargoGlobal  ["UGL_FlareRed_F", 4];
+	_box addMagazineCargoGlobal  ["UGL_FlareGreen_F", 4];
 
 	_box addItemCargoGlobal  ["ACE_SpareBarrel", 2];
 
