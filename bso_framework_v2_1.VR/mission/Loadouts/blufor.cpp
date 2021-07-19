@@ -1,7 +1,7 @@
 /*
 ////BL_TEMP_West v1.0////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+https://beowulfso.com/wiki/BSO_Loadouts
 BSO Loadout Template - Standard Western Force
 
 This template allows for quick creation of loadouts for your mission.
