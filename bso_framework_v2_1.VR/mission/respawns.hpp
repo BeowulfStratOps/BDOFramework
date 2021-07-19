@@ -1,4 +1,4 @@
-/////bmf-v2_0////
+/////bmf-v2_1////
 
 // Use the template below to activate respawns
 // See wiki for further references and examples https://beowulfso.com/wiki/BSO_Respawn_System

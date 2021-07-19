@@ -29,7 +29,7 @@ respawnDialog	= 0;						// <!-- Displays dialogue when killed (leave this at 0)
 respawnOnStart	= -1;						// <!-- Do not respawn players on the start of a mission. Leave -1 unless using magic
 
 // edit this files to enable respawns
-#include "respawns.hpp"
+#include "mission\respawns.hpp"
 
 
 
