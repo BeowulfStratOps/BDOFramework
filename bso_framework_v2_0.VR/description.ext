@@ -30,3 +30,17 @@ respawnOnStart	= -1;						// <!-- Do not respawn players on the start of a missi
 
 // edit this files to enable respawns
 #include "respawns.hpp"
+
+
+
+///// Garbage Collector /////
+
+corpseManagerMode = 3; // Default: 0 for SP, 2 for MP. 3 for All_But_Respawned - All units are managed by the manager with exception of respawned
+corpseLimit = 30; // Default: 15
+corpseRemovalMinTime = 60; // seconds. Default: 10
+corpseRemovalMaxTime = 240; // seconds. Default: 3600
+wreckManagerMode = 2; // Default: 0 for SP, 2 for MP
+wreckLimit = 15; // seconds. Default: 15
+wreckRemovalMinTime = 10; // seconds. Default: 10
+wreckRemovalMaxTime = 60; // seconds. Default: 36000 (10 hours)
+minPlayerDistance = 50;
