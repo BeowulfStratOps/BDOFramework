@@ -1,4 +1,4 @@
-/////bmf-v2_0////
+/////bmf-v2_1////
 
 if (isNil "Trigger_BSOStart") then { Trigger_BSOStart = false; };
 

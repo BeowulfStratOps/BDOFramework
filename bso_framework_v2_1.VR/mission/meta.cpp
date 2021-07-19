@@ -1,4 +1,5 @@
-/////bmf-v2_0////
+/////bmf-v2_1////
+
 ///////// ======  Mission meta data
 //
 // This file contains meta data specific to you mission. It also has the includes for your custom loadouts, and the debriefing information.

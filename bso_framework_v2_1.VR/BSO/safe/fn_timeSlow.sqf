@@ -1,4 +1,4 @@
-/////bmf-v2_0////
+/////bmf-v2_1////
 
 if (isServer) then {
 	setTimeMultiplier 0.1;

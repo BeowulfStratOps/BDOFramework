@@ -1,4 +1,5 @@
 /////bmf-v2_1////
+
 //	BSO AI Init Script v1
 //
 // Use this script to assign your own loadouts to AI units and apply any other changes to your AI. 

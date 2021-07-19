@@ -1,4 +1,4 @@
-/////bmf-v2_0////
+/////bmf-v2_1////
 
 #define SAFETY_ZONES    [] // Syntax: [["marker1", radius1], ["marker2", radius2], ...]
 #define MESSAGE "DON'T BE A DICK"
