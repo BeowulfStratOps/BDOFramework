@@ -34,12 +34,12 @@ if (isServer) then {
 	
 	_box addWeaponCargoGlobal  ["launch_NLAW_F", 2];
 	
-	_box addWeaponCargoGlobal  ["rhs_mag_maaws_HEAT", 2];
-	_box addWeaponCargoGlobal  ["rhs_mag_maaws_HE", 2];
+	_box addMagazineCargoGlobal  ["rhs_mag_maaws_HEAT", 2];
+	_box addMagazineCargoGlobal  ["rhs_mag_maaws_HE", 2];
 	
-	_box addWeaponCargoGlobal  ["Titan_AT", 2];
+	_box addMagazineCargoGlobal  ["Titan_AT", 2];
 	
-	_box addWeaponCargoGlobal  ["Titan_AA", 2];
+	_box addMagazineCargoGlobal  ["Titan_AA", 2];
 
 	_box addMagazineCargoGlobal  ["1Rnd_HE_Grenade_shell", 6];
 	_box addMagazineCargoGlobal  ["1Rnd_Smoke_Grenade_shell", 4];
