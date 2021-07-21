@@ -1,20 +1,21 @@
 /////bmf-v2_1////
 
-// In this file, you can call custom scripts
-// like setting up interactions, filling ammoboxes, initializing variables etc.
+// In this file, you can execute custom scripts
 
 if (isServer) then {
     // Put things that happen on the server here.
+    // Examples: Fill ammo boxes, set up public variables
 
 
-    // TODO: example ammo box script
-    // TODO: example: initialize variable
+
 };
 
 
 if (hasInterface) then {
     // Put player/client scripts here.
     // Note: player is guaranteed to exist here.
+    // Examples: Create ace interactions
 
-    // TODO: ace interaction example
+
+
 };
