@@ -1,5 +1,7 @@
 /////bmf-v2_1////
 
+// There should be no need to edit this file.
+
 /////// ==== Save Disable
 enableSaving [false,false];
 
@@ -19,9 +21,12 @@ execVM "mission\acre.sqf";
 // slows down time until gameon
 [] call bso_fnc_timeSlow;
 
-waitUntil {!isNull player};
+if (hasInterface) then {
+    waitUntil {!isNull player};
+};
 
 // add's a "Teleport to Leader" action for JIPs
 [] call bso_fnc_addJipTp;
 
-// DO STUFF BELOW HERE!
+// call player scripts
+[] execVM "mission\custom_scripts.sqf";
