@@ -11,7 +11,10 @@ bso_acre_language_civilian = ["gr"];
 bso_acre_splitChannels = true;
 
 // Set lower volume level for direct speech
-[{!isNull acre_player}, {acre_sys_gui_volumeLevel = 0.25;}] call CBA_fnc_waitUntilAndExecute;
+[{!isNull acre_player}, {
+    acre_sys_gui_volumeLevel = 0.25;
+    [acre_sys_gui_volumeLevel] call acre_sys_gui_fnc_setVoiceCurveLevel;
+}] call CBA_fnc_waitUntilAndExecute;
 
 // Don't remove this!
 [] call bso_fnc_acreApplyLanguages;
