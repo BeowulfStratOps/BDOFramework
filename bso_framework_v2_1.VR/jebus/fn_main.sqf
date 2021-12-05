@@ -331,6 +331,7 @@ while { _lives != 0 } do {
             _newVehicle animateSource [_x, _thisAnimationPhases select _forEachIndex];
         } forEach _thisAnimationNames;
 		_newVehicle setVehicleVarName (_vehicleVarNameList select _vehicleIndex);
+        missionNamespace setVariable [_vehicleVarNameList select _vehicleIndex, _newVehicle, true];
        
         sleep 0.1;
  
@@ -342,6 +343,7 @@ while { _lives != 0 } do {
             _x setSkill (_tmpSkill select _forEachIndex);
 			_tmpVarName = _crewVarNameList select _vehicleIndex;
 			_x setVehicleVarName (_tmpVarName select _forEachIndex);
+            missionNamespace setVariable [_tmpVarName select _forEachIndex, _x, true];
             sleep 0.1;
             _x moveInAny _newVehicle;
         } forEach (units _tmpGroup);
@@ -376,6 +378,7 @@ while { _lives != 0 } do {
         _x setUnitLoadout (_infantryInventoryList select _forEachIndex);
         _x setSkill (_infantrySkillList select _forEachIndex);
 		_x setVehicleVarName (_infantryVarNameList select _forEachIndex);
+        missionNamespace setVariable [_infantryVarNameList select _forEachIndex, _x, true];
         sleep 0.1;
     } forEach (units _tmpGroup);
    
