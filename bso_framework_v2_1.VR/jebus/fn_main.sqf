@@ -96,8 +96,6 @@ _crewList = [];
 _crewInventoryList = [];
 _crewSkillList = [];
 _crewVarNameList = [];
-_respawnPosList = [];
-_respawnPosList pushBack _respawnPos;
  
 //Set up default parameters
 _lives = -1;
@@ -134,12 +132,7 @@ for "_parameterIndex" from 1 to (count _this - 1) do {
 };
 
 if (!isnil "_exitTrigger" && {_exitTrigger isEqualType ""}) then { _exitTrigger = missionNamespace getVariable _exitTrigger; };
- 
-//Add additional respawn positions where applicable
-{
-    _respawnPosList pushBack (getMarkerPos _x);
-} forEach _respawnMarkers;
- 
+
 //Determine number of lives if passed an array
 if (typeName _lives == "ARRAY") then {
     _minLives = _lives select 0;
@@ -241,6 +234,13 @@ _waypointList = [_unitGroup] call jebus_fnc_saveWaypoints;
 deleteGroup _unitGroup;
 sleep 1;
  
+
+_find_respawn_pos = {
+    if (count _respawnMarkers == 0) exitWith { _respawnPos };
+    [_respawnMarkers] call BIS_fnc_randomPos
+};
+
+
 _firstLoop = true;
  
 //Main loop
@@ -264,11 +264,12 @@ while { _lives != 0 } do {
     _newGroup = createGroup _unitSide;
     _newGroup setVariable ["groupInitialising", true, false];
  
-    _tmpRespawnPos = selectRandom _respawnPosList;
+    _tmpRespawnPos = call _find_respawn_pos;
  
     while {[_tmpRespawnPos, _unitSide, _pauseRadius] call jebus_fnc_enemyInRadius} do {
         if (_debug) then {systemChat "Enemies in pause radius. Waiting."};
         sleep 5;
+        _tmpRespawnPos = call _find_respawn_pos;
     };
  
     //Spawn vehicles - spawn, disable sim, add crew, enable sim......
