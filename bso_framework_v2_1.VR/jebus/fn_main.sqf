@@ -237,7 +237,15 @@ sleep 1;
 
 _find_respawn_pos = {
     if (count _respawnMarkers == 0) exitWith { _respawnPos };
-    [_respawnMarkers] call BIS_fnc_randomPos
+    private _marker = selectRandom _respawnMarkers;
+    if (markerShape _marker in ["ELLIPSE", "RECTANGLE"]) exitWith {
+        private _pos = [[_marker]] call BIS_fnc_randomPos;
+        if (_pos isEqualTo [0, 0]) then {
+            _pos = markerPos _marker
+        };
+        _pos
+    };
+    markerPos _marker
 };
 
 
@@ -331,8 +339,12 @@ while { _lives != 0 } do {
         {
             _newVehicle animateSource [_x, _thisAnimationPhases select _forEachIndex];
         } forEach _thisAnimationNames;
-		_newVehicle setVehicleVarName (_vehicleVarNameList select _vehicleIndex);
-        missionNamespace setVariable [_vehicleVarNameList select _vehicleIndex, _newVehicle, true];
+        private _vehicleVarName = _vehicleVarNameList select _vehicleIndex;
+        if (_vehicleVarName != "") then
+        {
+		    _newVehicle setVehicleVarName _vehicleVarName;
+            missionNamespace setVariable [_vehicleVarName, _newVehicle, true];
+        };
        
         sleep 0.1;
  
@@ -343,8 +355,12 @@ while { _lives != 0 } do {
             _tmpSkill = _crewSkillList select _vehicleIndex;
             _x setSkill (_tmpSkill select _forEachIndex);
 			_tmpVarName = _crewVarNameList select _vehicleIndex;
-			_x setVehicleVarName (_tmpVarName select _forEachIndex);
-            missionNamespace setVariable [_tmpVarName select _forEachIndex, _x, true];
+            private _crewVarName = _tmpVarName select _forEachIndex;
+            if (_crewVarName != "") then
+            {
+			    _x setVehicleVarName _crewVarName;
+                missionNamespace setVariable [_crewVarName, _x, true];
+            };
             sleep 0.1;
             _x moveInAny _newVehicle;
         } forEach (units _tmpGroup);
@@ -378,8 +394,11 @@ while { _lives != 0 } do {
     {
         _x setUnitLoadout (_infantryInventoryList select _forEachIndex);
         _x setSkill (_infantrySkillList select _forEachIndex);
-		_x setVehicleVarName (_infantryVarNameList select _forEachIndex);
-        missionNamespace setVariable [_infantryVarNameList select _forEachIndex, _x, true];
+        private _infantryVarName = _infantryVarNameList select _forEachIndex;
+        if (_infantryVarName != "") then {
+		    _x setVehicleVarName _infantryVarName;
+            missionNamespace setVariable [_infantryVarNameList select _forEachIndex, _x, true];
+        };
         sleep 0.1;
     } forEach (units _tmpGroup);
    
