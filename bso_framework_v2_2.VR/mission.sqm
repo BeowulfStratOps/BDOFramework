@@ -23,7 +23,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="bso_framework_v2_1";
+sourceName="bso_framework_v2_2";
 addons[]=
 {
 	"A3_Ui_F",
@@ -328,7 +328,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="BSO Framework v2.1";
+		briefingName="BSO Framework v2.2";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;

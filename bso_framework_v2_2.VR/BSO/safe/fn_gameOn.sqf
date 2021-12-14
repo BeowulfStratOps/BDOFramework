@@ -1,4 +1,4 @@
-/////bmf-v2_1////
+/////bmf-v2_2////
 Trigger_BSOStart = true; publicVariable "Trigger_BSOStart";
 [] remoteExec ["bso_fnc_unsetSafety"];
 [1] remoteExec ["setTimeMultiplier", 2];

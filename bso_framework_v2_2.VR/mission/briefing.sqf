@@ -1,4 +1,4 @@
-/////bmf-v2_1////
+/////bmf-v2_2////
 
 // Here you can find the mission briefing, ACRE Languages, admin end conditions and allow for marker visibility to only certain factions.
 // You will have to set your debriefing information in the Meta.cpp file because ArmA.

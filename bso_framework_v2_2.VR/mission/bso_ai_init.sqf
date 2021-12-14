@@ -1,4 +1,4 @@
-/////bmf-v2_1////
+/////bmf-v2_2////
 
 //	BSO AI Init Script v1
 //
