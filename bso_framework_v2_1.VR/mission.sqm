@@ -433,7 +433,7 @@ class Mission
 			class Attributes
 			{
 				text="Patrol Start on GameOn";
-				condition="call{trigger_BSOstart;}";
+				condition="trigger_BSOstart";
 				sizeA=0;
 				sizeB=0;
 				interuptable=1;
@@ -3568,7 +3568,6 @@ class Mission
 			position[]={241.6212,5,710.0249};
 			class Attributes
 			{
-				condition="call{this}";
 				activationBy="WEST";
 				isServerOnly=1;
 			};
@@ -4577,7 +4576,7 @@ class Mission
 			position[]={319.17081,5,713.89807};
 			class Attributes
 			{
-				condition="call{trigger_BSOstart;}";
+				condition="trigger_BSOstart";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -5004,7 +5003,7 @@ class Mission
 			position[]={411.77081,5,715.22516};
 			class Attributes
 			{
-				condition="call{trigger_BSOstart;}";
+				condition="trigger_BSOstart";
 				sizeA=0;
 				sizeB=0;
 				isServerOnly=1;
@@ -5082,8 +5081,8 @@ class Mission
 			class Attributes
 			{
 				text="Teleport On GameOn Trigger";
-				condition="call{Trigger_BSOGameOn}";
-				onActivation="call{player setPos (getMarkerPos ""teleport_area"")}";
+				condition="Trigger_BSOGameOn";
+				onActivation="player setPos (getMarkerPos ""teleport_area"")";
 				sizeA=0;
 				sizeB=0;
 			};
