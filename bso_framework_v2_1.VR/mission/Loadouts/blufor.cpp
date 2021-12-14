@@ -286,7 +286,7 @@ class blufor //Name of your faction referenced in the init call
 		{
 			name = "Grenadier";
 			primaryWeapon = "arifle_TRG21_GL_F";
-			primaryWeaponItems[] = {"acc_pointer_IR","optic_Hamr"};
+			primaryWeaponItems[] = {"30Rnd_556x45_Stanag","acc_pointer_IR","optic_Hamr"};
 			magazines[] = {
 				{"30Rnd_556x45_Stanag",5},
 				{"30Rnd_556x45_Stanag_Tracer_Red",2},
