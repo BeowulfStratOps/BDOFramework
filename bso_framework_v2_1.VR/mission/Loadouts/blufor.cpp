@@ -227,6 +227,13 @@ class blufor //Name of your faction referenced in the init call
 			name = "TeamLeader";
 			handgun = "hgun_P07_F";
 			handgunItems[] = {"16Rnd_9x21_Mag"};
+			magazines[] = {
+				{"30Rnd_556x45_Stanag",5},
+				{"30Rnd_556x45_Stanag_Tracer_Red",2},
+				{"HandGrenade",2},
+				"SmokeShell",
+				{"16Rnd_9x21_Mag",4}
+			};
 			items[] += {"ACE_MapTools"};
 			personalRadios[] = {"ACRE_PRC148"};
 			assignedItems[] += {"ItemGPS"};
