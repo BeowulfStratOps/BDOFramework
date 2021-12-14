@@ -231,12 +231,12 @@ class blufor //Name of your faction referenced in the init call
 			personalRadios[] = {"ACRE_PRC148"};
 			assignedItems[] += {"ItemGPS"};
 			backpack = "B_AssaultPack_rgr";
-			backpackItems[] += {
-				{"ACE_fieldDressing",4},
-				{"ACE_morphine",2},
-				{"ACE_tourniquet",2},
+			backpackItems[] = {
+				{"ACE_fieldDressing",6},
+				{"ACE_morphine",3},
+				{"ACE_tourniquet",3},
 				{"ACE_epinephrine",2},
-				{"ACE_quikclot",2}
+				{"ACE_quikclot",3}
 			};
 			binoculars = "Binocular";
 		};
@@ -516,7 +516,16 @@ class blufor //Name of your faction referenced in the init call
 		class JTAC: SquadLeader
 		{
 			name = "JTAC";
-			magazines[] += {"Laserbatteries"};
+			magazines[] = {
+				{"30Rnd_556x45_Stanag",5},
+				{"30Rnd_556x45_Stanag_Tracer_Red",2},
+				{"1Rnd_HE_Grenade_shell",2},
+				"1Rnd_Smoke_Grenade_shell",
+				{"16Rnd_9x21_Mag",2},
+				{"HandGrenade",2},
+				"SmokeShell",
+				"Laserbatteries"
+			};
 			backpack = "B_Carryall_oli";
 			backpackMagazines[] = {
 				{"1Rnd_HE_Grenade_shell",4},

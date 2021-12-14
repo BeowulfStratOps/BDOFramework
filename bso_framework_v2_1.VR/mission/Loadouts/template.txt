@@ -230,12 +230,12 @@ class blufor //Name of your faction referenced in the init call
 			personalRadios[] = {"BL_LR_RADIO"};
 			assignedItems[] += {"ItemGPS"};
 			backpack = "BL_B_SML";
-			backpackItems[] += {
-				{"ACE_fieldDressing",4},
-				{"ACE_morphine",2},
-				{"ACE_tourniquet",2},
+			backpackItems[] = {
+				{"ACE_fieldDressing",6},
+				{"ACE_morphine",3},
+				{"ACE_tourniquet",3},
 				{"ACE_epinephrine",2},
-				{"ACE_quikclot",2}
+				{"ACE_quikclot",3}
 			};
 			BL_BINSs = "BL_BINS";
 		};
@@ -515,7 +515,16 @@ class blufor //Name of your faction referenced in the init call
 		class JTAC: SquadLeader
 		{
 			name = "JTAC";
-			magazines[] += {"Laserbatteries"};
+			magazines[] = {
+				{"BL_RIFLE_MAG",5},
+				{"BL_RIFLE_TRACER_MAG",2},
+				{"BL_UGL_HE",2},
+				"BL_UGL_SMOKE_1",
+				{"BL_SIDEARM_MAG",2},
+				{"BL_HG_FRAG",2},
+				"BL_HG_SMOKE_STD"
+				"Laserbatteries"
+			};
 			backpack = "BL_B_LRG";
 			backpackMagazines[] = {
 				{"BL_UGL_HE",4},
